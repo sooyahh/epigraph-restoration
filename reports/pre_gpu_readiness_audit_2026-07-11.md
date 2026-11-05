@@ -18,7 +18,7 @@ Your branch is up to date with 'origin/review/exp011-integration'.
 Changes not staged for commit:
   modified:   reports/exp007_gpu_status.md
   modified:   reports/gpu_eve_checklist.md
-  modified:   reports/pc_bang_runbook.md
+  modified:   reports/local_gpu_runbook.md
   modified:   reports/presentation_outline.md
   modified:   reports/presentation_qa.md
 
@@ -37,7 +37,7 @@ HEAD = 5d4f78220e7fdd5880f308feb0b7c944256cc59f
 
 | ID | 항목 | 근거 |
 |---|---|---|
-| C1 | **공식 실험 ID 충돌·미등록** | `docs/EXPERIMENT_LOG.md`에서 **EXP-007 = SillokBERT zero-shot (Phase 3)**. 그런데 `work/run_exp007_gpu.py`, `reports/pc_bang_runbook.md`, `reports/gpu_eve_checklist.md`, `reports/exp007_gpu_status.md`는 GPU full FT를 **EXP-007**로 실행·기록하도록 되어 있다. 저장소 어디에도 **EXP-012** 항목/스크립트가 없다. 그대로 실행하면 zero-shot EXP-007과 산출물·로그가 충돌한다. |
+| C1 | **공식 실험 ID 충돌·미등록** | `docs/EXPERIMENT_LOG.md`에서 **EXP-007 = SillokBERT zero-shot (Phase 3)**. 그런데 `work/run_exp007_gpu.py`, `reports/local_gpu_runbook.md`, `reports/gpu_eve_checklist.md`, `reports/exp007_gpu_status.md`는 GPU full FT를 **EXP-007**로 실행·기록하도록 되어 있다. 저장소 어디에도 **EXP-012** 항목/스크립트가 없다. 그대로 실행하면 zero-shot EXP-007과 산출물·로그가 충돌한다. |
 | C2 | **validation 기반 모델 선택이 코드·runbook에 없음** | `PROJECT_OVERVIEW.md` §4, `DECISIONS.md` [009], `EXPERIMENT_LOG` 평가 원칙은 “epoch/설정 선택은 validation만”을 요구한다. `finetune_sillokbert.py`는 epoch 끝마다 `checkpoint-epoch-N`을 저장하지만, **epoch별 validation 지표를 계산·비교하지 않고**, 학습 종료 후 최종 상태의 loss만 한 번 기록한다. runbook은 `.../final`만 평가한다. |
 | C3 | **기본값 `--max-train 128` / `--max-eval 64`** | CLI 기본값이 subsample이다. 플래그 없이 실행하면 full-data가 아니다. (`0`이면 full — 파싱 검증 완료.) wrapper/runbook은 `0`을 넘기지만, 수동 실행 실수 위험이 크다. |
 
@@ -52,9 +52,9 @@ HEAD = 5d4f78220e7fdd5880f308feb0b7c944256cc59f
 | W5 | **GPU 오케스트레이션 스크립트·문서가 legacy EXP-007 체계** | `run_exp007_gpu.py`가 끝나면 `work.generate_baseline_report`를 호출하며, 해당 리포트는 canonical ID를 `EXP-002b…EXP-006`(노트북 legacy)로 본다. EXP-012 결과를 공식 표로 반영하지 못함. |
 | W6 | **`pytest` 미설치** | `python -m pytest` 실패 (`No module named pytest`). `unittest`로는 13/13 통과. |
 | W7 | **`work/_finetune_smoke.py`는 `PYTHONPATH` 필요** | 기본 `python work/_finetune_smoke.py` → `No module named 'src'`. `$env:PYTHONPATH=.` 후 성공. |
-| W8 | **로컬 감사 환경은 CPU-only torch** | `torch 2.12.1+cpu`, `cuda_available: False`. PC방에서는 CUDA 빌드 재설치/`check_cuda_env.py` 필수. |
+| W8 | **로컬 감사 환경은 CPU-only torch** | `torch 2.12.1+cpu`, `cuda_available: False`. 로컬 GPU에서는 CUDA 빌드 재설치/`check_cuda_env.py` 필수. |
 | W9 | **working tree dirty (reports 5파일)** | 학습 코드와 무관하나, “깨끗한 트리에서 실행” 관행과 불일치. |
-| W10 | **발표/PC방 문서의 EXP-006/007 = GPU FT 서술** | 배너로 main 체계와 다르다고 고지했으나, 본문은 여전히 “EXP-007 = GPU full train”으로 읽힌다. 실행 당일 혼동 위험. |
+| W10 | **발표/로컬 GPU 문서의 EXP-006/007 = GPU FT 서술** | 배너로 main 체계와 다르다고 고지했으나, 본문은 여전히 “EXP-007 = GPU full train”으로 읽힌다. 실행 당일 혼동 위험. |
 | W11 | **MANIFEST 일부 stale** | `reports/exp011_baseline/MANIFEST.md`는 “epoch checkpoint 저장은 backup 브랜치에만”이라고 하나, 현재 `finetune_sillokbert.py`에는 checkpoint 저장이 이미 있다. |
 
 ### PASS
@@ -63,7 +63,7 @@ HEAD = 5d4f78220e7fdd5880f308feb0b7c944256cc59f
 |---|---|---|
 | P1 | 브랜치·commit 확인 | `review/exp011-integration` @ `5d4f782` |
 | P2 | EXP-011 경량 증거물 + SHA256 | `reports/exp011_baseline/` 4파일 존재, MANIFEST 해시와 **전부 일치** |
-| P3 | 필요 코드·스크립트 존재 | `src/data/finetune_sillokbert.py`, `src/eval/run_fill_mask_eval.py`, `work/run_exp007_gpu.py`, `work/check_cuda_env.py`, `work/run_step1_verify.py`, `reports/pc_bang_runbook.md`, `requirements.txt` |
+| P3 | 필요 코드·스크립트 존재 | `src/data/finetune_sillokbert.py`, `src/eval/run_fill_mask_eval.py`, `work/run_exp007_gpu.py`, `work/check_cuda_env.py`, `work/run_step1_verify.py`, `reports/local_gpu_runbook.md`, `requirements.txt` |
 | P4 | 데이터 행 수 | readings **14,702** / splits **6,084** / artificial_mask **66,537** (train 46,139 / valid 10,679 / test **9,719**) |
 | P5 | inscription split 무중복 | mask 기준 train∩test=0, train∩valid=0, valid∩test=0; splits.csv도 동일 |
 | P6 | real defect ≠ 정량 gold | `real_defect_inference.csv` 5,000행, `gold_label` 전부 비어 있음, `usage=demo_only`; mask와 reading_id 교집합 0 |
@@ -259,7 +259,7 @@ print({k: hashlib.sha256((b/k).read_bytes()).hexdigest()==v for k,v in exp.items
 | 위치 | 문제 |
 |---|---|
 | `work/run_exp007_gpu.py` | GPU FT를 `EXP-007`로 기록; 공식 zero-shot EXP-007과 충돌 |
-| `reports/pc_bang_runbook.md` | 목적·명령·성공 확인이 전부 EXP-007; validation 선택 없음; “checkpoint 있으면 재실행”은 resume이 아님 |
+| `reports/local_gpu_runbook.md` | 목적·명령·성공 확인이 전부 EXP-007; validation 선택 없음; “checkpoint 있으면 재실행”은 resume이 아님 |
 | `reports/gpu_eve_checklist.md` | “EXP-007 FT + eval”; EXPERIMENT_LOG에 EXP-007 추가하라고 안내 |
 | `reports/exp007_gpu_status.md` | pending PC bang / EXP-007 기록 지시 |
 | `reports/presentation_outline.md` / `presentation_qa.md` / `model_comparison_2026-07-04.md` / `baseline_results_2026-07-03.md` / `exp006_case_study.md` | 노트북 legacy 번호(EXP-006=FT, EXP-007=GPU). 배너는 있으나 본문은 여전히 GPU=EXP-007 |
@@ -279,10 +279,10 @@ print({k: hashlib.sha256((b/k).read_bytes()).hexdigest()==v for k,v in exp.items
 1. **실험 ID·경로 고정:** EXP-012, `sillokbert_exp012_gpu`, `exp012_*_predictions.csv`로 runbook/스크립트 문구 정리 (또는 당일 수동 명령만 사용하고 wrapper 비활성).  
 2. **validation→test 절차를 runbook 최상단에 명시** (코드에 epoch별 valid 로그를 넣으면 더 안전).  
 3. **CLI 기본값 변경 권장:** `--max-train`/`--max-eval` default를 `0`(full)로 바꾸거나, default 유지 시 full 실행 전 assert 출력.  
-4. **(가능하면) `--resume-from` 추가** — PC방 시간 제약 대비.  
+4. **(가능하면) `--resume-from` 추가** — 로컬 GPU 시간 제약 대비.  
 5. **(가능하면) score 저장** — predictors의 logits/prob를 CSV에 기록.  
 6. **metrics에 `max_seq_len`·`context_window`·`commit_hash` 기록**.  
-7. stale PC방/발표 문서에 “legacy EXP-007(GPU) → 공식 EXP-012” 매핑을 본문에도 반영.  
+7. stale 로컬 GPU/발표 문서에 “legacy EXP-007(GPU) → 공식 EXP-012” 매핑을 본문에도 반영.  
 8. `generate_baseline_report.py`가 EXP-012를 인식하도록 분리 또는 새 리포트 스크립트.  
 9. GPU 환경: CUDA torch 설치 → smoke → full-train → valid 선택 → test 1회 → USB 반출(모델은 Git 금지).
 
@@ -345,7 +345,7 @@ print({k: hashlib.sha256((b/k).read_bytes()).hexdigest()==v for k,v in exp.items
 - `bird_lite`: `.gitignore` + DATA_STATUS archive 목록만.  
 - `CLAUDE.md`: AI_COUNCIL 경고만.  
 - `SRC_AUDIT.md`: 미발견.  
-- EXP-011 최종 성능 오인: 핵심 docs는 방지됨; 발표/PC방 legacy 문서는 GPU를 EXP-007로 불러 혼동 가능.  
+- EXP-011 최종 성능 오인: 핵심 docs는 방지됨; 발표/로컬 GPU legacy 문서는 GPU를 EXP-007로 불러 혼동 가능.  
 - EXP-006 공식 FT ID 오인: 핵심 docs는 EXP-011로 정리; legacy 보고서는 배너 고지 하에 EXP-006 유지.  
 - unseen SillokBERT > BERT 오주장: DECISIONS/EXPERIMENT_LOG/CURSOR_HANDOFF가 **반대(3.7% < 4.1%)**를 명시.
 

@@ -15,7 +15,7 @@ def main() -> None:
         "EXP-007 remains SillokBERT zero-shot in docs/EXPERIMENT_LOG.md.\n"
         "For planned GPU full-data fine-tuning use:\n"
         "  python work/run_exp012_gpu.py\n"
-        "See reports/pc_bang_runbook.md."
+        "See reports/local_gpu_runbook.md."
     )
 
 

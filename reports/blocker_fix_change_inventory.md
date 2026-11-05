@@ -17,7 +17,7 @@ blocker 수정 작업 시작 시점에는 working tree가 **clean**이며, 해�
 |---|---|---|---|
 | `reports/exp007_gpu_status.md` | clean (tracked) | modified | 번호 체계 안내 배너 주변 공백/줄바꿈만 변경 (내용 의미 변화 없음) |
 | `reports/gpu_eve_checklist.md` | clean (tracked) | modified | 동일 (whitespace-only) |
-| `reports/pc_bang_runbook.md` | clean (tracked) | modified | 동일 (whitespace-only) |
+| `reports/local_gpu_runbook.md` | clean (tracked) | modified | 동일 (whitespace-only) |
 | `reports/presentation_outline.md` | clean (tracked) | modified | 동일 (whitespace-only) |
 | `reports/presentation_qa.md` | clean (tracked) | modified | 동일 (whitespace-only) |
 
@@ -27,7 +27,7 @@ blocker 수정 작업 시작 시점에는 working tree가 **clean**이며, 해�
 
 공통: 모두 노트북 legacy 번호 체계 안내 배너를 포함하며, **GPU full FT를 EXP-007**로 기술한다. 공식 로그에서 EXP-007은 SillokBERT zero-shot이다.
 
-1. **`reports/pc_bang_runbook.md`** — `run_exp007_gpu.py` 일괄 실행, `--max-train 0`, 평가 ID `EXP-007`, 산출물 `sillokbert_gsm_baseline_gpu` / `exp007_*`. validation 선택 절차 없음.
+1. **`reports/local_gpu_runbook.md`** — `run_exp007_gpu.py` 일괄 실행, `--max-train 0`, 평가 ID `EXP-007`, 산출물 `sillokbert_gsm_baseline_gpu` / `exp007_*`. validation 선택 절차 없음.
 2. **`reports/gpu_eve_checklist.md`** — 당일 작업을 EXP-007 FT+eval로 안내. EXP-011(CPU)과 혼동 가능한 legacy EXP-006 표기.
 3. **`reports/exp007_gpu_status.md`** — EXP-007 pending PC bang, 로그에 EXP-007 metrics 추가 지시.
 4. **`reports/presentation_outline.md`** — 발표용; subsample EXP-006(=공식 EXP-011) 수치와 GPU EXP-007 갱신 예정 서술.
@@ -36,5 +36,5 @@ blocker 수정 작업 시작 시점에는 working tree가 **clean**이며, 해�
 ## 처리 방침
 
 - 위 5파일의 **과거 whitespace diff는 복원하지 않음** (현재 없음).
-- blocker 수정 과정에서 `pc_bang_runbook.md`, `gpu_eve_checklist.md`, `exp007_gpu_status.md`는 **예정 EXP-012** 절차로 **내용 갱신**한다 (기존 변경 삭제가 아니라 신규 수정).
+- blocker 수정 과정에서 `local_gpu_runbook.md`, `gpu_eve_checklist.md`, `exp007_gpu_status.md`는 **예정 EXP-012** 절차로 **내용 갱신**한다 (기존 변경 삭제가 아니라 신규 수정).
 - `presentation_outline.md`, `presentation_qa.md`는 이번 blocker 범위 밖이면 최소 고지만 하거나 건드리지 않는다. GPU 실행 안전과 직접 관련된 runbook/체크리스트/상태 문서를 우선한다.

@@ -1,4 +1,4 @@
-# PC방 GPU 실행 Runbook — EXP-012 (legacy 경로)
+# 로컬 GPU 실행 Runbook — EXP-012 (legacy 경로)
 
 > **2026-07-12 갱신:** EXP-012는 **Colab GPU에서 실행 완료**됨 (Exact@1 33.75% / @5 53.04% / @10 60.47%, DECISIONS [010]).
 > **최신 절차·결과:** [`reports/colab_exp012_runbook.md`](colab_exp012_runbook.md) · [`reports/exp012_results.md`](exp012_results.md) · [`notebooks/exp012_colab.ipynb`](../notebooks/exp012_colab.ipynb)
