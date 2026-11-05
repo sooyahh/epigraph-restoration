@@ -53,7 +53,7 @@ See [`baseline_results_2026-07-03.md`](baseline_results_2026-07-03.md) § Era br
 | `reports/exp006_case_study.md` | Hit/miss examples |
 | `outputs/predictions/real_defect_demo_30.csv` | Real defect demo (30 cases) |
 | `reports/gpu_eve_checklist.md` | Pre-PC-bang checklist |
-| `reports/pc_bang_runbook.md` | EXP-007 GPU guide |
+| `reports/local_gpu_runbook.md` | EXP-007 GPU guide |
 
 ---
 

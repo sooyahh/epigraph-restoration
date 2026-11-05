@@ -1,7 +1,7 @@
 """Planned EXP-012 GPU pipeline: full-data fine-tune + validation checkpoint selection.
 
 Does NOT run full test automatically. After training, read best_checkpoint.json and
-run eval with an explicit --model-path (see reports/pc_bang_runbook.md).
+run eval with an explicit --model-path (see reports/local_gpu_runbook.md).
 
 Official IDs:
   EXP-007 = SillokBERT zero-shot (unchanged)
