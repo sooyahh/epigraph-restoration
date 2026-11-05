@@ -7,7 +7,7 @@ from pathlib import Path
 
 import xlrd
 
-from nrich_common import normalize_korean_title
+from src.nrich.text_utils import normalize_korean_title
 
 META_HEADER_ROW = 2
 META_DATA_START = 4

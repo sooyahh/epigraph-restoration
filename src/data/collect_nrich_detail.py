@@ -9,9 +9,10 @@ from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 
-from nrich_common import ListRecord, NrichClient, normalize_korean_title
+from src.nrich.portal_client import ListRecord, NrichClient
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]RAW_READINGS_DIR = PROJECT_ROOT / "data" / "raw_layer" / "nrich" / "readings"
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+RAW_READINGS_DIR = PROJECT_ROOT / "data" / "raw_layer" / "nrich" / "readings"
 MANIFEST_PATH = PROJECT_ROOT / "data" / "raw_layer" / "nrich" / "collect_manifest.json"
 
 
