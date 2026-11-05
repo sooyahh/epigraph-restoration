@@ -29,6 +29,7 @@ NRICH_MD_DATA_TO_FIELD = {
 }
 
 DETAIL_VIEW_PATH = "/kor/ksmUsrView.do"
+PANDOK_VIEW_PATH = "/kor/ksmPandokView.do"
 PANDOK_WRITER_PATH = "/kor/ksmPandokWriter.do"
 PANDOK_CLOB_PATH = "/ajaxPandokClob.do"
 LIST_VIEW_PATH = "/kor/ksmUsrList.do"
