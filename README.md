@@ -31,6 +31,19 @@
 - 체크포인트: `exp012_sillokbert_gpu_best_valid_loss` (Git에 미포함)
 - CPU subsample baseline(EXP-011, test n=2,000)과 혼동하지 말 것
 - 이득은 고빈도 한자에 집중되며, hapax 구간은 zero-shot 대비 하락할 수 있음 (EXP-013/014)
+- 데이터: 인공 single-mask **66,537건** (train 46,139 / valid 10,679 / test 9,719, inscription 단위 split)
+
+## 선택적 제안 (기권 규칙)
+
+모든 결손에 후보를 내면 희귀 한자에서 틀린 제안이 섞입니다. 그래서 **top-1 확률이 임계값 이상일 때만 후보를 제안**하고 나머지는 전문가에게 넘기는 규칙을 만들었습니다. 임계값은 valid에서 정하고(EXP-020), test에서는 다시 찾지 않고 그대로 적용했습니다(EXP-022).
+
+| split | 임계값 (top-1 확률) | 제안 비율 | Exact@1 | Exact@5 | Exact@10 |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| valid (EXP-020, 임계값 결정) | 0.617386 | 25.1% | 80.5% | 90.0% | 91.9% |
+| **test (EXP-022, 고정 적용)** | 0.617386 | **24.7%** | **80.2%** | **89.4%** | **91.5%** |
+
+- valid와 test의 차이는 모든 지표에서 통계적으로 유의하지 않음 (p ≥ 0.49) → 임계값이 재현됨
+- 상세: [`reports/exp022/exp022_results.md`](reports/exp022/exp022_results.md), 빈도 구간별 분석은 [`reports/exp023/`](reports/exp023/)
 
 ## 레포 구조
 
