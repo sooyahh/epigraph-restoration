@@ -1,10 +1,6 @@
 pandas>=2.0
-xlrd>=2.0
-openpyxl>=3.1
-beautifulsoup4>=4.12
-lxml>=5.0
-requests>=2.31
+numpy>=1.24
+torch>=2.1
 transformers>=4.40
-torch>=2.0
-datasets>=2.18
-accelerate>=0.28
+requests>=2.31
+xlrd>=2.0
