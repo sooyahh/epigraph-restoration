@@ -1,0 +1,213 @@
+{
+  "generated_at": "2026-07-03",
+  "sample_count": 10,
+  "truncated_or_missing_count": 0,
+  "rows": [
+    {
+      "ksm_idx": 3,
+      "title_ko": "이계신도비",
+      "xls_pandok_length": 3127,
+      "detail_max_length": 3093,
+      "length_diff": -34,
+      "xls_to_detail_ratio": 1.011,
+      "truncated_or_missing": false,
+      "truncated_in_xls": false,
+      "missing_in_xls": false,
+      "pandok_count_detail": 2,
+      "readings": [
+        {
+          "pan_idx": "15272",
+          "reader": "『가평군 금석문집』",
+          "preview_length": 3216,
+          "detail_length": 3093
+        },
+        {
+          "pan_idx": "15271",
+          "reader": "김혜완",
+          "preview_length": 3017,
+          "detail_length": 3047
+        }
+      ]
+    },
+    {
+      "ksm_idx": 5,
+      "title_ko": "이소한신도비",
+      "xls_pandok_length": 2373,
+      "detail_max_length": 2318,
+      "length_diff": -55,
+      "xls_to_detail_ratio": 1.0237,
+      "truncated_or_missing": false,
+      "truncated_in_xls": false,
+      "missing_in_xls": false,
+      "pandok_count_detail": 1,
+      "readings": [
+        {
+          "pan_idx": "2",
+          "reader": "김은미",
+          "preview_length": 2380,
+          "detail_length": 2318
+        }
+      ]
+    },
+    {
+      "ksm_idx": 8,
+      "title_ko": "이유상묘갈",
+      "xls_pandok_length": 2337,
+      "detail_max_length": 2218,
+      "length_diff": -119,
+      "xls_to_detail_ratio": 1.0537,
+      "truncated_or_missing": false,
+      "truncated_in_xls": false,
+      "missing_in_xls": false,
+      "pandok_count_detail": 1,
+      "readings": [
+        {
+          "pan_idx": "4",
+          "reader": "전혜경",
+          "preview_length": 2344,
+          "detail_length": 2218
+        }
+      ]
+    },
+    {
+      "ksm_idx": 9,
+      "title_ko": "이명신묘갈",
+      "xls_pandok_length": 921,
+      "detail_max_length": 830,
+      "length_diff": -91,
+      "xls_to_detail_ratio": 1.1096,
+      "truncated_or_missing": false,
+      "truncated_in_xls": false,
+      "missing_in_xls": false,
+      "pandok_count_detail": 1,
+      "readings": [
+        {
+          "pan_idx": "6",
+          "reader": "전혜경",
+          "preview_length": 928,
+          "detail_length": 830
+        }
+      ]
+    },
+    {
+      "ksm_idx": 11,
+      "title_ko": "이보혁묘지",
+      "xls_pandok_length": 3370,
+      "detail_max_length": 3327,
+      "length_diff": -43,
+      "xls_to_detail_ratio": 1.0129,
+      "truncated_or_missing": false,
+      "truncated_in_xls": false,
+      "missing_in_xls": false,
+      "pandok_count_detail": 1,
+      "readings": [
+        {
+          "pan_idx": "8",
+          "reader": "전혜경",
+          "preview_length": 3396,
+          "detail_length": 3327
+        }
+      ]
+    },
+    {
+      "ksm_idx": 13,
+      "title_ko": "이익보묘비",
+      "xls_pandok_length": 1010,
+      "detail_max_length": 763,
+      "length_diff": -247,
+      "xls_to_detail_ratio": 1.3237,
+      "truncated_or_missing": false,
+      "truncated_in_xls": false,
+      "missing_in_xls": false,
+      "pandok_count_detail": 1,
+      "readings": [
+        {
+          "pan_idx": "10",
+          "reader": "김은미",
+          "preview_length": 1020,
+          "detail_length": 763
+        }
+      ]
+    },
+    {
+      "ksm_idx": 15,
+      "title_ko": "최치운묘비",
+      "xls_pandok_length": 1446,
+      "detail_max_length": 1441,
+      "length_diff": -5,
+      "xls_to_detail_ratio": 1.0035,
+      "truncated_or_missing": false,
+      "truncated_in_xls": false,
+      "missing_in_xls": false,
+      "pandok_count_detail": 1,
+      "readings": [
+        {
+          "pan_idx": "12",
+          "reader": "김동석",
+          "preview_length": 1454,
+          "detail_length": 1441
+        }
+      ]
+    },
+    {
+      "ksm_idx": 16,
+      "title_ko": "정경부인함씨묘비",
+      "xls_pandok_length": 1524,
+      "detail_max_length": 1530,
+      "length_diff": 6,
+      "xls_to_detail_ratio": 0.9961,
+      "truncated_or_missing": false,
+      "truncated_in_xls": false,
+      "missing_in_xls": false,
+      "pandok_count_detail": 1,
+      "readings": [
+        {
+          "pan_idx": "13",
+          "reader": "김동석",
+          "preview_length": 1531,
+          "detail_length": 1530
+        }
+      ]
+    },
+    {
+      "ksm_idx": 30,
+      "title_ko": "김여명묘비",
+      "xls_pandok_length": 683,
+      "detail_max_length": 702,
+      "length_diff": 19,
+      "xls_to_detail_ratio": 0.9729,
+      "truncated_or_missing": false,
+      "truncated_in_xls": false,
+      "missing_in_xls": false,
+      "pandok_count_detail": 1,
+      "readings": [
+        {
+          "pan_idx": "15",
+          "reader": "김동석",
+          "preview_length": 689,
+          "detail_length": 702
+        }
+      ]
+    },
+    {
+      "ksm_idx": 38,
+      "title_ko": "동해묘중수기사비",
+      "xls_pandok_length": 677,
+      "detail_max_length": 684,
+      "length_diff": 7,
+      "xls_to_detail_ratio": 0.9898,
+      "truncated_or_missing": false,
+      "truncated_in_xls": false,
+      "missing_in_xls": false,
+      "pandok_count_detail": 1,
+      "readings": [
+        {
+          "pan_idx": "17",
+          "reader": "김혜완",
+          "preview_length": 681,
+          "detail_length": 684
+        }
+      ]
+    }
+  ]
+}

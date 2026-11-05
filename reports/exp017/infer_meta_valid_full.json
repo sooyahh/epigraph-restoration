@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-08-02T12:37:07.726443+00:00",
+  "tag": "valid_full",
+  "n": 10679,
+  "top_k": 50,
+  "context_window": 64,
+  "zs_model": "ddokbaro/SillokBert",
+  "ft_model": "notebooks\\best",
+  "device": "cpu",
+  "seed": null,
+  "path": "outputs\\predictions\\exp017_dist_valid_full_topk50.jsonl"
+}

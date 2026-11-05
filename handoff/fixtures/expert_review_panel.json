@@ -1,0 +1,3857 @@
+{
+  "description": "EXP-012 expert usability panel — diversified inscriptions; scores are relative preference, not calibrated confidence.",
+  "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+  "count": 50,
+  "samples": [
+    {
+      "sample_id": "mask_00014815",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_002528",
+      "era": "고구려",
+      "selection_reason": "diversified; bucket=hit_high; max_per_ins=2",
+      "request": {
+        "text": "乙亥年八[MASK]前部」小大使者於九婁治」城六百八十四間」",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "乙亥年八[MASK]前部」小大使者於九婁治」城六百八十四間」",
+        "mask_index": 4,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "月",
+            "score": 0.89804
+          },
+          {
+            "rank": 2,
+            "char": "里",
+            "score": 0.007166
+          },
+          {
+            "rank": 3,
+            "char": "州",
+            "score": 0.005657
+          },
+          {
+            "rank": 4,
+            "char": "日",
+            "score": 0.003924
+          },
+          {
+            "rank": 5,
+            "char": "坐",
+            "score": 0.002785
+          },
+          {
+            "rank": 6,
+            "char": "十",
+            "score": 0.001936
+          },
+          {
+            "rank": 7,
+            "char": "面",
+            "score": 0.00137
+          },
+          {
+            "rank": 8,
+            "char": "人",
+            "score": 0.0013
+          },
+          {
+            "rank": 9,
+            "char": "年",
+            "score": 0.001238
+          },
+          {
+            "rank": 10,
+            "char": "道",
+            "score": 0.001114
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "月",
+        "rank_of_gold": 1.0,
+        "is_exact_at_1": true,
+        "is_exact_at_5": true,
+        "is_exact_at_10": true
+      }
+    },
+    {
+      "sample_id": "mask_00056647",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_002736",
+      "era": "고구려",
+      "selection_reason": "diversified; bucket=hit_high; max_per_ins=2",
+      "request": {
+        "text": "晉高句[MASK]率善仟長」",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "晉高句[MASK]率善仟長」",
+        "mask_index": 3,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "麗",
+            "score": 0.806679
+          },
+          {
+            "rank": 2,
+            "char": "高",
+            "score": 0.041268
+          },
+          {
+            "rank": 3,
+            "char": "管",
+            "score": 0.016942
+          },
+          {
+            "rank": 4,
+            "char": "王",
+            "score": 0.009092
+          },
+          {
+            "rank": 5,
+            "char": "正",
+            "score": 0.007226
+          },
+          {
+            "rank": 6,
+            "char": "皇",
+            "score": 0.003041
+          },
+          {
+            "rank": 7,
+            "char": "度",
+            "score": 0.002941
+          },
+          {
+            "rank": 8,
+            "char": "崔",
+            "score": 0.00271
+          },
+          {
+            "rank": 9,
+            "char": "其",
+            "score": 0.002657
+          },
+          {
+            "rank": 10,
+            "char": "爾",
+            "score": 0.002443
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "麗",
+        "rank_of_gold": 1.0,
+        "is_exact_at_1": true,
+        "is_exact_at_5": true,
+        "is_exact_at_10": true
+      }
+    },
+    {
+      "sample_id": "mask_00001027",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_003337",
+      "era": "고려",
+      "selection_reason": "diversified; bucket=hit_high; max_per_ins=2",
+      "request": {
+        "text": "巨海漁人單網日夜」雜遝師始住之三年甲戌春身自禁止漁」人傳以爲故事不復近寺矣庚寅歲除三重」乙未歲受賜滿衲袈裟己亥歲加首座庚子」歲受[MASK]滿衲袈裟丁未歲加僧統己酉歲典領中」選庚戌歲受賜滿繡歲袈裟是十月會國家」設百座會以師爲空門領袖俾典之辛亥歲於內」殿大藏道塲亦爲之首",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "巨海漁人單網日夜」雜遝師始住之三年甲戌春身自禁止漁」人傳以爲故事不復近寺矣庚寅歲除三重」乙未歲受賜滿衲袈裟己亥歲加首座庚子」歲受[MASK]滿衲袈裟丁未歲加僧統己酉歲典領中」選庚戌歲受賜滿繡歲袈裟是十月會國家」設百座會以師爲空門領袖俾典之辛亥歲於內」殿大藏道塲亦爲之首",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "賜",
+            "score": 0.907767
+          },
+          {
+            "rank": 2,
+            "char": "敎",
+            "score": 0.013321
+          },
+          {
+            "rank": 3,
+            "char": "命",
+            "score": 0.009204
+          },
+          {
+            "rank": 4,
+            "char": "給",
+            "score": 0.007833
+          },
+          {
+            "rank": 5,
+            "char": "賞",
+            "score": 0.003062
+          },
+          {
+            "rank": 6,
+            "char": "惠",
+            "score": 0.001875
+          },
+          {
+            "rank": 7,
+            "char": "受",
+            "score": 0.001722
+          },
+          {
+            "rank": 8,
+            "char": "出",
+            "score": 0.001452
+          },
+          {
+            "rank": 9,
+            "char": "祿",
+            "score": 0.001393
+          },
+          {
+            "rank": 10,
+            "char": "供",
+            "score": 0.001298
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "賜",
+        "rank_of_gold": 1.0,
+        "is_exact_at_1": true,
+        "is_exact_at_5": true,
+        "is_exact_at_10": true
+      }
+    },
+    {
+      "sample_id": "mask_00001029",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_003337",
+      "era": "고려",
+      "selection_reason": "diversified; bucket=hit_high; max_per_ins=2",
+      "request": {
+        "text": "十月會國家」設百座會以師爲空門領袖俾典之辛亥歲於內」殿大藏道塲亦爲之首座捿領成福選壬子歲四月又掌宗選」是月始有錦之志乃下拪三角山[MASK]覺社自是後無」所事無所爲如在正定澹如也是年十一月以年八十上章」乞退十二月戊申終于圓覺社葬用辛酉焚身至明昌四年」癸丑歲二月二十三日",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "十月會國家」設百座會以師爲空門領袖俾典之辛亥歲於內」殿大藏道塲亦爲之首座捿領成福選壬子歲四月又掌宗選」是月始有錦之志乃下拪三角山[MASK]覺社自是後無」所事無所爲如在正定澹如也是年十一月以年八十上章」乞退十二月戊申終于圓覺社葬用辛酉焚身至明昌四年」癸丑歲二月二十三日",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "圓",
+            "score": 0.997716
+          },
+          {
+            "rank": 2,
+            "char": "正",
+            "score": 0.000372
+          },
+          {
+            "rank": 3,
+            "char": "先",
+            "score": 0.000188
+          },
+          {
+            "rank": 4,
+            "char": "心",
+            "score": 0.000132
+          },
+          {
+            "rank": 5,
+            "char": "原",
+            "score": 8.5e-05
+          },
+          {
+            "rank": 6,
+            "char": "明",
+            "score": 6.5e-05
+          },
+          {
+            "rank": 7,
+            "char": "元",
+            "score": 5.9e-05
+          },
+          {
+            "rank": 8,
+            "char": "洞",
+            "score": 4.4e-05
+          },
+          {
+            "rank": 9,
+            "char": "五",
+            "score": 3.7e-05
+          },
+          {
+            "rank": 10,
+            "char": "開",
+            "score": 3e-05
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "圓",
+        "rank_of_gold": 1.0,
+        "is_exact_at_1": true,
+        "is_exact_at_5": true,
+        "is_exact_at_10": true
+      }
+    },
+    {
+      "sample_id": "mask_00001856",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_003408",
+      "era": "고려",
+      "selection_reason": "diversified; bucket=hit_high; max_per_ins=2",
+      "request": {
+        "text": "主者」樞密院右副承宣孫挺烈尙書皇甫琦檢校尙書兪承錫華嚴業三重勝壽大選景興知識正之故上將軍奇弼宣之嘉偶珍原郡夫人吳氏」郞將金伯龍之[MASK]偶樂浪郡夫人崔氏同丈院錄事鄭常之嘉偶海陽郡君金氏學錄朱竩之嘉偶金氏比丘尼淸惠等此根幹外錙銖之單甚多故不具錄工人別將同正韓仲叙棟梁",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "主者」樞密院右副承宣孫挺烈尙書皇甫琦檢校尙書兪承錫華嚴業三重勝壽大選景興知識正之故上將軍奇弼宣之嘉偶珍原郡夫人吳氏」郞將金伯龍之[MASK]偶樂浪郡夫人崔氏同丈院錄事鄭常之嘉偶海陽郡君金氏學錄朱竩之嘉偶金氏比丘尼淸惠等此根幹外錙銖之單甚多故不具錄工人別將同正韓仲叙棟梁",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "嘉",
+            "score": 0.953833
+          },
+          {
+            "rank": 2,
+            "char": "慶",
+            "score": 0.003099
+          },
+          {
+            "rank": 3,
+            "char": "昌",
+            "score": 0.001843
+          },
+          {
+            "rank": 4,
+            "char": "崇",
+            "score": 0.001622
+          },
+          {
+            "rank": 5,
+            "char": "女",
+            "score": 0.001461
+          },
+          {
+            "rank": 6,
+            "char": "次",
+            "score": 0.001199
+          },
+          {
+            "rank": 7,
+            "char": "重",
+            "score": 0.001031
+          },
+          {
+            "rank": 8,
+            "char": "善",
+            "score": 0.000984
+          },
+          {
+            "rank": 9,
+            "char": "孝",
+            "score": 0.000811
+          },
+          {
+            "rank": 10,
+            "char": "惠",
+            "score": 0.000741
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "嘉",
+        "rank_of_gold": 1.0,
+        "is_exact_at_1": true,
+        "is_exact_at_5": true,
+        "is_exact_at_10": true
+      }
+    },
+    {
+      "sample_id": "mask_00001848",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_003408",
+      "era": "고려",
+      "selection_reason": "diversified; bucket=hit_low; max_per_ins=2",
+      "request": {
+        "text": "高麗二十三王環甲之年壬子四月十二日在於京師工人家中鑄成智[MASK]山安養社之飯子入重六十餘斤同願施主者」樞密院右副承宣孫挺烈尙書皇甫琦檢校尙書兪承錫華嚴業三重勝壽大選景興知識正之故上將軍奇弼宣之",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "高麗二十三王環甲之年壬子四月十二日在於京師工人家中鑄成智[MASK]山安養社之飯子入重六十餘斤同願施主者」樞密院右副承宣孫挺烈尙書皇甫琦檢校尙書兪承錫華嚴業三重勝壽大選景興知識正之故上將軍奇弼宣之",
+        "mask_index": 28,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "異",
+            "score": 0.121114
+          },
+          {
+            "rank": 2,
+            "char": "巖",
+            "score": 0.034947
+          },
+          {
+            "rank": 3,
+            "char": "王",
+            "score": 0.023482
+          },
+          {
+            "rank": 4,
+            "char": "善",
+            "score": 0.021055
+          },
+          {
+            "rank": 5,
+            "char": "雲",
+            "score": 0.018656
+          },
+          {
+            "rank": 6,
+            "char": "谷",
+            "score": 0.017734
+          },
+          {
+            "rank": 7,
+            "char": "壽",
+            "score": 0.016179
+          },
+          {
+            "rank": 8,
+            "char": "智",
+            "score": 0.010133
+          },
+          {
+            "rank": 9,
+            "char": "義",
+            "score": 0.009904
+          },
+          {
+            "rank": 10,
+            "char": "石",
+            "score": 0.009735
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "異",
+        "rank_of_gold": 1.0,
+        "is_exact_at_1": true,
+        "is_exact_at_5": true,
+        "is_exact_at_10": true
+      }
+    },
+    {
+      "sample_id": "mask_00003606",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_000535",
+      "era": "고려",
+      "selection_reason": "diversified; bucket=hit_low; max_per_ins=2",
+      "request": {
+        "text": "此多之公諱廉字士廉松齋娶密直使吳公諱仁永之女以大德壬寅冬十月己巳生公年十歲補含慶殿錄事延祐甲寅遷別將明年選充寶馬陪行首未幾進郞將[MASK]丁巳如燕京戊午拜三司副使階奉常大夫夏東還至治癸亥又如京進奉帝所泰㝎甲子加中正大夫司僕正明年奏授宣武將軍合浦鎭邊萬戶府萬戶盖世職也",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "此多之公諱廉字士廉松齋娶密直使吳公諱仁永之女以大德壬寅冬十月己巳生公年十歲補含慶殿錄事延祐甲寅遷別將明年選充寶馬陪行首未幾進郞將[MASK]丁巳如燕京戊午拜三司副使階奉常大夫夏東還至治癸亥又如京進奉帝所泰㝎甲子加中正大夫司僕正明年奏授宣武將軍合浦鎭邊萬戶府萬戶盖世職也",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "歲",
+            "score": 0.097084
+          },
+          {
+            "rank": 2,
+            "char": "後",
+            "score": 0.070977
+          },
+          {
+            "rank": 3,
+            "char": "以",
+            "score": 0.060283
+          },
+          {
+            "rank": 4,
+            "char": "之",
+            "score": 0.060081
+          },
+          {
+            "rank": 5,
+            "char": "也",
+            "score": 0.026093
+          },
+          {
+            "rank": 6,
+            "char": "中",
+            "score": 0.024083
+          },
+          {
+            "rank": 7,
+            "char": "至",
+            "score": 0.021479
+          },
+          {
+            "rank": 8,
+            "char": "其",
+            "score": 0.020635
+          },
+          {
+            "rank": 9,
+            "char": "次",
+            "score": 0.01863
+          },
+          {
+            "rank": 10,
+            "char": "事",
+            "score": 0.013256
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "歲",
+        "rank_of_gold": 1.0,
+        "is_exact_at_1": true,
+        "is_exact_at_5": true,
+        "is_exact_at_10": true
+      }
+    },
+    {
+      "sample_id": "mask_00003646",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_000535",
+      "era": "고려",
+      "selection_reason": "diversified; bucket=hit_low; max_per_ins=2",
+      "request": {
+        "text": "靖大夫僉議賛成事時燕南梁載得幸於上公鄙其爲人不與交禮載深銜之力沮其命明年再封玄福君一年而公以病卒于家歲庚辰四月初七日也正獻公王煦[MASK]之叔父也泣涕而言曰權氏子弟莫賢於萬戶吾甞望其庇宗族焉天何奪吾賢子弟如此之亟乎正獻公不阿所好且有鑒識公之賢可知已公生長膏梁而郤美飾",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "靖大夫僉議賛成事時燕南梁載得幸於上公鄙其爲人不與交禮載深銜之力沮其命明年再封玄福君一年而公以病卒于家歲庚辰四月初七日也正獻公王煦[MASK]之叔父也泣涕而言曰權氏子弟莫賢於萬戶吾甞望其庇宗族焉天何奪吾賢子弟如此之亟乎正獻公不阿所好且有鑒識公之賢可知已公生長膏梁而郤美飾",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "公",
+            "score": 0.057243
+          },
+          {
+            "rank": 2,
+            "char": "其",
+            "score": 0.053879
+          },
+          {
+            "rank": 3,
+            "char": "生",
+            "score": 0.051945
+          },
+          {
+            "rank": 4,
+            "char": "之",
+            "score": 0.047197
+          },
+          {
+            "rank": 5,
+            "char": "年",
+            "score": 0.046848
+          },
+          {
+            "rank": 6,
+            "char": "壽",
+            "score": 0.026268
+          },
+          {
+            "rank": 7,
+            "char": "臣",
+            "score": 0.016392
+          },
+          {
+            "rank": 8,
+            "char": "君",
+            "score": 0.015085
+          },
+          {
+            "rank": 9,
+            "char": "漢",
+            "score": 0.0147
+          },
+          {
+            "rank": 10,
+            "char": "從",
+            "score": 0.013105
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "公",
+        "rank_of_gold": 1.0,
+        "is_exact_at_1": true,
+        "is_exact_at_5": true,
+        "is_exact_at_10": true
+      }
+    },
+    {
+      "sample_id": "mask_00005241",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_000518",
+      "era": "고려",
+      "selection_reason": "diversified; bucket=hit_low; max_per_ins=2",
+      "request": {
+        "text": "兮寔人之特步驟臺閣兮奮髯正色奸吏屛氣兮顚倒蒲北正門言言兮人莫敢厠戎使迹穢兮欲蹈其閾公則往諭兮一言中的彼雖獸心兮豁然自釋廟謀密勿兮[MASK]手指畫綠野歸來兮任性閑適霞軿安往兮雲路遐逖舊德云亡兮于誰取則鳳凰之山兮有騫其翼土肥泉甘兮灌木植植於焉相攸兮是公之宅納銘隧道兮流耀",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "兮寔人之特步驟臺閣兮奮髯正色奸吏屛氣兮顚倒蒲北正門言言兮人莫敢厠戎使迹穢兮欲蹈其閾公則往諭兮一言中的彼雖獸心兮豁然自釋廟謀密勿兮[MASK]手指畫綠野歸來兮任性閑適霞軿安往兮雲路遐逖舊德云亡兮于誰取則鳳凰之山兮有騫其翼土肥泉甘兮灌木植植於焉相攸兮是公之宅納銘隧道兮流耀",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "以",
+            "score": 0.023258
+          },
+          {
+            "rank": 2,
+            "char": "赤",
+            "score": 0.019214
+          },
+          {
+            "rank": 3,
+            "char": "拱",
+            "score": 0.015379
+          },
+          {
+            "rank": 4,
+            "char": "奮",
+            "score": 0.01519
+          },
+          {
+            "rank": 5,
+            "char": "揮",
+            "score": 0.012378
+          },
+          {
+            "rank": 6,
+            "char": "斷",
+            "score": 0.011579
+          },
+          {
+            "rank": 7,
+            "char": "左",
+            "score": 0.011304
+          },
+          {
+            "rank": 8,
+            "char": "下",
+            "score": 0.011289
+          },
+          {
+            "rank": 9,
+            "char": "一",
+            "score": 0.011061
+          },
+          {
+            "rank": 10,
+            "char": "空",
+            "score": 0.010929
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "以",
+        "rank_of_gold": 1.0,
+        "is_exact_at_1": true,
+        "is_exact_at_5": true,
+        "is_exact_at_10": true
+      }
+    },
+    {
+      "sample_id": "mask_00010249",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_001619",
+      "era": "고려",
+      "selection_reason": "diversified; bucket=hit_low; max_per_ins=2",
+      "request": {
+        "text": "故下雖畏而不厭叅政公起自將官凡征戌裝賷及隨例甫醵宴飮之費煩浩不細夫人皆手親之無不精辦畧無倦容公之歷位至宰相夫人有內助焉家本饒財然[MASK]以富故手離女工子姓諫止之夫人曰紡績蠶織婦職也類若輩之文書筆硯烏可須臾離耶及公之至相位然後輟而不親一委妾侍晩節奉佛尤精常讀金剛經生",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "故下雖畏而不厭叅政公起自將官凡征戌裝賷及隨例甫醵宴飮之費煩浩不細夫人皆手親之無不精辦畧無倦容公之歷位至宰相夫人有內助焉家本饒財然[MASK]以富故手離女工子姓諫止之夫人曰紡績蠶織婦職也類若輩之文書筆硯烏可須臾離耶及公之至相位然後輟而不親一委妾侍晩節奉佛尤精常讀金剛經生",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "不",
+            "score": 0.091497
+          },
+          {
+            "rank": 2,
+            "char": "民",
+            "score": 0.08419
+          },
+          {
+            "rank": 3,
+            "char": "人",
+            "score": 0.06182
+          },
+          {
+            "rank": 4,
+            "char": "家",
+            "score": 0.044078
+          },
+          {
+            "rank": 5,
+            "char": "無",
+            "score": 0.040872
+          },
+          {
+            "rank": 6,
+            "char": "猶",
+            "score": 0.037052
+          },
+          {
+            "rank": 7,
+            "char": "日",
+            "score": 0.029142
+          },
+          {
+            "rank": 8,
+            "char": "亦",
+            "score": 0.024718
+          },
+          {
+            "rank": 9,
+            "char": "世",
+            "score": 0.023633
+          },
+          {
+            "rank": 10,
+            "char": "常",
+            "score": 0.018892
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "不",
+        "rank_of_gold": 1.0,
+        "is_exact_at_1": true,
+        "is_exact_at_5": true,
+        "is_exact_at_10": true
+      }
+    },
+    {
+      "sample_id": "mask_00003798",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_003469",
+      "era": "고려",
+      "selection_reason": "diversified; bucket=hit_mid; max_per_ins=2",
+      "request": {
+        "text": "」安惟忠次適府院君李齊賢次適」順正大君璹次適淮安大君珣皆」王氏一家九封君古未之有焉文」淸年高無恙而公知貢擧及公以」冢宰懸車吉昌引[MASK]生稱壽公之」二門生門生之三門生相継掌試」亦可謂盛事矣遠祖太師金幸佐」太祖有功賜姓權世濟其美以至」文淸禱于福靈寺水月菩薩像以」中統",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "」安惟忠次適府院君李齊賢次適」順正大君璹次適淮安大君珣皆」王氏一家九封君古未之有焉文」淸年高無恙而公知貢擧及公以」冢宰懸車吉昌引[MASK]生稱壽公之」二門生門生之三門生相継掌試」亦可謂盛事矣遠祖太師金幸佐」太祖有功賜姓權世濟其美以至」文淸禱于福靈寺水月菩薩像以」中統",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "門",
+            "score": 0.431767
+          },
+          {
+            "rank": 2,
+            "char": "先",
+            "score": 0.117714
+          },
+          {
+            "rank": 3,
+            "char": "諸",
+            "score": 0.104008
+          },
+          {
+            "rank": 4,
+            "char": "後",
+            "score": 0.045356
+          },
+          {
+            "rank": 5,
+            "char": "儒",
+            "score": 0.032191
+          },
+          {
+            "rank": 6,
+            "char": "學",
+            "score": 0.020315
+          },
+          {
+            "rank": 7,
+            "char": "其",
+            "score": 0.014365
+          },
+          {
+            "rank": 8,
+            "char": "人",
+            "score": 0.010249
+          },
+          {
+            "rank": 9,
+            "char": "公",
+            "score": 0.007323
+          },
+          {
+            "rank": 10,
+            "char": "所",
+            "score": 0.006812
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "門",
+        "rank_of_gold": 1.0,
+        "is_exact_at_1": true,
+        "is_exact_at_5": true,
+        "is_exact_at_10": true
+      }
+    },
+    {
+      "sample_id": "mask_00003815",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_003469",
+      "era": "고려",
+      "selection_reason": "diversified; bucket=hit_mid; max_per_ins=2",
+      "request": {
+        "text": "」中統三年仲冬十有一日日將晡」而生公戊子己未虛拱壬巳之祿」而互衝發之天機之妙如此公溫」乎春風湛乎晴空敬以事君誠以」事親睦於僚友惠[MASK]族姻目不睨」粉&KY0194;口不商財賄齒旣壯雖子姪」待之如爵旣崇雖輿臺遇之如」尊嗜讀書老不輟註銀臺詩廿卷」觀者服其該博爲詩文簡",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "」中統三年仲冬十有一日日將晡」而生公戊子己未虛拱壬巳之祿」而互衝發之天機之妙如此公溫」乎春風湛乎晴空敬以事君誠以」事親睦於僚友惠[MASK]族姻目不睨」粉&KY0194;口不商財賄齒旣壯雖子姪」待之如爵旣崇雖輿臺遇之如」尊嗜讀書老不輟註銀臺詩廿卷」觀者服其該博爲詩文簡",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "於",
+            "score": 0.369126
+          },
+          {
+            "rank": 2,
+            "char": "乎",
+            "score": 0.063727
+          },
+          {
+            "rank": 3,
+            "char": "諸",
+            "score": 0.052025
+          },
+          {
+            "rank": 4,
+            "char": "于",
+            "score": 0.049057
+          },
+          {
+            "rank": 5,
+            "char": "其",
+            "score": 0.038166
+          },
+          {
+            "rank": 6,
+            "char": "之",
+            "score": 0.02601
+          },
+          {
+            "rank": 7,
+            "char": "則",
+            "score": 0.02426
+          },
+          {
+            "rank": 8,
+            "char": "然",
+            "score": 0.018463
+          },
+          {
+            "rank": 9,
+            "char": "與",
+            "score": 0.017203
+          },
+          {
+            "rank": 10,
+            "char": "焉",
+            "score": 0.017088
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "於",
+        "rank_of_gold": 1.0,
+        "is_exact_at_1": true,
+        "is_exact_at_5": true,
+        "is_exact_at_10": true
+      }
+    },
+    {
+      "sample_id": "mask_00005181",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_000518",
+      "era": "고려",
+      "selection_reason": "diversified; bucket=hit_mid; max_per_ins=2",
+      "request": {
+        "text": "貴加之壽考哀榮終始俱無缺焉則此豈無得而然哉盖必有天所不得不厚者而雖取之多焉天與之不猒者歟公諱儀字節之舊諱克儀後改爲儀系出三韓功臣[MASK]容式之世譜而桂陽之金浦縣即其桑梓也曾祖諱某皇神虎衛散員贈上將軍祖諱某皇檢校大子少保贈左僕射考諱某皇昌安宅衙典以公故贈左僕射母徐氏",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "貴加之壽考哀榮終始俱無缺焉則此豈無得而然哉盖必有天所不得不厚者而雖取之多焉天與之不猒者歟公諱儀字節之舊諱克儀後改爲儀系出三韓功臣[MASK]容式之世譜而桂陽之金浦縣即其桑梓也曾祖諱某皇神虎衛散員贈上將軍祖諱某皇檢校大子少保贈左僕射考諱某皇昌安宅衙典以公故贈左僕射母徐氏",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "諱",
+            "score": 0.20537
+          },
+          {
+            "rank": 2,
+            "char": "李",
+            "score": 0.121331
+          },
+          {
+            "rank": 3,
+            "char": "金",
+            "score": 0.084513
+          },
+          {
+            "rank": 4,
+            "char": "字",
+            "score": 0.033376
+          },
+          {
+            "rank": 5,
+            "char": "公",
+            "score": 0.032545
+          },
+          {
+            "rank": 6,
+            "char": "趙",
+            "score": 0.028579
+          },
+          {
+            "rank": 7,
+            "char": "子",
+            "score": 0.021898
+          },
+          {
+            "rank": 8,
+            "char": "諡",
+            "score": 0.018625
+          },
+          {
+            "rank": 9,
+            "char": "許",
+            "score": 0.010997
+          },
+          {
+            "rank": 10,
+            "char": "鄭",
+            "score": 0.009798
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "諱",
+        "rank_of_gold": 1.0,
+        "is_exact_at_1": true,
+        "is_exact_at_5": true,
+        "is_exact_at_10": true
+      }
+    },
+    {
+      "sample_id": "mask_00011248",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_003256",
+      "era": "고려",
+      "selection_reason": "diversified; bucket=hit_mid; max_per_ins=2",
+      "request": {
+        "text": "學」士知制誥東宮侍講學士太子」諭德又掌貢擧試凡華要淸功」劇權重任無不備歷」上亦有重託意選授太子少傅」降使私第禮物優厚繼降恩命」授[MASK]忠內輔功臣金紫光祿大」夫吏部尙書政堂文學修文殿」大學士依前大子少傅未幾不」幸有疾越大金正豐元年四月」二十日卒享年四十有六」上聞之",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "學」士知制誥東宮侍講學士太子」諭德又掌貢擧試凡華要淸功」劇權重任無不備歷」上亦有重託意選授太子少傅」降使私第禮物優厚繼降恩命」授[MASK]忠內輔功臣金紫光祿大」夫吏部尙書政堂文學修文殿」大學士依前大子少傅未幾不」幸有疾越大金正豐元年四月」二十日卒享年四十有六」上聞之",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "輸",
+            "score": 0.27563
+          },
+          {
+            "rank": 2,
+            "char": "推",
+            "score": 0.110702
+          },
+          {
+            "rank": 3,
+            "char": "文",
+            "score": 0.07632
+          },
+          {
+            "rank": 4,
+            "char": "精",
+            "score": 0.052875
+          },
+          {
+            "rank": 5,
+            "char": "宣",
+            "score": 0.0285
+          },
+          {
+            "rank": 6,
+            "char": "內",
+            "score": 0.02535
+          },
+          {
+            "rank": 7,
+            "char": "純",
+            "score": 0.01824
+          },
+          {
+            "rank": 8,
+            "char": "顯",
+            "score": 0.012428
+          },
+          {
+            "rank": 9,
+            "char": "効",
+            "score": 0.011191
+          },
+          {
+            "rank": 10,
+            "char": "翼",
+            "score": 0.010974
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "輸",
+        "rank_of_gold": 1.0,
+        "is_exact_at_1": true,
+        "is_exact_at_5": true,
+        "is_exact_at_10": true
+      }
+    },
+    {
+      "sample_id": "mask_00011253",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_003256",
+      "era": "고려",
+      "selection_reason": "diversified; bucket=hit_mid; max_per_ins=2",
+      "request": {
+        "text": "器宇宏博深」謀遠慮有不可測始自東宮親」遇聖朝朝夕輔導言聽計行」陰功密輔有人所不知者國史」所錄十不得一曁遷葬于玆山」略叙始終以告後[MASK]且銘曰物」與我同死生生而貴死而榮千」載之後不殞其名有如不信請」考斯銘」4)]",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "器宇宏博深」謀遠慮有不可測始自東宮親」遇聖朝朝夕輔導言聽計行」陰功密輔有人所不知者國史」所錄十不得一曁遷葬于玆山」略叙始終以告後[MASK]且銘曰物」與我同死生生而貴死而榮千」載之後不殞其名有如不信請」考斯銘」4)]",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "人",
+            "score": 0.333462
+          },
+          {
+            "rank": 2,
+            "char": "世",
+            "score": 0.103048
+          },
+          {
+            "rank": 3,
+            "char": "嗣",
+            "score": 0.073153
+          },
+          {
+            "rank": 4,
+            "char": "考",
+            "score": 0.049776
+          },
+          {
+            "rank": 5,
+            "char": "孫",
+            "score": 0.04059
+          },
+          {
+            "rank": 6,
+            "char": "生",
+            "score": 0.025678
+          },
+          {
+            "rank": 7,
+            "char": "身",
+            "score": 0.018925
+          },
+          {
+            "rank": 8,
+            "char": "言",
+            "score": 0.009727
+          },
+          {
+            "rank": 9,
+            "char": "後",
+            "score": 0.009288
+          },
+          {
+            "rank": 10,
+            "char": "天",
+            "score": 0.00916
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "人",
+        "rank_of_gold": 1.0,
+        "is_exact_at_1": true,
+        "is_exact_at_5": true,
+        "is_exact_at_10": true
+      }
+    },
+    {
+      "sample_id": "mask_00060504",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_009105",
+      "era": "고구려",
+      "selection_reason": "diversified; bucket=miss_high; max_per_ins=2",
+      "request": {
+        "text": "[MASK]始七年",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "[MASK]始七年",
+        "mask_index": 0,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "正",
+            "score": 0.554497
+          },
+          {
+            "rank": 2,
+            "char": "終",
+            "score": 0.064694
+          },
+          {
+            "rank": 3,
+            "char": "經",
+            "score": 0.035287
+          },
+          {
+            "rank": 4,
+            "char": "復",
+            "score": 0.013839
+          },
+          {
+            "rank": 5,
+            "char": "成",
+            "score": 0.013594
+          },
+          {
+            "rank": 6,
+            "char": "中",
+            "score": 0.012021
+          },
+          {
+            "rank": 7,
+            "char": "上",
+            "score": 0.009118
+          },
+          {
+            "rank": 8,
+            "char": "開",
+            "score": 0.009001
+          },
+          {
+            "rank": 9,
+            "char": "乾",
+            "score": 0.008635
+          },
+          {
+            "rank": 10,
+            "char": "泰",
+            "score": 0.008431
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "泰",
+        "rank_of_gold": 10.0,
+        "is_exact_at_1": false,
+        "is_exact_at_5": false,
+        "is_exact_at_10": true
+      }
+    },
+    {
+      "sample_id": "mask_00005787",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_000514",
+      "era": "고려",
+      "selection_reason": "diversified; bucket=miss_high; max_per_ins=2",
+      "request": {
+        "text": "新羅敬順王金傅七世孫檢校[MASK]子少保金景輔父工部侍郞漢公祖追封工部尙書繼蔘外祖禮部員外郞金台器以年八十二於大金皇統十年庚午歲四月十七日癸亥卒于家以七月十七日乙",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "新羅敬順王金傅七世孫檢校[MASK]子少保金景輔父工部侍郞漢公祖追封工部尙書繼蔘外祖禮部員外郞金台器以年八十二於大金皇統十年庚午歲四月十七日癸亥卒于家以七月十七日乙",
+        "mask_index": 12,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "世",
+            "score": 0.554657
+          },
+          {
+            "rank": 2,
+            "char": "孝",
+            "score": 0.0314
+          },
+          {
+            "rank": 3,
+            "char": "其",
+            "score": 0.01515
+          },
+          {
+            "rank": 4,
+            "char": "曾",
+            "score": 0.014969
+          },
+          {
+            "rank": 5,
+            "char": "庶",
+            "score": 0.013761
+          },
+          {
+            "rank": 6,
+            "char": "戊",
+            "score": 0.013105
+          },
+          {
+            "rank": 7,
+            "char": "國",
+            "score": 0.012941
+          },
+          {
+            "rank": 8,
+            "char": "丙",
+            "score": 0.011569
+          },
+          {
+            "rank": 9,
+            "char": "直",
+            "score": 0.010779
+          },
+          {
+            "rank": 10,
+            "char": "甲",
+            "score": 0.009032
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "太",
+        "rank_of_gold": NaN,
+        "is_exact_at_1": false,
+        "is_exact_at_5": false,
+        "is_exact_at_10": false
+      }
+    },
+    {
+      "sample_id": "mask_00005790",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_000514",
+      "era": "고려",
+      "selection_reason": "diversified; bucket=miss_high; max_per_ins=2",
+      "request": {
+        "text": "十二於大金皇統十年庚午歲四月十七日癸亥卒于家以七月十七日乙酉葬于五龍山男儒林郞監察御史賜緋魚帒作雯長女壻靜州使試殿中內給事尹裕延[MASK]女壻典獄署丞柳冕",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "十二於大金皇統十年庚午歲四月十七日癸亥卒于家以七月十七日乙酉葬于五龍山男儒林郞監察御史賜緋魚帒作雯長女壻靜州使試殿中內給事尹裕延[MASK]女壻典獄署丞柳冕",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "次",
+            "score": 0.862162
+          },
+          {
+            "rank": 2,
+            "char": "之",
+            "score": 0.027572
+          },
+          {
+            "rank": 3,
+            "char": "女",
+            "score": 0.018945
+          },
+          {
+            "rank": 4,
+            "char": "後",
+            "score": 0.00743
+          },
+          {
+            "rank": 5,
+            "char": "長",
+            "score": 0.005786
+          },
+          {
+            "rank": 6,
+            "char": "庶",
+            "score": 0.004659
+          },
+          {
+            "rank": 7,
+            "char": "從",
+            "score": 0.004176
+          },
+          {
+            "rank": 8,
+            "char": "生",
+            "score": 0.002448
+          },
+          {
+            "rank": 9,
+            "char": "二",
+            "score": 0.002324
+          },
+          {
+            "rank": 10,
+            "char": "外",
+            "score": 0.002219
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "二",
+        "rank_of_gold": 9.0,
+        "is_exact_at_1": false,
+        "is_exact_at_5": false,
+        "is_exact_at_10": true
+      }
+    },
+    {
+      "sample_id": "mask_00010252",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_001619",
+      "era": "고려",
+      "selection_reason": "diversified; bucket=miss_high; max_per_ins=2",
+      "request": {
+        "text": "紡績蠶織婦職也類若輩之文書筆硯烏可須臾離耶及公之至相位然後輟而不親一委妾侍晩節奉佛尤精常讀金剛經生子曰公粹進士登第今爲入內侍監門[MASK]錄事叅軍事兼直翰林院次曰某爲將官備宿衛女子適劉昌緖今爲將軍公粹以與予同寮內翰故來乞銘銘曰肥其家不係財秉德之靜專功於國不必身有子之",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "紡績蠶織婦職也類若輩之文書筆硯烏可須臾離耶及公之至相位然後輟而不親一委妾侍晩節奉佛尤精常讀金剛經生子曰公粹進士登第今爲入內侍監門[MASK]錄事叅軍事兼直翰林院次曰某爲將官備宿衛女子適劉昌緖今爲將軍公粹以與予同寮內翰故來乞銘銘曰肥其家不係財秉德之靜專功於國不必身有子之",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "下",
+            "score": 0.666571
+          },
+          {
+            "rank": 2,
+            "char": "直",
+            "score": 0.033387
+          },
+          {
+            "rank": 3,
+            "char": "府",
+            "score": 0.024839
+          },
+          {
+            "rank": 4,
+            "char": "副",
+            "score": 0.024678
+          },
+          {
+            "rank": 5,
+            "char": "客",
+            "score": 0.021367
+          },
+          {
+            "rank": 6,
+            "char": "將",
+            "score": 0.015606
+          },
+          {
+            "rank": 7,
+            "char": "簿",
+            "score": 0.014892
+          },
+          {
+            "rank": 8,
+            "char": "衛",
+            "score": 0.008464
+          },
+          {
+            "rank": 9,
+            "char": "都",
+            "score": 0.006805
+          },
+          {
+            "rank": 10,
+            "char": "洞",
+            "score": 0.006451
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "衛",
+        "rank_of_gold": 8.0,
+        "is_exact_at_1": false,
+        "is_exact_at_5": false,
+        "is_exact_at_10": true
+      }
+    },
+    {
+      "sample_id": "mask_00011662",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_003242",
+      "era": "고려",
+      "selection_reason": "diversified; bucket=miss_high; max_per_ins=2",
+      "request": {
+        "text": "左僕射信雄」雄生司徒內史侍郞平章事因」謂謂生兵部尙書中樞使元晃」晃生中書令樂浪公景庸庸生」中書侍郞平章事判尙書工部」事仁揆揆生之[MASK]初功臣仁允」仕大祖統合三國有功隨大祖」入京家焉金氏之族世世衣冠」顯達金姓自此始矣至今稱爲」貴姓母開州郡夫人左僕射叅」知政事王嘏之",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "左僕射信雄」雄生司徒內史侍郞平章事因」謂謂生兵部尙書中樞使元晃」晃生中書令樂浪公景庸庸生」中書侍郞平章事判尙書工部」事仁揆揆生之[MASK]初功臣仁允」仕大祖統合三國有功隨大祖」入京家焉金氏之族世世衣冠」顯達金姓自此始矣至今稱爲」貴姓母開州郡夫人左僕射叅」知政事王嘏之",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "當",
+            "score": 0.629123
+          },
+          {
+            "rank": 2,
+            "char": "其",
+            "score": 0.070982
+          },
+          {
+            "rank": 3,
+            "char": "亂",
+            "score": 0.02291
+          },
+          {
+            "rank": 4,
+            "char": "在",
+            "score": 0.014577
+          },
+          {
+            "rank": 5,
+            "char": "之",
+            "score": 0.013158
+          },
+          {
+            "rank": 6,
+            "char": "平",
+            "score": 0.013065
+          },
+          {
+            "rank": 7,
+            "char": "同",
+            "score": 0.011385
+          },
+          {
+            "rank": 8,
+            "char": "始",
+            "score": 0.010282
+          },
+          {
+            "rank": 9,
+            "char": "國",
+            "score": 0.009927
+          },
+          {
+            "rank": 10,
+            "char": "最",
+            "score": 0.007802
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "祐",
+        "rank_of_gold": NaN,
+        "is_exact_at_1": false,
+        "is_exact_at_5": false,
+        "is_exact_at_10": false
+      }
+    },
+    {
+      "sample_id": "mask_00056976",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_007200",
+      "era": "가야",
+      "selection_reason": "diversified; bucket=miss_low; max_per_ins=2",
+      "request": {
+        "text": "辛」未」大」大[MASK]」",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "辛」未」大」大[MASK]」",
+        "mask_index": 7,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "師",
+            "score": 0.126229
+          },
+          {
+            "rank": 2,
+            "char": "祭",
+            "score": 0.103292
+          },
+          {
+            "rank": 3,
+            "char": "妃",
+            "score": 0.061465
+          },
+          {
+            "rank": 4,
+            "char": "風",
+            "score": 0.056739
+          },
+          {
+            "rank": 5,
+            "char": "雨",
+            "score": 0.040101
+          },
+          {
+            "rank": 6,
+            "char": "作",
+            "score": 0.039469
+          },
+          {
+            "rank": 7,
+            "char": "雷",
+            "score": 0.038472
+          },
+          {
+            "rank": 8,
+            "char": "祥",
+            "score": 0.026937
+          },
+          {
+            "rank": 9,
+            "char": "王",
+            "score": 0.019536
+          },
+          {
+            "rank": 10,
+            "char": "夫",
+            "score": 0.018095
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "干",
+        "rank_of_gold": NaN,
+        "is_exact_at_1": false,
+        "is_exact_at_5": false,
+        "is_exact_at_10": false
+      }
+    },
+    {
+      "sample_id": "mask_00056977",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_007201",
+      "era": "가야",
+      "selection_reason": "diversified; bucket=miss_low; max_per_ins=2",
+      "request": {
+        "text": "大干」[MASK]」",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "大干」[MASK]」",
+        "mask_index": 3,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "山",
+            "score": 0.156546
+          },
+          {
+            "rank": 2,
+            "char": "寺",
+            "score": 0.05294
+          },
+          {
+            "rank": 3,
+            "char": "星",
+            "score": 0.029364
+          },
+          {
+            "rank": 4,
+            "char": "堂",
+            "score": 0.018662
+          },
+          {
+            "rank": 5,
+            "char": "縣",
+            "score": 0.016099
+          },
+          {
+            "rank": 6,
+            "char": "日",
+            "score": 0.012853
+          },
+          {
+            "rank": 7,
+            "char": "圖",
+            "score": 0.011107
+          },
+          {
+            "rank": 8,
+            "char": "洞",
+            "score": 0.010703
+          },
+          {
+            "rank": 9,
+            "char": "川",
+            "score": 0.01028
+          },
+          {
+            "rank": 10,
+            "char": "卜",
+            "score": 0.008003
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "巾",
+        "rank_of_gold": NaN,
+        "is_exact_at_1": false,
+        "is_exact_at_5": false,
+        "is_exact_at_10": false
+      }
+    },
+    {
+      "sample_id": "mask_00001017",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_002523",
+      "era": "고구려",
+      "selection_reason": "diversified; bucket=miss_low; max_per_ins=2",
+      "request": {
+        "text": "[MASK]主着鎧馬之像」",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "[MASK]主着鎧馬之像」",
+        "mask_index": 0,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "人",
+            "score": 0.067331
+          },
+          {
+            "rank": 2,
+            "char": "其",
+            "score": 0.047957
+          },
+          {
+            "rank": 3,
+            "char": "有",
+            "score": 0.032291
+          },
+          {
+            "rank": 4,
+            "char": "神",
+            "score": 0.029487
+          },
+          {
+            "rank": 5,
+            "char": "無",
+            "score": 0.026664
+          },
+          {
+            "rank": 6,
+            "char": "立",
+            "score": 0.025231
+          },
+          {
+            "rank": 7,
+            "char": "喪",
+            "score": 0.019322
+          },
+          {
+            "rank": 8,
+            "char": "寺",
+            "score": 0.017404
+          },
+          {
+            "rank": 9,
+            "char": "馬",
+            "score": 0.016611
+          },
+          {
+            "rank": 10,
+            "char": "地",
+            "score": 0.014438
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "冢",
+        "rank_of_gold": NaN,
+        "is_exact_at_1": false,
+        "is_exact_at_5": false,
+        "is_exact_at_10": false
+      }
+    },
+    {
+      "sample_id": "mask_00003378",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_002735",
+      "era": "고구려",
+      "selection_reason": "diversified; bucket=miss_low; max_per_ins=2",
+      "request": {
+        "text": "[MASK]司馬印」",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "[MASK]司馬印」",
+        "mask_index": 0,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "刻",
+            "score": 0.050091
+          },
+          {
+            "rank": 2,
+            "char": "鑄",
+            "score": 0.041253
+          },
+          {
+            "rank": 3,
+            "char": "賜",
+            "score": 0.036461
+          },
+          {
+            "rank": 4,
+            "char": "造",
+            "score": 0.035382
+          },
+          {
+            "rank": 5,
+            "char": "大",
+            "score": 0.034932
+          },
+          {
+            "rank": 6,
+            "char": "行",
+            "score": 0.029172
+          },
+          {
+            "rank": 7,
+            "char": "篆",
+            "score": 0.019545
+          },
+          {
+            "rank": 8,
+            "char": "下",
+            "score": 0.017853
+          },
+          {
+            "rank": 9,
+            "char": "寺",
+            "score": 0.017383
+          },
+          {
+            "rank": 10,
+            "char": "出",
+            "score": 0.015638
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "軍",
+        "rank_of_gold": NaN,
+        "is_exact_at_1": false,
+        "is_exact_at_5": false,
+        "is_exact_at_10": false
+      }
+    },
+    {
+      "sample_id": "mask_00060540",
+      "case_id": "nan",
+      "prediction_type": "artificial_mask",
+      "inscription_id": "insc_nrich_009170",
+      "era": "고구려",
+      "selection_reason": "diversified; bucket=miss_low; max_per_ins=2",
+      "request": {
+        "text": "願太王陵安如山固[MASK]岳",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "願太王陵安如山固[MASK]岳",
+        "mask_index": 8,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "安",
+            "score": 0.02869
+          },
+          {
+            "rank": 2,
+            "char": "石",
+            "score": 0.019372
+          },
+          {
+            "rank": 3,
+            "char": "城",
+            "score": 0.017097
+          },
+          {
+            "rank": 4,
+            "char": "白",
+            "score": 0.016751
+          },
+          {
+            "rank": 5,
+            "char": "林",
+            "score": 0.014766
+          },
+          {
+            "rank": 6,
+            "char": "里",
+            "score": 0.014035
+          },
+          {
+            "rank": 7,
+            "char": "山",
+            "score": 0.014012
+          },
+          {
+            "rank": 8,
+            "char": "南",
+            "score": 0.012754
+          },
+          {
+            "rank": 9,
+            "char": "壽",
+            "score": 0.01223
+          },
+          {
+            "rank": 10,
+            "char": "原",
+            "score": 0.011318
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "如",
+        "rank_of_gold": NaN,
+        "is_exact_at_1": false,
+        "is_exact_at_5": false,
+        "is_exact_at_10": false
+      }
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_002261",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_002808",
+      "era": "가야",
+      "selection_reason": "diversified_real; score_bucket=high; no_gold",
+      "request": {
+        "text": "(a)[MASK]畏也□<imgsrc='/mediaFileImgStreamOut.do□media_id=2276_001'border='",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "(a)[MASK]畏也□<imgsrc='/mediaFileImgStreamOut.do□media_id=2276_001'border='",
+        "mask_index": 3,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "可",
+            "score": 0.177949
+          },
+          {
+            "rank": 2,
+            "char": "之",
+            "score": 0.019581
+          },
+          {
+            "rank": 3,
+            "char": "不",
+            "score": 0.015683
+          },
+          {
+            "rank": 4,
+            "char": "天",
+            "score": 0.013887
+          },
+          {
+            "rank": 5,
+            "char": "無",
+            "score": 0.013085
+          },
+          {
+            "rank": 6,
+            "char": "嚴",
+            "score": 0.012807
+          },
+          {
+            "rank": 7,
+            "char": "敬",
+            "score": 0.012585
+          },
+          {
+            "rank": 8,
+            "char": "是",
+            "score": 0.010337
+          },
+          {
+            "rank": 9,
+            "char": "明",
+            "score": 0.009233
+          },
+          {
+            "rank": 10,
+            "char": "公",
+            "score": 0.007983
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_000254",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_007192",
+      "era": "고구려",
+      "selection_reason": "diversified_real; score_bucket=high; no_gold",
+      "request": {
+        "text": "正始三年高勾驪反督七牙門討勾驪五復遺寇六年五月旋討寇將軍巍烏丸單于[MASK]威寇將軍都亭侯行裨將軍領裨將軍",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "正始三年高勾驪反督七牙門討勾驪五復遺寇六年五月旋討寇將軍巍烏丸單于[MASK]威寇將軍都亭侯行裨將軍領裨將軍",
+        "mask_index": 33,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "振",
+            "score": 0.245051
+          },
+          {
+            "rank": 2,
+            "char": "軍",
+            "score": 0.100896
+          },
+          {
+            "rank": 3,
+            "char": "宣",
+            "score": 0.089445
+          },
+          {
+            "rank": 4,
+            "char": "陽",
+            "score": 0.023331
+          },
+          {
+            "rank": 5,
+            "char": "龍",
+            "score": 0.014514
+          },
+          {
+            "rank": 6,
+            "char": "仁",
+            "score": 0.014503
+          },
+          {
+            "rank": 7,
+            "char": "德",
+            "score": 0.006806
+          },
+          {
+            "rank": 8,
+            "char": "丹",
+            "score": 0.006707
+          },
+          {
+            "rank": 9,
+            "char": "水",
+            "score": 0.00651
+          },
+          {
+            "rank": 10,
+            "char": "豊",
+            "score": 0.006329
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_000275",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_002546",
+      "era": "고구려",
+      "selection_reason": "diversified_real; score_bucket=high; no_gold",
+      "request": {
+        "text": "泰」歲[MASK]戌年造瓦所記」",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "泰」歲[MASK]戌年造瓦所記」",
+        "mask_index": 3,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "戊",
+            "score": 0.394759
+          },
+          {
+            "rank": 2,
+            "char": "壬",
+            "score": 0.173959
+          },
+          {
+            "rank": 3,
+            "char": "丙",
+            "score": 0.153867
+          },
+          {
+            "rank": 4,
+            "char": "庚",
+            "score": 0.152571
+          },
+          {
+            "rank": 5,
+            "char": "甲",
+            "score": 0.107914
+          },
+          {
+            "rank": 6,
+            "char": "丁",
+            "score": 0.001445
+          },
+          {
+            "rank": 7,
+            "char": "己",
+            "score": 0.001442
+          },
+          {
+            "rank": 8,
+            "char": "癸",
+            "score": 0.0014
+          },
+          {
+            "rank": 9,
+            "char": "乙",
+            "score": 0.001192
+          },
+          {
+            "rank": 10,
+            "char": "辛",
+            "score": 0.000811
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_000280",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_002559",
+      "era": "고구려",
+      "selection_reason": "diversified_real; score_bucket=high; no_gold",
+      "request": {
+        "text": "癸未年十一月一日」宝華爲亡父趙[MASK]人造」",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "癸未年十一月一日」宝華爲亡父趙[MASK]人造」",
+        "mask_index": 15,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "夫",
+            "score": 0.906083
+          },
+          {
+            "rank": 2,
+            "char": "淑",
+            "score": 0.011594
+          },
+          {
+            "rank": 3,
+            "char": "氏",
+            "score": 0.01123
+          },
+          {
+            "rank": 4,
+            "char": "庶",
+            "score": 0.00455
+          },
+          {
+            "rank": 5,
+            "char": "主",
+            "score": 0.003932
+          },
+          {
+            "rank": 6,
+            "char": "士",
+            "score": 0.002827
+          },
+          {
+            "rank": 7,
+            "char": "姓",
+            "score": 0.002509
+          },
+          {
+            "rank": 8,
+            "char": "貴",
+            "score": 0.001352
+          },
+          {
+            "rank": 9,
+            "char": "大",
+            "score": 0.001243
+          },
+          {
+            "rank": 10,
+            "char": "好",
+            "score": 0.001163
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_000445",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_002531",
+      "era": "고구려",
+      "selection_reason": "diversified_real; score_bucket=high; no_gold",
+      "request": {
+        "text": "己丑年三月」廿一日自此下」向[MASK]下二里」內中百頭上」位使尒丈作」蓈矣」",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "己丑年三月」廿一日自此下」向[MASK]下二里」內中百頭上」位使尒丈作」蓈矣」",
+        "mask_index": 14,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "山",
+            "score": 0.165895
+          },
+          {
+            "rank": 2,
+            "char": "其",
+            "score": 0.093696
+          },
+          {
+            "rank": 3,
+            "char": "城",
+            "score": 0.053681
+          },
+          {
+            "rank": 4,
+            "char": "坐",
+            "score": 0.042803
+          },
+          {
+            "rank": 5,
+            "char": "陵",
+            "score": 0.023692
+          },
+          {
+            "rank": 6,
+            "char": "谷",
+            "score": 0.014299
+          },
+          {
+            "rank": 7,
+            "char": "墓",
+            "score": 0.013093
+          },
+          {
+            "rank": 8,
+            "char": "上",
+            "score": 0.012862
+          },
+          {
+            "rank": 9,
+            "char": "峯",
+            "score": 0.012184
+          },
+          {
+            "rank": 10,
+            "char": "川",
+            "score": 0.012021
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_000594",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_002530",
+      "era": "고구려",
+      "selection_reason": "diversified_real; score_bucket=high; no_gold",
+      "request": {
+        "text": "己丑年三月廿一日自此下向東十二里物省小兄俳[MASK]百頭□節矣",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "己丑年三月廿一日自此下向東十二里物省小兄俳[MASK]百頭□節矣",
+        "mask_index": 21,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "優",
+            "score": 0.158031
+          },
+          {
+            "rank": 2,
+            "char": "子",
+            "score": 0.038195
+          },
+          {
+            "rank": 3,
+            "char": "魚",
+            "score": 0.020597
+          },
+          {
+            "rank": 4,
+            "char": "頭",
+            "score": 0.016245
+          },
+          {
+            "rank": 5,
+            "char": "女",
+            "score": 0.015881
+          },
+          {
+            "rank": 6,
+            "char": "友",
+            "score": 0.015288
+          },
+          {
+            "rank": 7,
+            "char": "徊",
+            "score": 0.013938
+          },
+          {
+            "rank": 8,
+            "char": "養",
+            "score": 0.012497
+          },
+          {
+            "rank": 9,
+            "char": "母",
+            "score": 0.01135
+          },
+          {
+            "rank": 10,
+            "char": "兒",
+            "score": 0.010373
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_001059",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_002526",
+      "era": "고구려",
+      "selection_reason": "diversified_real; score_bucket=high; no_gold",
+      "request": {
+        "text": "(玄室東壁)神光難」[MASK]進力」",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "(玄室東壁)神光難」[MASK]進力」",
+        "mask_index": 10,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "以",
+            "score": 0.464328
+          },
+          {
+            "rank": 2,
+            "char": "得",
+            "score": 0.025781
+          },
+          {
+            "rank": 3,
+            "char": "由",
+            "score": 0.023389
+          },
+          {
+            "rank": 4,
+            "char": "自",
+            "score": 0.020874
+          },
+          {
+            "rank": 5,
+            "char": "不",
+            "score": 0.015915
+          },
+          {
+            "rank": 6,
+            "char": "能",
+            "score": 0.013871
+          },
+          {
+            "rank": 7,
+            "char": "復",
+            "score": 0.012696
+          },
+          {
+            "rank": 8,
+            "char": "爲",
+            "score": 0.009962
+          },
+          {
+            "rank": 9,
+            "char": "從",
+            "score": 0.009913
+          },
+          {
+            "rank": 10,
+            "char": "於",
+            "score": 0.008774
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_001090",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_002513",
+      "era": "고구려",
+      "selection_reason": "diversified_real; score_bucket=high; no_gold",
+      "request": {
+        "text": "□□容□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□守[自]□□□□□□□□□□□□□□[MASK]",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "□□容□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□守[自]□□□□□□□□□□□□□□[MASK]",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "守",
+            "score": 0.138408
+          },
+          {
+            "rank": 2,
+            "char": "公",
+            "score": 0.016146
+          },
+          {
+            "rank": 3,
+            "char": "條",
+            "score": 0.008845
+          },
+          {
+            "rank": 4,
+            "char": "氏",
+            "score": 0.007302
+          },
+          {
+            "rank": 5,
+            "char": "順",
+            "score": 0.007281
+          },
+          {
+            "rank": 6,
+            "char": "山",
+            "score": 0.006363
+          },
+          {
+            "rank": 7,
+            "char": "子",
+            "score": 0.006099
+          },
+          {
+            "rank": 8,
+            "char": "也",
+            "score": 0.005289
+          },
+          {
+            "rank": 9,
+            "char": "洙",
+            "score": 0.004733
+          },
+          {
+            "rank": 10,
+            "char": "均",
+            "score": 0.004648
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_001105",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_002533",
+      "era": "고구려",
+      "selection_reason": "diversified_real; score_bucket=high; no_gold",
+      "request": {
+        "text": "卦婁蓋切小」兄加群自」此東廻上」[MASK]里四」尺治」",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "卦婁蓋切小」兄加群自」此東廻上」[MASK]里四」尺治」",
+        "mask_index": 16,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "千",
+            "score": 0.134809
+          },
+          {
+            "rank": 2,
+            "char": "十",
+            "score": 0.131581
+          },
+          {
+            "rank": 3,
+            "char": "百",
+            "score": 0.068062
+          },
+          {
+            "rank": 4,
+            "char": "萬",
+            "score": 0.064126
+          },
+          {
+            "rank": 5,
+            "char": "五",
+            "score": 0.05805
+          },
+          {
+            "rank": 6,
+            "char": "三",
+            "score": 0.037954
+          },
+          {
+            "rank": 7,
+            "char": "四",
+            "score": 0.026519
+          },
+          {
+            "rank": 8,
+            "char": "六",
+            "score": 0.023794
+          },
+          {
+            "rank": 9,
+            "char": "二",
+            "score": 0.016267
+          },
+          {
+            "rank": 10,
+            "char": "一",
+            "score": 0.015236
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_000091",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_002512",
+      "era": "고구려",
+      "selection_reason": "diversified_real; score_bucket=low; no_gold",
+      "request": {
+        "text": "城□城倭滿倭潰城□□盡更□来安羅人戍兵滿□□□□其□□□□□□□言第三面□□□□□□□□□□□□□□□□□□□□□□□□□□辭□[MASK]□□□□□□□□□□□潰□以隨□安羅人戍兵昔新羅寐錦未有身來□□□□□□□開土境好太王□□□□寐錦□□僕勾□□□□朝貢十四年甲辰",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "城□城倭滿倭潰城□□盡更□来安羅人戍兵滿□□□□其□□□□□□□言第三面□□□□□□□□□□□□□□□□□□□□□□□□□□辭□[MASK]□□□□□□□□□□□潰□以隨□安羅人戍兵昔新羅寐錦未有身來□□□□□□□開土境好太王□□□□寐錦□□僕勾□□□□朝貢十四年甲辰",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "公",
+            "score": 0.03143
+          },
+          {
+            "rank": 2,
+            "char": "炯",
+            "score": 0.011826
+          },
+          {
+            "rank": 3,
+            "char": "完",
+            "score": 0.00902
+          },
+          {
+            "rank": 4,
+            "char": "子",
+            "score": 0.006868
+          },
+          {
+            "rank": 5,
+            "char": "出",
+            "score": 0.006424
+          },
+          {
+            "rank": 6,
+            "char": "曰",
+            "score": 0.006095
+          },
+          {
+            "rank": 7,
+            "char": "謙",
+            "score": 0.005603
+          },
+          {
+            "rank": 8,
+            "char": "城",
+            "score": 0.005444
+          },
+          {
+            "rank": 9,
+            "char": "下",
+            "score": 0.005307
+          },
+          {
+            "rank": 10,
+            "char": "空",
+            "score": 0.005012
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_000165",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_002535",
+      "era": "고구려",
+      "selection_reason": "diversified_real; score_bucket=low; no_gold",
+      "request": {
+        "text": "□□功德三寶□□□」除成凡己□□成行御」古□心□忍北不□□」□□□□功德逮及七」世父母□□□□□□」衆生咸同□□□□壽」昔惡途□[MASK]之願□□」結地□□感慕□因」緣少佛□□□□□□」□文□佛像一□□□」□□□□三寶出入□」",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "□□功德三寶□□□」除成凡己□□成行御」古□心□忍北不□□」□□□□功德逮及七」世父母□□□□□□」衆生咸同□□□□壽」昔惡途□[MASK]之願□□」結地□□感慕□因」緣少佛□□□□□□」□文□佛像一□□□」□□□□三寶出入□」",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "公",
+            "score": 0.02515
+          },
+          {
+            "rank": 2,
+            "char": "人",
+            "score": 0.019516
+          },
+          {
+            "rank": 3,
+            "char": "天",
+            "score": 0.01596
+          },
+          {
+            "rank": 4,
+            "char": "徒",
+            "score": 0.015332
+          },
+          {
+            "rank": 5,
+            "char": "子",
+            "score": 0.011886
+          },
+          {
+            "rank": 6,
+            "char": "山",
+            "score": 0.009155
+          },
+          {
+            "rank": 7,
+            "char": "佛",
+            "score": 0.009079
+          },
+          {
+            "rank": 8,
+            "char": "吾",
+            "score": 0.008766
+          },
+          {
+            "rank": 9,
+            "char": "老",
+            "score": 0.007348
+          },
+          {
+            "rank": 10,
+            "char": "王",
+            "score": 0.007317
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_000189",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_007191",
+      "era": "고구려",
+      "selection_reason": "diversified_real; score_bucket=low; no_gold",
+      "request": {
+        "text": "□□□□□□□□三輪垂世耳」□所階是故如來唱圓敎於金河」□神之妙宅現闍維□□□□□」迎於後代是以[MASK]□慧郎奉爲圓覺」大王謹造玆塔表刻五層相輪相副」願王神昇兜率查勤彌勒天孫俱會」四生蒙慶於是頌曰」聖智契眞妙應群生形言暉世」□育道成",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "□□□□□□□□三輪垂世耳」□所階是故如來唱圓敎於金河」□神之妙宅現闍維□□□□□」迎於後代是以[MASK]□慧郎奉爲圓覺」大王謹造玆塔表刻五層相輪相副」願王神昇兜率查勤彌勒天孫俱會」四生蒙慶於是頌曰」聖智契眞妙應群生形言暉世」□育道成",
+        "mask_index": 48,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "以",
+            "score": 0.029747
+          },
+          {
+            "rank": 2,
+            "char": "有",
+            "score": 0.025
+          },
+          {
+            "rank": 3,
+            "char": "明",
+            "score": 0.017166
+          },
+          {
+            "rank": 4,
+            "char": "其",
+            "score": 0.014849
+          },
+          {
+            "rank": 5,
+            "char": "設",
+            "score": 0.012791
+          },
+          {
+            "rank": 6,
+            "char": "也",
+            "score": 0.01046
+          },
+          {
+            "rank": 7,
+            "char": "於",
+            "score": 0.009
+          },
+          {
+            "rank": 8,
+            "char": "而",
+            "score": 0.008848
+          },
+          {
+            "rank": 9,
+            "char": "與",
+            "score": 0.008697
+          },
+          {
+            "rank": 10,
+            "char": "爲",
+            "score": 0.007818
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_000444",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_002512",
+      "era": "고구려",
+      "selection_reason": "diversified_real; score_bucket=low; no_gold",
+      "request": {
+        "text": "t:12px;vertical-align:middle;display:inline;margin:0;'>卯年來渡海破百殘□[MASK]□羅以爲臣民以六年丙申王躬率水軍討科殘國軍□□首攻取壹八城臼模盧城<imgsrc='/mediaFileImgStreamOut",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "t:12px;vertical-align:middle;display:inline;margin:0;'>卯年來渡海破百殘□[MASK]□羅以爲臣民以六年丙申王躬率水軍討科殘國軍□□首攻取壹八城臼模盧城<imgsrc='/mediaFileImgStreamOut",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "百",
+            "score": 0.015839
+          },
+          {
+            "rank": 2,
+            "char": "千",
+            "score": 0.013865
+          },
+          {
+            "rank": 3,
+            "char": "全",
+            "score": 0.011611
+          },
+          {
+            "rank": 4,
+            "char": "三",
+            "score": 0.011432
+          },
+          {
+            "rank": 5,
+            "char": "兩",
+            "score": 0.011374
+          },
+          {
+            "rank": 6,
+            "char": "一",
+            "score": 0.010696
+          },
+          {
+            "rank": 7,
+            "char": "十",
+            "score": 0.008284
+          },
+          {
+            "rank": 8,
+            "char": "周",
+            "score": 0.00749
+          },
+          {
+            "rank": 9,
+            "char": "雙",
+            "score": 0.005847
+          },
+          {
+            "rank": 10,
+            "char": "半",
+            "score": 0.005757
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_000467",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_002537",
+      "era": "고구려",
+      "selection_reason": "diversified_real; score_bucket=low; no_gold",
+      "request": {
+        "text": "寺主敬弟子僧演師徒𠦌人共」造賢劫千佛流布第廿九回現歲」佛比丘<imgsrc='/mediaFileImgStreamOut.do[MASK]media_id=1679_001'border='0'style='width:12px;height:12px;vertic",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "寺主敬弟子僧演師徒𠦌人共」造賢劫千佛流布第廿九回現歲」佛比丘<imgsrc='/mediaFileImgStreamOut.do[MASK]media_id=1679_001'border='0'style='width:12px;height:12px;vertic",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "火",
+            "score": 0.022572
+          },
+          {
+            "rank": 2,
+            "char": "空",
+            "score": 0.018784
+          },
+          {
+            "rank": 3,
+            "char": "坐",
+            "score": 0.015609
+          },
+          {
+            "rank": 4,
+            "char": "餘",
+            "score": 0.010189
+          },
+          {
+            "rank": 5,
+            "char": "日",
+            "score": 0.008819
+          },
+          {
+            "rank": 6,
+            "char": "公",
+            "score": 0.007068
+          },
+          {
+            "rank": 7,
+            "char": "地",
+            "score": 0.005562
+          },
+          {
+            "rank": 8,
+            "char": "錢",
+            "score": 0.005029
+          },
+          {
+            "rank": 9,
+            "char": "天",
+            "score": 0.005014
+          },
+          {
+            "rank": 10,
+            "char": "房",
+            "score": 0.004833
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_000628",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_002513",
+      "era": "고구려",
+      "selection_reason": "diversified_real; score_bucket=low; no_gold",
+      "request": {
+        "text": "12px;vertical-align:middle;display:inline;margin:0;'>][胜]□[沙]□□□[MASK]□□□□□□刺功□□射□□□□□節人刺□□□□□□□□[辛][酉]□□□□□□□□□□太王國土□□□□□□□□□□□□□□黃□□",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "12px;vertical-align:middle;display:inline;margin:0;'>][胜]□[沙]□□□[MASK]□□□□□□刺功□□射□□□□□節人刺□□□□□□□□[辛][酉]□□□□□□□□□□太王國土□□□□□□□□□□□□□□黃□□",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "亘",
+            "score": 0.029397
+          },
+          {
+            "rank": 2,
+            "char": "鴻",
+            "score": 0.020048
+          },
+          {
+            "rank": 3,
+            "char": "子",
+            "score": 0.015642
+          },
+          {
+            "rank": 4,
+            "char": "斯",
+            "score": 0.012665
+          },
+          {
+            "rank": 5,
+            "char": "亥",
+            "score": 0.010825
+          },
+          {
+            "rank": 6,
+            "char": "公",
+            "score": 0.00919
+          },
+          {
+            "rank": 7,
+            "char": "錮",
+            "score": 0.008673
+          },
+          {
+            "rank": 8,
+            "char": "坐",
+            "score": 0.007045
+          },
+          {
+            "rank": 9,
+            "char": "垓",
+            "score": 0.00656
+          },
+          {
+            "rank": 10,
+            "char": "巳",
+            "score": 0.005878
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_000724",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_002747",
+      "era": "고구려",
+      "selection_reason": "diversified_real; score_bucket=low; no_gold",
+      "request": {
+        "text": "e;margin:0;'>河」南府洛陽縣之𠨑山舊塋禮也高墳崫<imgsrc='/mediaFileImgStreamOut.do[MASK]media_id=1997_015'border='0'style='width:12px;height:12px;vertic",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "e;margin:0;'>河」南府洛陽縣之𠨑山舊塋禮也高墳崫<imgsrc='/mediaFileImgStreamOut.do[MASK]media_id=1997_015'border='0'style='width:12px;height:12px;vertic",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "房",
+            "score": 0.015319
+          },
+          {
+            "rank": 2,
+            "char": "火",
+            "score": 0.013982
+          },
+          {
+            "rank": 3,
+            "char": "空",
+            "score": 0.012072
+          },
+          {
+            "rank": 4,
+            "char": "坐",
+            "score": 0.010693
+          },
+          {
+            "rank": 5,
+            "char": "地",
+            "score": 0.009662
+          },
+          {
+            "rank": 6,
+            "char": "公",
+            "score": 0.009074
+          },
+          {
+            "rank": 7,
+            "char": "恒",
+            "score": 0.008284
+          },
+          {
+            "rank": 8,
+            "char": "田",
+            "score": 0.007942
+          },
+          {
+            "rank": 9,
+            "char": "宅",
+            "score": 0.007699
+          },
+          {
+            "rank": 10,
+            "char": "臺",
+            "score": 0.007044
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_000909",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_002517",
+      "era": "고구려",
+      "selection_reason": "diversified_real; score_bucket=low; no_gold",
+      "request": {
+        "text": "x;height:12px;vertical-align:middle;display:inline;margin:0;'>都鄕[MASK]甘里」釋加文佛弟子□□氏鎭仕」位建威將軍國小大兄左將軍」龍驤將軍遼東太守使持」節東夷校尉幽州刺史鎭」年七十七薨焉以永𣐩十八年」太",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "x;height:12px;vertical-align:middle;display:inline;margin:0;'>都鄕[MASK]甘里」釋加文佛弟子□□氏鎭仕」位建威將軍國小大兄左將軍」龍驤將軍遼東太守使持」節東夷校尉幽州刺史鎭」年七十七薨焉以永𣐩十八年」太",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "王",
+            "score": 0.024342
+          },
+          {
+            "rank": 2,
+            "char": "也",
+            "score": 0.019679
+          },
+          {
+            "rank": 3,
+            "char": "名",
+            "score": 0.01558
+          },
+          {
+            "rank": 4,
+            "char": "居",
+            "score": 0.014307
+          },
+          {
+            "rank": 5,
+            "char": "里",
+            "score": 0.01388
+          },
+          {
+            "rank": 6,
+            "char": "人",
+            "score": 0.013298
+          },
+          {
+            "rank": 7,
+            "char": "金",
+            "score": 0.012337
+          },
+          {
+            "rank": 8,
+            "char": "有",
+            "score": 0.012139
+          },
+          {
+            "rank": 9,
+            "char": "之",
+            "score": 0.010794
+          },
+          {
+            "rank": 10,
+            "char": "子",
+            "score": 0.010106
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_001237",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_002549",
+      "era": "고구려",
+      "selection_reason": "diversified_real; score_bucket=low; no_gold",
+      "request": {
+        "text": "1)□四時興詣□□[MASK]□萬世太歲在丁巳五月廿日」",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "1)□四時興詣□□[MASK]□萬世太歲在丁巳五月廿日」",
+        "mask_index": 9,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "碑",
+            "score": 0.042663
+          },
+          {
+            "rank": 2,
+            "char": "下",
+            "score": 0.023136
+          },
+          {
+            "rank": 3,
+            "char": "祭",
+            "score": 0.0161
+          },
+          {
+            "rank": 4,
+            "char": "上",
+            "score": 0.015638
+          },
+          {
+            "rank": 5,
+            "char": "石",
+            "score": 0.010978
+          },
+          {
+            "rank": 6,
+            "char": "壇",
+            "score": 0.01063
+          },
+          {
+            "rank": 7,
+            "char": "堂",
+            "score": 0.010608
+          },
+          {
+            "rank": 8,
+            "char": "寺",
+            "score": 0.010584
+          },
+          {
+            "rank": 9,
+            "char": "之",
+            "score": 0.009473
+          },
+          {
+            "rank": 10,
+            "char": "壽",
+            "score": 0.008245
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_000691",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_002539",
+      "era": "고구려",
+      "selection_reason": "diversified_real; score_bucket=mid; no_gold",
+      "request": {
+        "text": "建興五年歲在丙辰」佛弟子淸信女上部」[MASK]奄造釋迦文像」願生生世世□値佛聞」法一切衆生同此願」",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "建興五年歲在丙辰」佛弟子淸信女上部」[MASK]奄造釋迦文像」願生生世世□値佛聞」法一切衆生同此願」",
+        "mask_index": 18,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "正",
+            "score": 0.048719
+          },
+          {
+            "rank": 2,
+            "char": "子",
+            "score": 0.019345
+          },
+          {
+            "rank": 3,
+            "char": "大",
+            "score": 0.013624
+          },
+          {
+            "rank": 4,
+            "char": "李",
+            "score": 0.012924
+          },
+          {
+            "rank": 5,
+            "char": "金",
+            "score": 0.012223
+          },
+          {
+            "rank": 6,
+            "char": "主",
+            "score": 0.011402
+          },
+          {
+            "rank": 7,
+            "char": "長",
+            "score": 0.01072
+          },
+          {
+            "rank": 8,
+            "char": "秀",
+            "score": 0.010648
+          },
+          {
+            "rank": 9,
+            "char": "張",
+            "score": 0.009006
+          },
+          {
+            "rank": 10,
+            "char": "信",
+            "score": 0.008817
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_000725",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_002747",
+      "era": "고구려",
+      "selection_reason": "diversified_real; score_bucket=mid; no_gold",
+      "request": {
+        "text": ";display:inline;margin:0;'>望二室<imgsrc='/mediaFileImgStreamOut.do[MASK]media_id=1997_005'border='0'style='width:12px;height:12px;vertic",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": ";display:inline;margin:0;'>望二室<imgsrc='/mediaFileImgStreamOut.do[MASK]media_id=1997_005'border='0'style='width:12px;height:12px;vertic",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "坐",
+            "score": 0.054733
+          },
+          {
+            "rank": 2,
+            "char": "里",
+            "score": 0.015081
+          },
+          {
+            "rank": 3,
+            "char": "也",
+            "score": 0.014978
+          },
+          {
+            "rank": 4,
+            "char": "宿",
+            "score": 0.012973
+          },
+          {
+            "rank": 5,
+            "char": "空",
+            "score": 0.012863
+          },
+          {
+            "rank": 6,
+            "char": "餘",
+            "score": 0.01265
+          },
+          {
+            "rank": 7,
+            "char": "房",
+            "score": 0.011491
+          },
+          {
+            "rank": 8,
+            "char": "合",
+            "score": 0.010164
+          },
+          {
+            "rank": 9,
+            "char": "底",
+            "score": 0.008519
+          },
+          {
+            "rank": 10,
+            "char": "地",
+            "score": 0.008489
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_002362",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_002538",
+      "era": "고구려",
+      "selection_reason": "diversified_real; score_bucket=mid; no_gold",
+      "request": {
+        "text": "景四年在辛卯比丘道[MASK]」共諸善知識那婁」賤奴阿王𡍄五人」共造無量壽像一軀」願亡師父母生生心中常」値諸佛善知識等値」遇彌勒所願如是」願共生一處見佛聞法」",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "景四年在辛卯比丘道[MASK]」共諸善知識那婁」賤奴阿王𡍄五人」共造無量壽像一軀」願亡師父母生生心中常」値諸佛善知識等値」遇彌勒所願如是」願共生一處見佛聞法」",
+        "mask_index": 9,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "寺",
+            "score": 0.057029
+          },
+          {
+            "rank": 2,
+            "char": "山",
+            "score": 0.02703
+          },
+          {
+            "rank": 3,
+            "char": "子",
+            "score": 0.021592
+          },
+          {
+            "rank": 4,
+            "char": "僧",
+            "score": 0.01925
+          },
+          {
+            "rank": 5,
+            "char": "禪",
+            "score": 0.016053
+          },
+          {
+            "rank": 6,
+            "char": "場",
+            "score": 0.014933
+          },
+          {
+            "rank": 7,
+            "char": "庵",
+            "score": 0.01359
+          },
+          {
+            "rank": 8,
+            "char": "也",
+            "score": 0.012732
+          },
+          {
+            "rank": 9,
+            "char": "師",
+            "score": 0.012331
+          },
+          {
+            "rank": 10,
+            "char": "老",
+            "score": 0.012027
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_002408",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_002543",
+      "era": "고구려",
+      "selection_reason": "diversified_real; score_bucket=mid; no_gold",
+      "request": {
+        "text": "太寧四年太歲□[MASK]閏月六日己巳造吉保子宜孫」",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "太寧四年太歲□[MASK]閏月六日己巳造吉保子宜孫」",
+        "mask_index": 7,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "年",
+            "score": 0.09249
+          },
+          {
+            "rank": 2,
+            "char": "酉",
+            "score": 0.091954
+          },
+          {
+            "rank": 3,
+            "char": "亥",
+            "score": 0.088897
+          },
+          {
+            "rank": 4,
+            "char": "午",
+            "score": 0.080252
+          },
+          {
+            "rank": 5,
+            "char": "子",
+            "score": 0.064419
+          },
+          {
+            "rank": 6,
+            "char": "戌",
+            "score": 0.042119
+          },
+          {
+            "rank": 7,
+            "char": "後",
+            "score": 0.033752
+          },
+          {
+            "rank": 8,
+            "char": "寅",
+            "score": 0.031695
+          },
+          {
+            "rank": 9,
+            "char": "巳",
+            "score": 0.024235
+          },
+          {
+            "rank": 10,
+            "char": "申",
+            "score": 0.019395
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_002959",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_002541",
+      "era": "고구려",
+      "selection_reason": "diversified_real; score_bucket=mid; no_gold",
+      "request": {
+        "text": "\"footnote\">2</a></sup>造合杅」三斤」<liclass='footnote'id='fn:2'><p>敬(敎[MASK])(濱田耕策),敬(李弘稙),敎(李基文,金昌鎬)<ahref='#fnref:2'title=''>↩</a></p></li",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "\"footnote\">2</a></sup>造合杅」三斤」<liclass='footnote'id='fn:2'><p>敬(敎[MASK])(濱田耕策),敬(李弘稙),敎(李基文,金昌鎬)<ahref='#fnref:2'title=''>↩</a></p></li",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "官",
+            "score": 0.123536
+          },
+          {
+            "rank": 2,
+            "char": "子",
+            "score": 0.039301
+          },
+          {
+            "rank": 3,
+            "char": "書",
+            "score": 0.035068
+          },
+          {
+            "rank": 4,
+            "char": "授",
+            "score": 0.017801
+          },
+          {
+            "rank": 5,
+            "char": "堂",
+            "score": 0.016108
+          },
+          {
+            "rank": 6,
+            "char": "文",
+            "score": 0.014586
+          },
+          {
+            "rank": 7,
+            "char": "生",
+            "score": 0.014087
+          },
+          {
+            "rank": 8,
+            "char": "之",
+            "score": 0.01178
+          },
+          {
+            "rank": 9,
+            "char": "坊",
+            "score": 0.011082
+          },
+          {
+            "rank": 10,
+            "char": "事",
+            "score": 0.010385
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_003000",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_002807",
+      "era": "고구려",
+      "selection_reason": "diversified_real; score_bucket=mid; no_gold",
+      "request": {
+        "text": "乙亥年[MASK]扞率□",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "乙亥年[MASK]扞率□",
+        "mask_index": 3,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "命",
+            "score": 0.047999
+          },
+          {
+            "rank": 2,
+            "char": "立",
+            "score": 0.047799
+          },
+          {
+            "rank": 3,
+            "char": "始",
+            "score": 0.031913
+          },
+          {
+            "rank": 4,
+            "char": "改",
+            "score": 0.02944
+          },
+          {
+            "rank": 5,
+            "char": "月",
+            "score": 0.02727
+          },
+          {
+            "rank": 6,
+            "char": "春",
+            "score": 0.025599
+          },
+          {
+            "rank": 7,
+            "char": "上",
+            "score": 0.023289
+          },
+          {
+            "rank": 8,
+            "char": "復",
+            "score": 0.021318
+          },
+          {
+            "rank": 9,
+            "char": "下",
+            "score": 0.020416
+          },
+          {
+            "rank": 10,
+            "char": "作",
+            "score": 0.019266
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    },
+    {
+      "sample_id": "nan",
+      "case_id": "real_003348",
+      "prediction_type": "real_defect",
+      "inscription_id": "insc_nrich_002746",
+      "era": "고구려",
+      "selection_reason": "diversified_real; score_bucket=mid; no_gold",
+      "request": {
+        "text": "e;display:inline;margin:0;'>拱二<imgsrc='/mediaFileImgStreamOut.do[MASK]media_id=1994_002'border='0'style='width:12px;height:12px;vertic",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "e;display:inline;margin:0;'>拱二<imgsrc='/mediaFileImgStreamOut.do[MASK]media_id=1994_002'border='0'style='width:12px;height:12px;vertic",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "坐",
+            "score": 0.074717
+          },
+          {
+            "rank": 2,
+            "char": "拱",
+            "score": 0.01802
+          },
+          {
+            "rank": 3,
+            "char": "地",
+            "score": 0.017696
+          },
+          {
+            "rank": 4,
+            "char": "恒",
+            "score": 0.016315
+          },
+          {
+            "rank": 5,
+            "char": "邊",
+            "score": 0.015887
+          },
+          {
+            "rank": 6,
+            "char": "宿",
+            "score": 0.011872
+          },
+          {
+            "rank": 7,
+            "char": "亦",
+            "score": 0.009152
+          },
+          {
+            "rank": 8,
+            "char": "偏",
+            "score": 0.008864
+          },
+          {
+            "rank": 9,
+            "char": "零",
+            "score": 0.008099
+          },
+          {
+            "rank": 10,
+            "char": "亘",
+            "score": 0.007913
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": null
+    }
+  ]
+}

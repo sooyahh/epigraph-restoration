@@ -1,0 +1,269 @@
+{
+  "training_only": true,
+  "models": [
+    {
+      "model_name": "bert-base-chinese",
+      "vocab_size": 21128,
+      "unique_cjk_chars": 9023,
+      "total_cjk_occurrences": 3378013,
+      "unk_char_types": 4080,
+      "unk_char_type_rate": 0.4521777679264103,
+      "unk_occurrence_rate": 0.03419761854084043,
+      "multi_token_char_types": 0,
+      "top_unk_chars": [
+        {
+          "char": "尙",
+          "count": 4340
+        },
+        {
+          "char": "淸",
+          "count": 4275
+        },
+        {
+          "char": "旣",
+          "count": 3472
+        },
+        {
+          "char": "郞",
+          "count": 2892
+        },
+        {
+          "char": "卽",
+          "count": 2651
+        },
+        {
+          "char": "叅",
+          "count": 2636
+        },
+        {
+          "char": "擧",
+          "count": 2236
+        },
+        {
+          "char": "摠",
+          "count": 2124
+        },
+        {
+          "char": "曺",
+          "count": 1890
+        },
+        {
+          "char": "僉",
+          "count": 1670
+        },
+        {
+          "char": "幷",
+          "count": 1513
+        },
+        {
+          "char": "鎭",
+          "count": 1505
+        },
+        {
+          "char": "鄕",
+          "count": 1430
+        },
+        {
+          "char": "賛",
+          "count": 1177
+        },
+        {
+          "char": "歿",
+          "count": 1067
+        },
+        {
+          "char": "祔",
+          "count": 974
+        },
+        {
+          "char": "甞",
+          "count": 959
+        },
+        {
+          "char": "靑",
+          "count": 912
+        },
+        {
+          "char": "歟",
+          "count": 884
+        },
+        {
+          "char": "愼",
+          "count": 869
+        },
+        {
+          "char": "閭",
+          "count": 819
+        },
+        {
+          "char": "噫",
+          "count": 777
+        },
+        {
+          "char": "謚",
+          "count": 757
+        },
+        {
+          "char": "竪",
+          "count": 752
+        },
+        {
+          "char": "菴",
+          "count": 692
+        },
+        {
+          "char": "寔",
+          "count": 631
+        },
+        {
+          "char": "玆",
+          "count": 623
+        },
+        {
+          "char": "䟽",
+          "count": 618
+        },
+        {
+          "char": "壻",
+          "count": 575
+        },
+        {
+          "char": "塋",
+          "count": 515
+        }
+      ]
+    },
+    {
+      "model_name": "ddokbaro/SillokBert",
+      "vocab_size": 119547,
+      "unique_cjk_chars": 9023,
+      "total_cjk_occurrences": 3378013,
+      "unk_char_types": 4195,
+      "unk_char_type_rate": 0.4649229746204145,
+      "unk_occurrence_rate": 0.025051117328441307,
+      "multi_token_char_types": 0,
+      "top_unk_chars": [
+        {
+          "char": "旣",
+          "count": 3472
+        },
+        {
+          "char": "卽",
+          "count": 2651
+        },
+        {
+          "char": "叅",
+          "count": 2636
+        },
+        {
+          "char": "妣",
+          "count": 1628
+        },
+        {
+          "char": "幷",
+          "count": 1513
+        },
+        {
+          "char": "祔",
+          "count": 974
+        },
+        {
+          "char": "甞",
+          "count": 959
+        },
+        {
+          "char": "歟",
+          "count": 884
+        },
+        {
+          "char": "噫",
+          "count": 777
+        },
+        {
+          "char": "玆",
+          "count": 623
+        },
+        {
+          "char": "䟽",
+          "count": 618
+        },
+        {
+          "char": "壻",
+          "count": 575
+        },
+        {
+          "char": "塋",
+          "count": 515
+        },
+        {
+          "char": "踰",
+          "count": 469
+        },
+        {
+          "char": "窆",
+          "count": 459
+        },
+        {
+          "char": "泯",
+          "count": 456
+        },
+        {
+          "char": "寃",
+          "count": 378
+        },
+        {
+          "char": "賻",
+          "count": 360
+        },
+        {
+          "char": "徃",
+          "count": 354
+        },
+        {
+          "char": "飮",
+          "count": 351
+        },
+        {
+          "char": "緖",
+          "count": 323
+        },
+        {
+          "char": "竝",
+          "count": 312
+        },
+        {
+          "char": "遆",
+          "count": 304
+        },
+        {
+          "char": "闋",
+          "count": 300
+        },
+        {
+          "char": "扵",
+          "count": 281
+        },
+        {
+          "char": "顚",
+          "count": 274
+        },
+        {
+          "char": "箚",
+          "count": 273
+        },
+        {
+          "char": "飭",
+          "count": 271
+        },
+        {
+          "char": "曁",
+          "count": 268
+        },
+        {
+          "char": "秊",
+          "count": 268
+        }
+      ]
+    }
+  ]
+}

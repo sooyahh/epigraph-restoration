@@ -1,0 +1,5 @@
+experiment_id,experiment_name,model_name,dataset_name,split,num_samples,exact_at_1,exact_at_5,exact_at_10,group_at_1,group_at_5,group_at_10,created_at,notes
+EXP003,frequency unigram baseline,frequency,artificial_mask_dataset_v1,test,9719,0.02253318242617553,0.06595328737524436,0.10330280893095997,,,,2026-07-06T11:06:06.642718+00:00,device=cpu
+EXP004,ngram context baseline,ngram,artificial_mask_dataset_v1,test,9719,0.14476798024488116,0.28068731350962034,0.34674349212881983,,,,2026-07-06T11:06:23.909758+00:00,device=cpu
+EXP006,bert-base-chinese zero-shot,bert-base-chinese,artificial_mask_dataset_v1,test,9719,0.19693384093013686,0.349830229447474,0.42380903385121926,,,,2026-07-06T11:06:57.708027+00:00,device=cpu
+EXP007,SillokBert zero-shot,ddokbaro/SillokBert,artificial_mask_dataset_v1,test,9719,0.24889391912748224,0.431731659635765,0.512192612408684,,,,2026-07-06T11:13:30.314323+00:00,device=cpu

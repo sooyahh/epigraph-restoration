@@ -1,0 +1,921 @@
+{
+  "description": "EXP-012 SillokBERT masked-Hanja prediction — sample fixtures for frontend mocking.",
+  "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+  "source": "notebooks/best/exp012_sillok_ft_full_predictions.csv (Colab GPU full test, n=9719)",
+  "note": "gold.* fields are ground-truth for reference/UI-badge only; a real API response returns only the 'response' object.",
+  "count": 12,
+  "samples": [
+    {
+      "sample_id": "mask_00000342",
+      "request": {
+        "text": "駕洛國師長逰和尚紀蹟碑長逰和尚紀蹟碑銘日布潭上人訪余於齋居寂寞之中叉手而言曰貧道[MASK]居長逰庵盖長逰和尚長逰之地也方與現大衆謀竪貞珉公是殿官也以一言之不可以不乞於公而公亦恐不可以無惠也余曰噫今距和尚之卋二千年而始舉",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "駕洛國師長逰和尚紀蹟碑長逰和尚紀蹟碑銘日布潭上人訪余於齋居寂寞之中叉手而言曰貧道[MASK]居長逰庵盖長逰和尚長逰之地也方與現大衆謀竪貞珉公是殿官也以一言之不可以不乞於公而公亦恐不可以無惠也余曰噫今距和尚之卋二千年而始舉",
+        "mask_index": 40,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "所",
+            "score": 0.043539
+          },
+          {
+            "rank": 2,
+            "char": "而",
+            "score": 0.042441
+          },
+          {
+            "rank": 3,
+            "char": "之",
+            "score": 0.039706
+          },
+          {
+            "rank": 4,
+            "char": "深",
+            "score": 0.035137
+          },
+          {
+            "rank": 5,
+            "char": "其",
+            "score": 0.028568
+          },
+          {
+            "rank": 6,
+            "char": "舊",
+            "score": 0.025015
+          },
+          {
+            "rank": 7,
+            "char": "同",
+            "score": 0.021049
+          },
+          {
+            "rank": 8,
+            "char": "齋",
+            "score": 0.01775
+          },
+          {
+            "rank": 9,
+            "char": "吾",
+            "score": 0.017223
+          },
+          {
+            "rank": 10,
+            "char": "里",
+            "score": 0.01588
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "所",
+        "rank_of_gold": 1,
+        "is_exact_at_1": true,
+        "is_exact_at_5": true,
+        "is_exact_at_10": true
+      },
+      "_bucket": "hit_at_1"
+    },
+    {
+      "sample_id": "mask_00000345",
+      "request": {
+        "text": "多釆閱萬劫而名自替何必無幾風磨雨洗之一片龜頭爲㢤上人曰大和尚懿蹟始末冝昭示衆生於来劫而恐世代寖遠遂失眞印也余曰諾遂按陵誌和尚姓許[MASK]名寳玉阿隃陀國君之子也粵我始祖首露王建國之七年戊申普州太后許氏以阿隃國公主承父命航海累百由旬而来克成天作之配其旗茜其塔鎮風其媵臣",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "多釆閱萬劫而名自替何必無幾風磨雨洗之一片龜頭爲㢤上人曰大和尚懿蹟始末冝昭示衆生於来劫而恐世代寖遠遂失眞印也余曰諾遂按陵誌和尚姓許[MASK]名寳玉阿隃陀國君之子也粵我始祖首露王建國之七年戊申普州太后許氏以阿隃國公主承父命航海累百由旬而来克成天作之配其旗茜其塔鎮風其媵臣",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "氏",
+            "score": 0.963179
+          },
+          {
+            "rank": 2,
+            "char": "公",
+            "score": 0.006996
+          },
+          {
+            "rank": 3,
+            "char": "姓",
+            "score": 0.001846
+          },
+          {
+            "rank": 4,
+            "char": "某",
+            "score": 0.001678
+          },
+          {
+            "rank": 5,
+            "char": "之",
+            "score": 0.0012
+          },
+          {
+            "rank": 6,
+            "char": "其",
+            "score": 0.000719
+          },
+          {
+            "rank": 7,
+            "char": "也",
+            "score": 0.000608
+          },
+          {
+            "rank": 8,
+            "char": "君",
+            "score": 0.000492
+          },
+          {
+            "rank": 9,
+            "char": "考",
+            "score": 0.000254
+          },
+          {
+            "rank": 10,
+            "char": "郡",
+            "score": 0.000219
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "氏",
+        "rank_of_gold": 1,
+        "is_exact_at_1": true,
+        "is_exact_at_5": true,
+        "is_exact_at_10": true
+      },
+      "_bucket": "hit_at_1"
+    },
+    {
+      "sample_id": "mask_00000346",
+      "request": {
+        "text": "蹟始末冝昭示衆生於来劫而恐世代寖遠遂失眞印也余曰諾遂按陵誌和尚姓許氏名寳玉阿隃陀國君之子也粵我始祖首露王建國之七年戊申普州太后許[MASK]以阿隃國公主承父命航海累百由旬而来克成天作之配其旗茜其塔鎮風其媵臣男女数十人護其行者卽和尚太后弟也和尚以椒房之親視富貴如浮雲遂超",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "蹟始末冝昭示衆生於来劫而恐世代寖遠遂失眞印也余曰諾遂按陵誌和尚姓許氏名寳玉阿隃陀國君之子也粵我始祖首露王建國之七年戊申普州太后許[MASK]以阿隃國公主承父命航海累百由旬而来克成天作之配其旗茜其塔鎮風其媵臣男女数十人護其行者卽和尚太后弟也和尚以椒房之親視富貴如浮雲遂超",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "氏",
+            "score": 0.990008
+          },
+          {
+            "rank": 2,
+            "char": "公",
+            "score": 0.003039
+          },
+          {
+            "rank": 3,
+            "char": "某",
+            "score": 0.000317
+          },
+          {
+            "rank": 4,
+            "char": "淑",
+            "score": 0.000142
+          },
+          {
+            "rank": 5,
+            "char": "也",
+            "score": 0.000135
+          },
+          {
+            "rank": 6,
+            "char": "后",
+            "score": 0.000127
+          },
+          {
+            "rank": 7,
+            "char": "王",
+            "score": 0.00011
+          },
+          {
+            "rank": 8,
+            "char": "亦",
+            "score": 0.0001
+          },
+          {
+            "rank": 9,
+            "char": "嬪",
+            "score": 8.9e-05
+          },
+          {
+            "rank": 10,
+            "char": "嘗",
+            "score": 7.9e-05
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "氏",
+        "rank_of_gold": 1,
+        "is_exact_at_1": true,
+        "is_exact_at_5": true,
+        "is_exact_at_10": true
+      },
+      "_bucket": "hit_at_1"
+    },
+    {
+      "sample_id": "mask_00000348",
+      "request": {
+        "text": "陵誌和尚姓許氏名寳玉阿隃陀國君之子也粵我始祖首露王建國之七年戊申普州太后許氏以阿隃國公主承父命航海累百由旬而来克成天作之配其旗茜[MASK]塔鎮風其媵臣男女数十人護其行者卽和尚太后弟也和尚以椒房之親視富貴如浮雲遂超塵相入佛母山長逰不返世稱長逰和尚以是也巧其年代和尚之東",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "陵誌和尚姓許氏名寳玉阿隃陀國君之子也粵我始祖首露王建國之七年戊申普州太后許氏以阿隃國公主承父命航海累百由旬而来克成天作之配其旗茜[MASK]塔鎮風其媵臣男女数十人護其行者卽和尚太后弟也和尚以椒房之親視富貴如浮雲遂超塵相入佛母山長逰不返世稱長逰和尚以是也巧其年代和尚之東",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "石",
+            "score": 0.10542
+          },
+          {
+            "rank": 2,
+            "char": "其",
+            "score": 0.102489
+          },
+          {
+            "rank": 3,
+            "char": "于",
+            "score": 0.046344
+          },
+          {
+            "rank": 4,
+            "char": "之",
+            "score": 0.028937
+          },
+          {
+            "rank": 5,
+            "char": "於",
+            "score": 0.02283
+          },
+          {
+            "rank": 6,
+            "char": "而",
+            "score": 0.014732
+          },
+          {
+            "rank": 7,
+            "char": "有",
+            "score": 0.009159
+          },
+          {
+            "rank": 8,
+            "char": "一",
+            "score": 0.00872
+          },
+          {
+            "rank": 9,
+            "char": "以",
+            "score": 0.008602
+          },
+          {
+            "rank": 10,
+            "char": "在",
+            "score": 0.008427
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "其",
+        "rank_of_gold": 2,
+        "is_exact_at_1": false,
+        "is_exact_at_5": true,
+        "is_exact_at_10": true
+      },
+      "_bucket": "hit_at_5_not_1"
+    },
+    {
+      "sample_id": "mask_00000349",
+      "request": {
+        "text": "成天作之配其旗茜其塔鎮風其媵臣男女数十人護其行者卽和尚太后弟也和尚以椒房之親視富貴如浮雲遂超塵相入佛母山長逰不返世稱長逰和尚以是[MASK]巧其年代和尚之東在摂糜法蘭諸師入中國之前意者海東一隅蓮花道塲建法幢說經誦偈者皆和尚之衣鉢也至銍知王創長逰庵蔵和尚眞影于星君閣云爾",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "成天作之配其旗茜其塔鎮風其媵臣男女数十人護其行者卽和尚太后弟也和尚以椒房之親視富貴如浮雲遂超塵相入佛母山長逰不返世稱長逰和尚以是[MASK]巧其年代和尚之東在摂糜法蘭諸師入中國之前意者海東一隅蓮花道塲建法幢說經誦偈者皆和尚之衣鉢也至銍知王創長逰庵蔵和尚眞影于星君閣云爾",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "益",
+            "score": 0.141193
+          },
+          {
+            "rank": 2,
+            "char": "精",
+            "score": 0.054904
+          },
+          {
+            "rank": 3,
+            "char": "而",
+            "score": 0.041801
+          },
+          {
+            "rank": 4,
+            "char": "也",
+            "score": 0.033755
+          },
+          {
+            "rank": 5,
+            "char": "其",
+            "score": 0.033325
+          },
+          {
+            "rank": 6,
+            "char": "不",
+            "score": 0.024316
+          },
+          {
+            "rank": 7,
+            "char": "尤",
+            "score": 0.02425
+          },
+          {
+            "rank": 8,
+            "char": "奇",
+            "score": 0.020682
+          },
+          {
+            "rank": 9,
+            "char": "亦",
+            "score": 0.018961
+          },
+          {
+            "rank": 10,
+            "char": "皆",
+            "score": 0.017843
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "也",
+        "rank_of_gold": 4,
+        "is_exact_at_1": false,
+        "is_exact_at_5": true,
+        "is_exact_at_10": true
+      },
+      "_bucket": "hit_at_5_not_1"
+    },
+    {
+      "sample_id": "mask_00000356",
+      "request": {
+        "text": "宣布潭錦䳽海潭李德善柳智憲化主金雨潭在希印虚金性文金泰玄九𠯮將仕郎行崇善殿叅奉許廉謹撰圃月辛嶋秀金亘潤六𠯮通訓大夫行東莱監理署主[MASK]盧相旭謹書田性淳文大彦石手林億祚丙寅生李鍾燻(子)庚寅生鎮雨朴泓珪戊申生徐善德華己酉生黃大圎覺庚申生崔普明華丙子生朱氏壬子生金鍾",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "宣布潭錦䳽海潭李德善柳智憲化主金雨潭在希印虚金性文金泰玄九𠯮將仕郎行崇善殿叅奉許廉謹撰圃月辛嶋秀金亘潤六𠯮通訓大夫行東莱監理署主[MASK]盧相旭謹書田性淳文大彦石手林億祚丙寅生李鍾燻(子)庚寅生鎮雨朴泓珪戊申生徐善德華己酉生黃大圎覺庚申生崔普明華丙子生朱氏壬子生金鍾",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "簿",
+            "score": 0.999891
+          },
+          {
+            "rank": 2,
+            "char": "事",
+            "score": 2.1e-05
+          },
+          {
+            "rank": 3,
+            "char": "令",
+            "score": 8e-06
+          },
+          {
+            "rank": 4,
+            "char": "義",
+            "score": 8e-06
+          },
+          {
+            "rank": 5,
+            "char": "管",
+            "score": 5e-06
+          },
+          {
+            "rank": 6,
+            "char": "將",
+            "score": 5e-06
+          },
+          {
+            "rank": 7,
+            "char": "正",
+            "score": 5e-06
+          },
+          {
+            "rank": 8,
+            "char": "任",
+            "score": 4e-06
+          },
+          {
+            "rank": 9,
+            "char": "人",
+            "score": 3e-06
+          },
+          {
+            "rank": 10,
+            "char": "務",
+            "score": 2e-06
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "事",
+        "rank_of_gold": 2,
+        "is_exact_at_1": false,
+        "is_exact_at_5": true,
+        "is_exact_at_10": true
+      },
+      "_bucket": "hit_at_5_not_1"
+    },
+    {
+      "sample_id": "mask_00000343",
+      "request": {
+        "text": "日布潭上人訪余於齋居寂寞之中叉手而言曰貧道所居長逰庵盖長逰和尚長逰之地也方與現大衆謀竪貞珉公是殿官也以一言之不可以不乞於公而公亦[MASK]不可以無惠也余曰噫今距和尚之卋二千年而始舉未遑之役此眞無量㓛德也𨿽然以和尚逰寺曰長逰山曰長逰村亦曰長逰較之鄭公鄕嚴陵灘亦已多釆閱",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "日布潭上人訪余於齋居寂寞之中叉手而言曰貧道所居長逰庵盖長逰和尚長逰之地也方與現大衆謀竪貞珉公是殿官也以一言之不可以不乞於公而公亦[MASK]不可以無惠也余曰噫今距和尚之卋二千年而始舉未遑之役此眞無量㓛德也𨿽然以和尚逰寺曰長逰山曰長逰村亦曰長逰較之鄭公鄕嚴陵灘亦已多釆閱",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "亦",
+            "score": 0.178969
+          },
+          {
+            "rank": 2,
+            "char": "曰",
+            "score": 0.140595
+          },
+          {
+            "rank": 3,
+            "char": "豈",
+            "score": 0.088398
+          },
+          {
+            "rank": 4,
+            "char": "謂",
+            "score": 0.058497
+          },
+          {
+            "rank": 5,
+            "char": "知",
+            "score": 0.037509
+          },
+          {
+            "rank": 6,
+            "char": "終",
+            "score": 0.035277
+          },
+          {
+            "rank": 7,
+            "char": "云",
+            "score": 0.034282
+          },
+          {
+            "rank": 8,
+            "char": "恐",
+            "score": 0.027165
+          },
+          {
+            "rank": 9,
+            "char": "將",
+            "score": 0.022274
+          },
+          {
+            "rank": 10,
+            "char": "非",
+            "score": 0.021838
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "恐",
+        "rank_of_gold": 8,
+        "is_exact_at_1": false,
+        "is_exact_at_5": false,
+        "is_exact_at_10": true
+      },
+      "_bucket": "hit_at_10_not_5"
+    },
+    {
+      "sample_id": "mask_00000350",
+      "request": {
+        "text": "隅蓮花道塲建法幢說經誦偈者皆和尚之衣鉢也至銍知王創長逰庵蔵和尚眞影于星君閣云爾銘之以詩曰逖矣阿隃陀互稱南天竺和尚公子而修道念度衆[MASK]彌逺及石舟疾於葱嶺馬兄及弟矣客東土兄爲不億䴡生民之始弟爲大千界空門之祖山名佛母長時逰無變乎始道攸關枕下溪澗恒河聽雲裡峰巒須彌看諸",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "隅蓮花道塲建法幢說經誦偈者皆和尚之衣鉢也至銍知王創長逰庵蔵和尚眞影于星君閣云爾銘之以詩曰逖矣阿隃陀互稱南天竺和尚公子而修道念度衆[MASK]彌逺及石舟疾於葱嶺馬兄及弟矣客東土兄爲不億䴡生民之始弟爲大千界空門之祖山名佛母長時逰無變乎始道攸關枕下溪澗恒河聽雲裡峰巒須彌看諸",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "之",
+            "score": 0.036324
+          },
+          {
+            "rank": 2,
+            "char": "所",
+            "score": 0.030636
+          },
+          {
+            "rank": 3,
+            "char": "而",
+            "score": 0.030312
+          },
+          {
+            "rank": 4,
+            "char": "心",
+            "score": 0.024364
+          },
+          {
+            "rank": 5,
+            "char": "不",
+            "score": 0.023596
+          },
+          {
+            "rank": 6,
+            "char": "皆",
+            "score": 0.019151
+          },
+          {
+            "rank": 7,
+            "char": "生",
+            "score": 0.013707
+          },
+          {
+            "rank": 8,
+            "char": "度",
+            "score": 0.01203
+          },
+          {
+            "rank": 9,
+            "char": "人",
+            "score": 0.011071
+          },
+          {
+            "rank": 10,
+            "char": "於",
+            "score": 0.010416
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "生",
+        "rank_of_gold": 7,
+        "is_exact_at_1": false,
+        "is_exact_at_5": false,
+        "is_exact_at_10": true
+      },
+      "_bucket": "hit_at_10_not_5"
+    },
+    {
+      "sample_id": "mask_00000361",
+      "request": {
+        "text": "泓珪戊申生徐善德華己酉生黃大圎覺庚申生崔普明華丙子生朱氏壬子生金鍾瑨丙子生許墢金貴先庚戌生徐萬德華癸丑生高大仙華丙辰生崔上𠯮華甲[MASK]生丁氏辛巳生盧文善(子)昌鉉金處汝丙午生文蓮潭華庚戌生裵至誠心己卯生李菩提華癸酉生曺氏癸未生朴介南(両主)李承驥丙辰生許極楽華癸",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "泓珪戊申生徐善德華己酉生黃大圎覺庚申生崔普明華丙子生朱氏壬子生金鍾瑨丙子生許墢金貴先庚戌生徐萬德華癸丑生高大仙華丙辰生崔上𠯮華甲[MASK]生丁氏辛巳生盧文善(子)昌鉉金處汝丙午生文蓮潭華庚戌生裵至誠心己卯生李菩提華癸酉生曺氏癸未生朴介南(両主)李承驥丙辰生許極楽華癸",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "子",
+            "score": 0.292751
+          },
+          {
+            "rank": 2,
+            "char": "午",
+            "score": 0.184397
+          },
+          {
+            "rank": 3,
+            "char": "辰",
+            "score": 0.163083
+          },
+          {
+            "rank": 4,
+            "char": "戌",
+            "score": 0.131483
+          },
+          {
+            "rank": 5,
+            "char": "申",
+            "score": 0.111042
+          },
+          {
+            "rank": 6,
+            "char": "寅",
+            "score": 0.10143
+          },
+          {
+            "rank": 7,
+            "char": "酉",
+            "score": 0.001039
+          },
+          {
+            "rank": 8,
+            "char": "未",
+            "score": 0.000601
+          },
+          {
+            "rank": 9,
+            "char": "亥",
+            "score": 0.000463
+          },
+          {
+            "rank": 10,
+            "char": "巳",
+            "score": 0.000456
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "寅",
+        "rank_of_gold": 6,
+        "is_exact_at_1": false,
+        "is_exact_at_5": false,
+        "is_exact_at_10": true
+      },
+      "_bucket": "hit_at_10_not_5"
+    },
+    {
+      "sample_id": "mask_00000344",
+      "request": {
+        "text": "大衆謀竪貞珉公是殿官也以一言之不可以不乞於公而公亦恐不可以無惠也余曰噫今距和尚之卋二千年而始舉未遑之役此眞無量㓛德也𨿽然以和尚逰[MASK]曰長逰山曰長逰村亦曰長逰較之鄭公鄕嚴陵灘亦已多釆閱萬劫而名自替何必無幾風磨雨洗之一片龜頭爲㢤上人曰大和尚懿蹟始末冝昭示衆生於来劫",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "大衆謀竪貞珉公是殿官也以一言之不可以不乞於公而公亦恐不可以無惠也余曰噫今距和尚之卋二千年而始舉未遑之役此眞無量㓛德也𨿽然以和尚逰[MASK]曰長逰山曰長逰村亦曰長逰較之鄭公鄕嚴陵灘亦已多釆閱萬劫而名自替何必無幾風磨雨洗之一片龜頭爲㢤上人曰大和尚懿蹟始末冝昭示衆生於来劫",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "山",
+            "score": 0.111559
+          },
+          {
+            "rank": 2,
+            "char": "之",
+            "score": 0.057443
+          },
+          {
+            "rank": 3,
+            "char": "石",
+            "score": 0.022394
+          },
+          {
+            "rank": 4,
+            "char": "里",
+            "score": 0.020947
+          },
+          {
+            "rank": 5,
+            "char": "者",
+            "score": 0.015984
+          },
+          {
+            "rank": 6,
+            "char": "而",
+            "score": 0.014093
+          },
+          {
+            "rank": 7,
+            "char": "然",
+            "score": 0.013582
+          },
+          {
+            "rank": 8,
+            "char": "公",
+            "score": 0.009999
+          },
+          {
+            "rank": 9,
+            "char": "坐",
+            "score": 0.009896
+          },
+          {
+            "rank": 10,
+            "char": "人",
+            "score": 0.00947
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "寺",
+        "rank_of_gold": null,
+        "is_exact_at_1": false,
+        "is_exact_at_5": false,
+        "is_exact_at_10": false
+      },
+      "_bucket": "miss"
+    },
+    {
+      "sample_id": "mask_00000347",
+      "request": {
+        "text": "恐世代寖遠遂失眞印也余曰諾遂按陵誌和尚姓許氏名寳玉阿隃陀國君之子也粵我始祖首露王建國之七年戊申普州太后許氏以阿隃國公主承父命航海[MASK]百由旬而来克成天作之配其旗茜其塔鎮風其媵臣男女数十人護其行者卽和尚太后弟也和尚以椒房之親視富貴如浮雲遂超塵相入佛母山長逰不返世稱",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "恐世代寖遠遂失眞印也余曰諾遂按陵誌和尚姓許氏名寳玉阿隃陀國君之子也粵我始祖首露王建國之七年戊申普州太后許氏以阿隃國公主承父命航海[MASK]百由旬而来克成天作之配其旗茜其塔鎮風其媵臣男女数十人護其行者卽和尚太后弟也和尚以椒房之親視富貴如浮雲遂超塵相入佛母山長逰不返世稱",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "三",
+            "score": 0.055536
+          },
+          {
+            "rank": 2,
+            "char": "四",
+            "score": 0.036288
+          },
+          {
+            "rank": 3,
+            "char": "二",
+            "score": 0.034749
+          },
+          {
+            "rank": 4,
+            "char": "數",
+            "score": 0.028792
+          },
+          {
+            "rank": 5,
+            "char": "五",
+            "score": 0.02784
+          },
+          {
+            "rank": 6,
+            "char": "六",
+            "score": 0.02689
+          },
+          {
+            "rank": 7,
+            "char": "者",
+            "score": 0.017187
+          },
+          {
+            "rank": 8,
+            "char": "之",
+            "score": 0.014891
+          },
+          {
+            "rank": 9,
+            "char": "山",
+            "score": 0.014544
+          },
+          {
+            "rank": 10,
+            "char": "一",
+            "score": 0.01378
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "累",
+        "rank_of_gold": null,
+        "is_exact_at_1": false,
+        "is_exact_at_5": false,
+        "is_exact_at_10": false
+      },
+      "_bucket": "miss"
+    },
+    {
+      "sample_id": "mask_00000351",
+      "request": {
+        "text": "之衣鉢也至銍知王創長逰庵蔵和尚眞影于星君閣云爾銘之以詩曰逖矣阿隃陀互稱南天竺和尚公子而修道念度衆生彌逺及石舟疾於葱嶺馬兄及弟矣客[MASK]土兄爲不億䴡生民之始弟爲大千界空門之祖山名佛母長時逰無變乎始道攸關枕下溪澗恒河聽雲裡峰巒須彌看諸師發願竪三尺屈指年代何茫茫囬看山",
+        "top_k": 10
+      },
+      "response": {
+        "input_text": "之衣鉢也至銍知王創長逰庵蔵和尚眞影于星君閣云爾銘之以詩曰逖矣阿隃陀互稱南天竺和尚公子而修道念度衆生彌逺及石舟疾於葱嶺馬兄及弟矣客[MASK]土兄爲不億䴡生民之始弟爲大千界空門之祖山名佛母長時逰無變乎始道攸關枕下溪澗恒河聽雲裡峰巒須彌看諸師發願竪三尺屈指年代何茫茫囬看山",
+        "mask_index": 64,
+        "candidates": [
+          {
+            "rank": 1,
+            "char": "與",
+            "score": 0.070141
+          },
+          {
+            "rank": 2,
+            "char": "於",
+            "score": 0.068585
+          },
+          {
+            "rank": 3,
+            "char": "也",
+            "score": 0.046426
+          },
+          {
+            "rank": 4,
+            "char": "以",
+            "score": 0.044623
+          },
+          {
+            "rank": 5,
+            "char": "之",
+            "score": 0.043558
+          },
+          {
+            "rank": 6,
+            "char": "曰",
+            "score": 0.043387
+          },
+          {
+            "rank": 7,
+            "char": "矣",
+            "score": 0.035611
+          },
+          {
+            "rank": 8,
+            "char": "在",
+            "score": 0.024761
+          },
+          {
+            "rank": 9,
+            "char": "而",
+            "score": 0.018252
+          },
+          {
+            "rank": 10,
+            "char": "焉",
+            "score": 0.016818
+          }
+        ],
+        "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+        "meta": {
+          "max_seq_len": 512,
+          "context_window": 64
+        }
+      },
+      "gold": {
+        "label_char": "東",
+        "rank_of_gold": null,
+        "is_exact_at_1": false,
+        "is_exact_at_5": false,
+        "is_exact_at_10": false
+      },
+      "_bucket": "miss"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "split": "test",
+  "ngram_sizes": [
+    8,
+    4,
+    2,
+    1
+  ],
+  "context_window": 64,
+  "num_train_samples": 46139,
+  "num_eval_samples": 9719,
+  "samples_with_any_train_ngram_match": 9682,
+  "fraction_with_any_match": 0.9961930239736598,
+  "samples_with_match_n_ge_2": 5787,
+  "fraction_with_match_n_ge_2": 0.5954316287683918,
+  "samples_with_left_match": 9379,
+  "samples_with_right_match": 9410,
+  "avg_matching_keys_per_sample": 2.8157217820763454,
+  "by_ngram_size": {
+    "8": {
+      "matched_samples": 176,
+      "fraction": 0.018108858936104536
+    },
+    "4": {
+      "matched_samples": 789,
+      "fraction": 0.081181191480605
+    },
+    "2": {
+      "matched_samples": 5787,
+      "fraction": 0.5954316287683918
+    },
+    "1": {
+      "matched_samples": 9682,
+      "fraction": 0.9961930239736598
+    }
+  }
+}

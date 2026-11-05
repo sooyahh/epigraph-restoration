@@ -1,0 +1,30 @@
+{
+  "k": 5,
+  "hit_column": "is_exact_at_5",
+  "label_a": "cw64",
+  "label_b": "cw128",
+  "n_paired": 2000,
+  "n_a_only_rows": 2000,
+  "n_b_only_rows": 2000,
+  "both_correct": 1004,
+  "both_incorrect": 883,
+  "only_a_correct": 64,
+  "only_b_correct": 49,
+  "exact_at_5_a": 0.534,
+  "exact_at_5_b": 0.5265,
+  "diff_b_minus_a": -0.007500000000000062,
+  "diff_pp": -0.7500000000000062,
+  "mcnemar": {
+    "continuity_correction": true,
+    "chi2": 1.7345132743362832,
+    "p_value": 0.18783553549120532,
+    "formula": "(abs(b-c)-1)^2 / (b+c) with b=only_a, c=only_b"
+  },
+  "bootstrap_diff_b_minus_a": {
+    "n_boot": 2000,
+    "seed": 42,
+    "alpha": 0.05,
+    "ci_low": -0.018000000000000016,
+    "ci_high": 0.0020000000000000018
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "recomputed_from_predictions": {
+    "num_samples": 9719,
+    "exact_at_1": 0.3374832801728573,
+    "exact_at_5": 0.5304043625887437,
+    "exact_at_10": 0.6046918407243543,
+    "model_version_unique": [
+      "exp012_sillokbert_gpu_best_valid_loss"
+    ],
+    "prediction_type_unique": [
+      "artificial_mask"
+    ]
+  },
+  "expected_official": {
+    "exact_at_1": 0.3374832801728573,
+    "exact_at_5": 0.5304043625887437,
+    "exact_at_10": 0.6046918407243543,
+    "num_samples": 9719
+  },
+  "matches_official_exact_k": true,
+  "evaluation_summary_overall": {
+    "exact_at_1": 0.3374832801728573,
+    "exact_at_5": 0.5304043625887437,
+    "exact_at_10": 0.6046918407243543,
+    "num_samples": 9719
+  },
+  "finetune_metrics": {
+    "generated_at": "2026-07-12T12:05:51.134133+00:00",
+    "planned_experiment_id": "EXP-012",
+    "run_mode": "full",
+    "model_name": "ddokbaro/SillokBert",
+    "device": "cuda",
+    "max_seq_len": 512,
+    "context_window": 64,
+    "train_rows_full_split": 46139,
+    "eval_rows_full_split": 10679,
+    "train_rows": 46139,
+    "eval_rows": 10679,
+    "train_examples": 44955,
+    "eval_examples": 10415,
+    "train_steps": 5620,
+    "train_loss": 3.162612373198903,
+    "eval_loss": 3.66192810216807,
+    "best_epoch": 1,
+    "best_valid_loss": 3.66192810216807,
+    "best_checkpoint_dir": "/content/exp012/sillokbert_exp012_gpu/checkpoint-epoch-1",
+    "best_alias_dir": "/content/exp012/sillokbert_exp012_gpu/best",
+    "selection_metric": "valid_loss",
+    "selection_rule": "minimize_valid_loss",
+    "output_dir": "/content/exp012/sillokbert_exp012_gpu",
+    "max_train_cap": null,
+    "max_eval_cap": null,
+    "subsample_seed": 42,
+    "train_subsampled": false,
+    "eval_subsampled": false,
+    "full_data_no_row_cap": true,
+    "epochs": 2.0,
+    "batch_size": 16,
+    "learning_rate": 5e-05,
+    "resume_from": null,
+    "resume_completed_epoch": 0,
+    "epoch_records": [
+      {
+        "epoch": 1,
+        "checkpoint_dir": "/content/exp012/sillokbert_exp012_gpu/checkpoint-epoch-1",
+        "train_loss_epoch": 4.035407347950647,
+        "valid_loss": 3.66192810216807,
+        "steps": 2810,
+        "selection_metric": "valid_loss",
+        "used_for_test_selection": false
+      },
+      {
+        "epoch": 2,
+        "checkpoint_dir": "/content/exp012/sillokbert_exp012_gpu/checkpoint-epoch-2",
+        "train_loss_epoch": 2.289817398447159,
+        "valid_loss": 3.7699451506961874,
+        "steps": 2810,
+        "selection_metric": "valid_loss",
+        "used_for_test_selection": false
+      }
+    ],
+    "official_performance": false,
+    "smoke_not_official": false
+  },
+  "best_checkpoint": {
+    "planned_experiment_id": "EXP-012",
+    "selection_metric": "valid_loss",
+    "selection_rule": "minimize_valid_loss",
+    "best_epoch": 1,
+    "best_valid_loss": 3.66192810216807,
+    "best_checkpoint_dir": "/content/exp012/sillokbert_exp012_gpu/checkpoint-epoch-1",
+    "best_alias_dir": "/content/exp012/sillokbert_exp012_gpu/best",
+    "resumed_from": null,
+    "note": "Select checkpoints with validation loss only. Do not use test Exact@k for model selection. Official full-test must pass --model-path to best/ or the winning checkpoint-epoch-*.",
+    "epoch_records": [
+      {
+        "epoch": 1,
+        "checkpoint_dir": "/content/exp012/sillokbert_exp012_gpu/checkpoint-epoch-1",
+        "train_loss_epoch": 4.035407347950647,
+        "valid_loss": 3.66192810216807,
+        "steps": 2810,
+        "selection_metric": "valid_loss",
+        "used_for_test_selection": false
+      },
+      {
+        "epoch": 2,
+        "checkpoint_dir": "/content/exp012/sillokbert_exp012_gpu/checkpoint-epoch-2",
+        "train_loss_epoch": 2.289817398447159,
+        "valid_loss": 3.7699451506961874,
+        "steps": 2810,
+        "selection_metric": "valid_loss",
+        "used_for_test_selection": false
+      }
+    ]
+  }
+}

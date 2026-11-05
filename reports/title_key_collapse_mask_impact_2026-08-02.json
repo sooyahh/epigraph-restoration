@@ -1,0 +1,185 @@
+{
+  "generated_at": "2026-08-02",
+  "prior_artifact": null,
+  "criteria": {
+    "dup_keys": "XLS meta title_key with >1 row",
+    "dup_readings_link": "XLS reading-sheet rows with title_key in dup set → xls_seq → readings.reading_id suffix _x{seq}",
+    "freq_dedupe": "Within dup reading title_key groups, keep one is_training_text reading per (title_key, text_normalized); recount train label_char",
+    "code_unit": "build_artificial_mask iterates training readings row-wise"
+  },
+  "item1_generation_unit": "reading_row",
+  "item1_code_refs": [
+    "src/data/build_artificial_mask.py:105-114",
+    "src/data/build_artificial_mask.py:46-91"
+  ],
+  "item2_cases": {
+    "유명악영세불망비": {
+      "ksm": "14139",
+      "readings_rows": 14,
+      "unique_text_normalized": 6,
+      "unique_inscription_id": 1,
+      "mask_samples": 14,
+      "mask_by_split": {
+        "train": 14
+      },
+      "mask_inscription_ids": [
+        "insc_nrich_014139"
+      ],
+      "mask_splits_unique": [
+        "train"
+      ]
+    },
+    "척화비": {
+      "ksm": "11739",
+      "readings_rows": 12,
+      "unique_text_normalized": 1,
+      "unique_inscription_id": 1,
+      "mask_samples": 12,
+      "mask_by_split": {
+        "train": 12
+      },
+      "mask_inscription_ids": [
+        "insc_nrich_011739"
+      ],
+      "mask_splits_unique": [
+        "train"
+      ]
+    },
+    "김명진영세불망비": {
+      "ksm": "13201",
+      "readings_rows": 12,
+      "unique_text_normalized": 2,
+      "unique_inscription_id": 1,
+      "mask_samples": 12,
+      "mask_by_split": {
+        "test": 12
+      },
+      "mask_inscription_ids": [
+        "insc_nrich_013201"
+      ],
+      "mask_splits_unique": [
+        "test"
+      ]
+    }
+  },
+  "item3_overall": {
+    "xls_meta_rows": 6753,
+    "unique_title_key": 6623,
+    "extra_rows": 130,
+    "dup_key_count": 97,
+    "dup_xls_reading_rows": 410,
+    "dup_linked_readings_rows": 407,
+    "dup_linked_training_readings": 245,
+    "dup_linked_unique_inscriptions": 92,
+    "dup_linked_mask_samples": 587,
+    "mask_total": 66537,
+    "dup_mask_ratio": 0.008822
+  },
+  "item3_key_collapse": {
+    "dup_keys_with_linked_readings": 92,
+    "keys_with_1_inscription": 92,
+    "keys_with_gt1_inscription": 0
+  },
+  "item4_freq_shifts": {
+    "n_chars_bucket_changed": 10,
+    "shifts": [
+      {
+        "char": "嵌",
+        "count_before": 3,
+        "bucket_before": "rare (2-5)",
+        "count_after": 0,
+        "bucket_after": "unseen_in_train"
+      },
+      {
+        "char": "碑",
+        "count_before": 100,
+        "bucket_before": "very_common (100+)",
+        "count_after": 97,
+        "bucket_after": "common (21-100)"
+      },
+      {
+        "char": "侯",
+        "count_before": 21,
+        "bucket_before": "common (21-100)",
+        "count_after": 19,
+        "bucket_after": "mid (6-20)"
+      },
+      {
+        "char": "凜",
+        "count_before": 3,
+        "bucket_before": "rare (2-5)",
+        "count_after": 1,
+        "bucket_after": "hapax (count=1)"
+      },
+      {
+        "char": "嵩",
+        "count_before": 1,
+        "bucket_before": "hapax (count=1)",
+        "count_after": 0,
+        "bucket_after": "unseen_in_train"
+      },
+      {
+        "char": "橋",
+        "count_before": 6,
+        "bucket_before": "mid (6-20)",
+        "count_after": 5,
+        "bucket_after": "rare (2-5)"
+      },
+      {
+        "char": "算",
+        "count_before": 1,
+        "bucket_before": "hapax (count=1)",
+        "count_after": 0,
+        "bucket_after": "unseen_in_train"
+      },
+      {
+        "char": "管",
+        "count_before": 21,
+        "bucket_before": "common (21-100)",
+        "count_after": 20,
+        "bucket_after": "mid (6-20)"
+      },
+      {
+        "char": "續",
+        "count_before": 2,
+        "bucket_before": "rare (2-5)",
+        "count_after": 1,
+        "bucket_after": "hapax (count=1)"
+      },
+      {
+        "char": "賣",
+        "count_before": 2,
+        "bucket_before": "rare (2-5)",
+        "count_after": 1,
+        "bucket_after": "hapax (count=1)"
+      }
+    ],
+    "train_mask_before": 46139,
+    "train_mask_after_dedupe": 45949,
+    "dropped_dup_reading_ids": 158,
+    "bucket_unique_chars_before": {
+      "very_common (100+)": 80,
+      "common (21-100)": 434,
+      "mid (6-20)": 702,
+      "rare (2-5)": 1103,
+      "hapax (count=1)": 1185,
+      "unseen_in_train": 0
+    },
+    "bucket_unique_chars_after": {
+      "very_common (100+)": 79,
+      "common (21-100)": 433,
+      "mid (6-20)": 703,
+      "rare (2-5)": 1100,
+      "hapax (count=1)": 1186,
+      "unseen_in_train": 0
+    }
+  },
+  "item5_cross_split": {
+    "n_dup_groups_with_cross_split_masks": 0,
+    "n_cross_split_with_single_inscription": 0,
+    "n_cross_split_with_multi_inscription": 0,
+    "n_collapsed_one_insc_cross_split": 0,
+    "groups": []
+  },
+  "splits_file_rows": 6084
+}

@@ -1,0 +1,12 @@
+experiment_id,experiment_name,model_name,dataset_name,split,num_samples,exact_at_1,exact_at_5,exact_at_10,group_at_1,group_at_5,group_at_10,created_at,notes
+EXP003,frequency unigram baseline,frequency,artificial_mask_dataset_v1,test,9719,0.02253318242617553,0.06595328737524436,0.10330280893095997,,,,2026-07-06T11:06:06.642718+00:00,device=cpu
+EXP003,frequency unigram baseline [가야],frequency,artificial_mask_dataset_v1,test,2,0.0,0.0,0.0,,,,2026-07-06T11:06:06.642718+00:00,era=가야; device=cpu
+EXP003,frequency unigram baseline [고구려],frequency,artificial_mask_dataset_v1,test,24,0.0,0.0,0.0,,,,2026-07-06T11:06:06.642718+00:00,era=고구려; device=cpu
+EXP003,frequency unigram baseline [고려],frequency,artificial_mask_dataset_v1,test,1098,0.018214936247723135,0.0610200364298725,0.1092896174863388,,,,2026-07-06T11:06:06.642718+00:00,era=고려; device=cpu
+EXP003,frequency unigram baseline [낙랑],frequency,artificial_mask_dataset_v1,test,48,0.0,0.0,0.020833333333333332,,,,2026-07-06T11:06:06.642718+00:00,era=낙랑; device=cpu
+EXP003,frequency unigram baseline [대한제국],frequency,artificial_mask_dataset_v1,test,379,0.0316622691292876,0.08443271767810026,0.11609498680738786,,,,2026-07-06T11:06:06.642718+00:00,era=대한제국; device=cpu
+EXP003,frequency unigram baseline [백제],frequency,artificial_mask_dataset_v1,test,7,0.0,0.0,0.14285714285714285,,,,2026-07-06T11:06:06.642718+00:00,era=백제; device=cpu
+EXP003,frequency unigram baseline [신라],frequency,artificial_mask_dataset_v1,test,10,0.0,0.0,0.0,,,,2026-07-06T11:06:06.642718+00:00,era=신라; device=cpu
+EXP003,frequency unigram baseline [일제강점기],frequency,artificial_mask_dataset_v1,test,617,0.03403565640194489,0.08103727714748785,0.12317666126418152,,,,2026-07-06T11:06:06.642718+00:00,era=일제강점기; device=cpu
+EXP003,frequency unigram baseline [조선],frequency,artificial_mask_dataset_v1,test,7425,0.021683501683501683,0.06505050505050505,0.10087542087542088,,,,2026-07-06T11:06:06.642718+00:00,era=조선; device=cpu
+EXP003,frequency unigram baseline [통일신라],frequency,artificial_mask_dataset_v1,test,109,0.045871559633027525,0.08256880733944955,0.11926605504587157,,,,2026-07-06T11:06:06.642718+00:00,era=통일신라; device=cpu

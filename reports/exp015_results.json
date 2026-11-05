@@ -1,0 +1,22 @@
+{
+  "experiment_id": "EXP-015",
+  "status": "completed",
+  "purpose": "EXP-012 best full-valid Exact@k baseline (no training)",
+  "model_path": "notebooks/best",
+  "model_version": "exp012_sillokbert_gpu_best_valid_loss",
+  "split": "valid",
+  "run_mode": "full",
+  "device": "cpu",
+  "num_samples": 10679,
+  "seed": 42,
+  "exact_at_1": 0.3377657083996629,
+  "exact_at_5": 0.532353216593314,
+  "exact_at_10": 0.608952149077629,
+  "exact_at_1_pct": 33.78,
+  "exact_at_5_pct": 53.24,
+  "exact_at_10_pct": 60.9,
+  "predictions_csv": "outputs/predictions/exp015_sillok_ft_valid_predictions.csv",
+  "summary_csv": "reports/evaluation/exp015_sillokbert_valid_summary.csv",
+  "related_decisions": ["012", "010"],
+  "note": "Use for FT iteration baseline. Official test comparison remains EXP-012."
+}

@@ -1,0 +1,12 @@
+experiment_id,experiment_name,model_name,dataset_name,split,num_samples,exact_at_1,exact_at_5,exact_at_10,group_at_1,group_at_5,group_at_10,created_at,notes
+EXP007,SillokBert zero-shot,ddokbaro/SillokBert,artificial_mask_dataset_v1,test,9719,0.24889391912748224,0.431731659635765,0.512192612408684,,,,2026-07-06T11:13:30.314323+00:00,device=cpu
+EXP007,SillokBert zero-shot [가야],ddokbaro/SillokBert,artificial_mask_dataset_v1,test,2,0.0,0.0,0.0,,,,2026-07-06T11:13:30.314323+00:00,era=가야; device=cpu
+EXP007,SillokBert zero-shot [고구려],ddokbaro/SillokBert,artificial_mask_dataset_v1,test,24,0.08333333333333333,0.25,0.25,,,,2026-07-06T11:13:30.314323+00:00,era=고구려; device=cpu
+EXP007,SillokBert zero-shot [고려],ddokbaro/SillokBert,artificial_mask_dataset_v1,test,1098,0.21311475409836064,0.3925318761384335,0.4808743169398907,,,,2026-07-06T11:13:30.314323+00:00,era=고려; device=cpu
+EXP007,SillokBert zero-shot [낙랑],ddokbaro/SillokBert,artificial_mask_dataset_v1,test,48,0.10416666666666667,0.20833333333333334,0.20833333333333334,,,,2026-07-06T11:13:30.314323+00:00,era=낙랑; device=cpu
+EXP007,SillokBert zero-shot [대한제국],ddokbaro/SillokBert,artificial_mask_dataset_v1,test,379,0.20844327176781002,0.35883905013192613,0.43799472295514513,,,,2026-07-06T11:13:30.314323+00:00,era=대한제국; device=cpu
+EXP007,SillokBert zero-shot [백제],ddokbaro/SillokBert,artificial_mask_dataset_v1,test,7,0.14285714285714285,0.2857142857142857,0.42857142857142855,,,,2026-07-06T11:13:30.314323+00:00,era=백제; device=cpu
+EXP007,SillokBert zero-shot [신라],ddokbaro/SillokBert,artificial_mask_dataset_v1,test,10,0.1,0.2,0.2,,,,2026-07-06T11:13:30.314323+00:00,era=신라; device=cpu
+EXP007,SillokBert zero-shot [일제강점기],ddokbaro/SillokBert,artificial_mask_dataset_v1,test,617,0.2106969205834684,0.37439222042139386,0.45705024311183146,,,,2026-07-06T11:13:30.314323+00:00,era=일제강점기; device=cpu
+EXP007,SillokBert zero-shot [조선],ddokbaro/SillokBert,artificial_mask_dataset_v1,test,7425,0.2634343434343434,0.4506397306397306,0.5303703703703704,,,,2026-07-06T11:13:30.314323+00:00,era=조선; device=cpu
+EXP007,SillokBert zero-shot [통일신라],ddokbaro/SillokBert,artificial_mask_dataset_v1,test,109,0.10091743119266056,0.29357798165137616,0.3944954128440367,,,,2026-07-06T11:13:30.314323+00:00,era=통일신라; device=cpu

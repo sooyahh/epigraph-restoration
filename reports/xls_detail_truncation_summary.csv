@@ -1,0 +1,11 @@
+ksm_idx,title_ko,xls_pandok_length,detail_max_length,length_diff,xls_to_detail_ratio,truncated_or_missing,missing_in_xls,pandok_count_detail
+3,이계신도비,3127,3093,-34,1.011,False,False,2
+5,이소한신도비,2373,2318,-55,1.0237,False,False,1
+8,이유상묘갈,2337,2218,-119,1.0537,False,False,1
+9,이명신묘갈,921,830,-91,1.1096,False,False,1
+11,이보혁묘지,3370,3327,-43,1.0129,False,False,1
+13,이익보묘비,1010,763,-247,1.3237,False,False,1
+15,최치운묘비,1446,1441,-5,1.0035,False,False,1
+16,정경부인함씨묘비,1524,1530,6,0.9961,False,False,1
+30,김여명묘비,683,702,19,0.9729,False,False,1
+38,동해묘중수기사비,677,684,7,0.9898,False,False,1

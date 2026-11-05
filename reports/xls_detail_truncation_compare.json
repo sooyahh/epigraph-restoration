@@ -1,0 +1,104 @@
+{
+  "generated_at": "2026-07-02T16:21:18.562548+00:00",
+  "xls_path": "data\\금석문 사용자 검색_2026-07-03.xls",
+  "sample_count": 8,
+  "truncated_count": 1,
+  "rows": [
+    {
+      "ksm_idx": "3",
+      "title_ko": "이계신도비",
+      "reader": "『가평군 금석문집』",
+      "xls_len": 3127,
+      "detail_len": 3127,
+      "delta": 0,
+      "truncated_in_xls": false,
+      "detail_pan_idx": "15272",
+      "detail_reader": "『가평군 금석문집』",
+      "detail_url": "http://portal.nrich.go.kr/kor/ksmUsrView.do?menuIdx=584&ksm_idx=3"
+    },
+    {
+      "ksm_idx": "3",
+      "title_ko": "이계신도비",
+      "reader": "김혜완",
+      "xls_len": 3017,
+      "detail_len": 3017,
+      "delta": 0,
+      "truncated_in_xls": false,
+      "detail_pan_idx": "15271",
+      "detail_reader": "김혜완",
+      "detail_url": "http://portal.nrich.go.kr/kor/ksmUsrView.do?menuIdx=584&ksm_idx=3"
+    },
+    {
+      "ksm_idx": "5",
+      "title_ko": "이소한신도비",
+      "reader": "김은미",
+      "xls_len": 2373,
+      "detail_len": 2373,
+      "delta": 0,
+      "truncated_in_xls": false,
+      "detail_pan_idx": "2",
+      "detail_reader": "김은미",
+      "detail_url": "http://portal.nrich.go.kr/kor/ksmUsrView.do?menuIdx=584&ksm_idx=5"
+    },
+    {
+      "ksm_idx": "1739",
+      "title_ko": "가락국 수로왕릉비",
+      "reader": "『금석문 탁본 조사보고서(2021)』",
+      "xls_len": 355,
+      "detail_len": 355,
+      "delta": 0,
+      "truncated_in_xls": false,
+      "detail_pan_idx": "16304",
+      "detail_reader": "『금석문 탁본 조사보고서(2021)』",
+      "detail_url": "http://portal.nrich.go.kr/kor/ksmUsrView.do?menuIdx=584&ksm_idx=1739"
+    },
+    {
+      "ksm_idx": "8722",
+      "title_ko": "가락국 태조릉숭선전비",
+      "reader": "『금석문 탁본 조사보고서(2021)』",
+      "xls_len": 1507,
+      "detail_len": 1507,
+      "delta": 0,
+      "truncated_in_xls": false,
+      "detail_pan_idx": "16312",
+      "detail_reader": "『금석문 탁본 조사보고서(2021)』",
+      "detail_url": "http://portal.nrich.go.kr/kor/ksmUsrView.do?menuIdx=584&ksm_idx=8722"
+    },
+    {
+      "ksm_idx": "9216",
+      "title_ko": "가상부귀명 사유팔금문 경",
+      "reader": "국립문화유산연구원",
+      "xls_len": 7,
+      "detail_len": 7,
+      "delta": 0,
+      "truncated_in_xls": false,
+      "detail_pan_idx": "7333",
+      "detail_reader": "국립문화유산연구원",
+      "detail_url": "http://portal.nrich.go.kr/kor/ksmUsrView.do?menuIdx=584&ksm_idx=9216"
+    },
+    {
+      "ksm_idx": "9426",
+      "title_ko": "가갸·거겨명 철사 죽문 병",
+      "reader": "",
+      "xls_len": 0,
+      "detail_len": 0,
+      "delta": 0,
+      "truncated_in_xls": false,
+      "detail_pan_idx": "",
+      "detail_reader": "",
+      "detail_url": "http://portal.nrich.go.kr/kor/ksmUsrView.do?menuIdx=584&ksm_idx=9426"
+    },
+    {
+      "ksm_idx": "2866",
+      "title_ko": "경주 황룡사 구층목탑 금동찰주본기",
+      "reader": "정병삼",
+      "xls_len": 9782,
+      "detail_len": 18514,
+      "delta": 8732,
+      "truncated_in_xls": true,
+      "detail_pan_idx": "2569",
+      "detail_reader": "정병삼",
+      "detail_url": "http://portal.nrich.go.kr/kor/ksmUsrView.do?menuIdx=584&ksm_idx=2866"
+    }
+  ]
+}

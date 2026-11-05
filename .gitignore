@@ -1,0 +1,78 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+~$*
+
+# Local settings
+.claude/settings.local.json
+
+# Archive / generated outputs
+_archive/
+outputs/
+backup_staging/
+# work/ is ignored except GPU-run scripts referenced by reports/pc_bang_runbook.md
+work/*
+!work/run_exp007_gpu.py
+!work/run_exp012_gpu.py
+!work/colab_preflight.py
+!work/check_cuda_env.py
+!work/run_step1_verify.py
+!work/generate_baseline_report.py
+!work/reverify_exp012_metrics.py
+
+# Git backups
+.git_broken_project_backup_2026-06-26/
+.git_accidental_home_backup_2026-06-26/
+
+# External repositories / vendored experiments
+external/BIRD/.git/
+external/BIRD/results/
+external/BIRD/errors/
+external/BIRD/__pycache__/
+external/BIRD/**/__pycache__/
+external/BIRD/**/*.pyc
+external/BIRD/**/*.safetensors
+
+# Experiment outputs
+bird_lite/runs/
+source_audit/outputs/
+source_audit/rendered_pages/
+source_audit/extracted_images_sample/
+
+# Large source PDFs - keep outside Git unless explicitly approved
+금석문 탁본 조사 보고서(2023) 경기도Ⅱ 서울특별시Ⅱ.pdf
+
+# External reference repositories - entire BIRD repo excluded from first commit
+# (manage via submodule, separate clone, or adapted copy as decided later)
+external/BIRD/
+
+# Manual review pending data - not yet validated corpus, decision pending
+quality_audit/v2_1_review/review_blocks.csv
+quality_audit/v2_1_review/review_blocks_by_artifact.md
+
+# Planning source files - keep local until sharing/copyright confirmed
+금석문 계획서.pdf
+금석문 계획서.pptx
+
+# Unreviewed research drafts
+deep-research-report.md
+deep-research-report(2).md
+deep-research-gpt-dataset search.md
+
+# Notebooks - excluded from tracking for now (kept locally)
+notebooks/*
+!notebooks/exp012_colab.ipynb
+!notebooks/exp018_colab.ipynb
+Cursor_학습_교과서.md

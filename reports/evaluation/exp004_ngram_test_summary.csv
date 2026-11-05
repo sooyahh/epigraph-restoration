@@ -1,0 +1,12 @@
+experiment_id,experiment_name,model_name,dataset_name,split,num_samples,exact_at_1,exact_at_5,exact_at_10,group_at_1,group_at_5,group_at_10,created_at,notes
+EXP004,ngram context baseline,ngram,artificial_mask_dataset_v1,test,9719,0.14476798024488116,0.28068731350962034,0.34674349212881983,,,,2026-07-06T11:06:23.909758+00:00,device=cpu
+EXP004,ngram context baseline [가야],ngram,artificial_mask_dataset_v1,test,2,0.0,0.0,0.0,,,,2026-07-06T11:06:23.909758+00:00,era=가야; device=cpu
+EXP004,ngram context baseline [고구려],ngram,artificial_mask_dataset_v1,test,24,0.25,0.375,0.375,,,,2026-07-06T11:06:23.909758+00:00,era=고구려; device=cpu
+EXP004,ngram context baseline [고려],ngram,artificial_mask_dataset_v1,test,1098,0.11293260473588343,0.24043715846994534,0.3132969034608379,,,,2026-07-06T11:06:23.909758+00:00,era=고려; device=cpu
+EXP004,ngram context baseline [낙랑],ngram,artificial_mask_dataset_v1,test,48,0.10416666666666667,0.1875,0.2916666666666667,,,,2026-07-06T11:06:23.909758+00:00,era=낙랑; device=cpu
+EXP004,ngram context baseline [대한제국],ngram,artificial_mask_dataset_v1,test,379,0.10817941952506596,0.23746701846965698,0.29023746701846964,,,,2026-07-06T11:06:23.909758+00:00,era=대한제국; device=cpu
+EXP004,ngram context baseline [백제],ngram,artificial_mask_dataset_v1,test,7,0.0,0.14285714285714285,0.14285714285714285,,,,2026-07-06T11:06:23.909758+00:00,era=백제; device=cpu
+EXP004,ngram context baseline [신라],ngram,artificial_mask_dataset_v1,test,10,0.0,0.0,0.1,,,,2026-07-06T11:06:23.909758+00:00,era=신라; device=cpu
+EXP004,ngram context baseline [일제강점기],ngram,artificial_mask_dataset_v1,test,617,0.10210696920583469,0.24311183144246354,0.31280388978930307,,,,2026-07-06T11:06:23.909758+00:00,era=일제강점기; device=cpu
+EXP004,ngram context baseline [조선],ngram,artificial_mask_dataset_v1,test,7425,0.15622895622895622,0.29494949494949496,0.3612121212121212,,,,2026-07-06T11:06:23.909758+00:00,era=조선; device=cpu
+EXP004,ngram context baseline [통일신라],ngram,artificial_mask_dataset_v1,test,109,0.07339449541284404,0.13761467889908258,0.14678899082568808,,,,2026-07-06T11:06:23.909758+00:00,era=통일신라; device=cpu

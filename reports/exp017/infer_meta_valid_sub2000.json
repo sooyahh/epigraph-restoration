@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-08-02T11:06:47.797870+00:00",
+  "tag": "valid_sub2000",
+  "n": 2000,
+  "top_k": 50,
+  "context_window": 64,
+  "zs_model": "ddokbaro/SillokBert",
+  "ft_model": "notebooks\\best",
+  "device": "cpu",
+  "seed": 42,
+  "path": "outputs\\predictions\\exp017_dist_valid_sub2000_topk50.jsonl"
+}

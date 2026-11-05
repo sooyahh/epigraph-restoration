@@ -1,0 +1,115 @@
+{
+  "n_valid": 10679,
+  "top25_composition": [
+    {
+      "freq_bucket": "very_common (100+)",
+      "share_all": 0.3406,
+      "share_top25_conf": 0.473,
+      "lift_top25_vs_all": 1.389,
+      "n_all": 3637,
+      "n_top25": 1263
+    },
+    {
+      "freq_bucket": "common (21-100)",
+      "share_all": 0.3894,
+      "share_top25_conf": 0.3884,
+      "lift_top25_vs_all": 0.998,
+      "n_all": 4158,
+      "n_top25": 1037
+    },
+    {
+      "freq_bucket": "mid (6-20)",
+      "share_all": 0.1618,
+      "share_top25_conf": 0.0985,
+      "lift_top25_vs_all": 0.609,
+      "n_all": 1728,
+      "n_top25": 263
+    },
+    {
+      "freq_bucket": "rare (2-5)",
+      "share_all": 0.0642,
+      "share_top25_conf": 0.0202,
+      "lift_top25_vs_all": 0.315,
+      "n_all": 686,
+      "n_top25": 54
+    },
+    {
+      "freq_bucket": "hapax (count=1)",
+      "share_all": 0.02,
+      "share_top25_conf": 0.0105,
+      "lift_top25_vs_all": 0.523,
+      "n_all": 214,
+      "n_top25": 28
+    },
+    {
+      "freq_bucket": "unseen_in_train",
+      "share_all": 0.024,
+      "share_top25_conf": 0.0094,
+      "lift_top25_vs_all": 0.391,
+      "n_all": 256,
+      "n_top25": 25
+    }
+  ],
+  "exact5_90_by_freq": [
+    {
+      "freq_bucket": "very_common (100+)",
+      "n_bucket": 3637,
+      "exact_at_5_full": 0.7259,
+      "exact_at_5_cov25": 0.9758,
+      "exact_at_5_cov50": 0.9114,
+      "max_coverage_for_exact5_ge_90": 0.5,
+      "threshold_at_that_coverage": 0.380207,
+      "reaches_exact5_90": true
+    },
+    {
+      "freq_bucket": "common (21-100)",
+      "n_bucket": 4158,
+      "exact_at_5_full": 0.5527,
+      "exact_at_5_cov25": 0.9077,
+      "exact_at_5_cov50": 0.7821,
+      "max_coverage_for_exact5_ge_90": 0.25,
+      "threshold_at_that_coverage": 0.619576,
+      "reaches_exact5_90": true
+    },
+    {
+      "freq_bucket": "mid (6-20)",
+      "n_bucket": 1728,
+      "exact_at_5_full": 0.342,
+      "exact_at_5_cov25": 0.7222,
+      "exact_at_5_cov50": 0.5359,
+      "max_coverage_for_exact5_ge_90": 0.05,
+      "threshold_at_that_coverage": 0.959209,
+      "reaches_exact5_90": true
+    },
+    {
+      "freq_bucket": "rare (2-5)",
+      "n_bucket": 686,
+      "exact_at_5_full": 0.1706,
+      "exact_at_5_cov25": 0.3663,
+      "exact_at_5_cov50": 0.2624,
+      "max_coverage_for_exact5_ge_90": null,
+      "threshold_at_that_coverage": null,
+      "reaches_exact5_90": false
+    },
+    {
+      "freq_bucket": "hapax (count=1)",
+      "n_bucket": 214,
+      "exact_at_5_full": 0.1262,
+      "exact_at_5_cov25": 0.3333,
+      "exact_at_5_cov50": 0.2056,
+      "max_coverage_for_exact5_ge_90": null,
+      "threshold_at_that_coverage": null,
+      "reaches_exact5_90": false
+    },
+    {
+      "freq_bucket": "unseen_in_train",
+      "n_bucket": 256,
+      "exact_at_5_full": 0.0469,
+      "exact_at_5_cov25": 0.1406,
+      "exact_at_5_cov50": 0.0859,
+      "max_coverage_for_exact5_ge_90": null,
+      "threshold_at_that_coverage": null,
+      "reaches_exact5_90": false
+    }
+  ]
+}

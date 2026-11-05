@@ -1,0 +1,12 @@
+experiment_id,experiment_name,model_name,dataset_name,split,num_samples,exact_at_1,exact_at_5,exact_at_10,group_at_1,group_at_5,group_at_10,created_at,notes
+EXP006,bert-base-chinese zero-shot,bert-base-chinese,artificial_mask_dataset_v1,test,9719,0.19693384093013686,0.349830229447474,0.42380903385121926,,,,2026-07-06T11:06:57.708027+00:00,device=cpu
+EXP006,bert-base-chinese zero-shot [가야],bert-base-chinese,artificial_mask_dataset_v1,test,2,0.0,0.0,0.0,,,,2026-07-06T11:06:57.708027+00:00,era=가야; device=cpu
+EXP006,bert-base-chinese zero-shot [고구려],bert-base-chinese,artificial_mask_dataset_v1,test,24,0.20833333333333334,0.4166666666666667,0.4583333333333333,,,,2026-07-06T11:06:57.708027+00:00,era=고구려; device=cpu
+EXP006,bert-base-chinese zero-shot [고려],bert-base-chinese,artificial_mask_dataset_v1,test,1098,0.2058287795992714,0.3770491803278688,0.45081967213114754,,,,2026-07-06T11:06:57.708027+00:00,era=고려; device=cpu
+EXP006,bert-base-chinese zero-shot [낙랑],bert-base-chinese,artificial_mask_dataset_v1,test,48,0.14583333333333334,0.20833333333333334,0.2708333333333333,,,,2026-07-06T11:06:57.708027+00:00,era=낙랑; device=cpu
+EXP006,bert-base-chinese zero-shot [대한제국],bert-base-chinese,artificial_mask_dataset_v1,test,379,0.17678100263852242,0.3087071240105541,0.39577836411609496,,,,2026-07-06T11:06:57.708027+00:00,era=대한제국; device=cpu
+EXP006,bert-base-chinese zero-shot [백제],bert-base-chinese,artificial_mask_dataset_v1,test,7,0.14285714285714285,0.5714285714285714,0.5714285714285714,,,,2026-07-06T11:06:57.708027+00:00,era=백제; device=cpu
+EXP006,bert-base-chinese zero-shot [신라],bert-base-chinese,artificial_mask_dataset_v1,test,10,0.0,0.1,0.3,,,,2026-07-06T11:06:57.708027+00:00,era=신라; device=cpu
+EXP006,bert-base-chinese zero-shot [일제강점기],bert-base-chinese,artificial_mask_dataset_v1,test,617,0.18152350081037277,0.32576985413290116,0.41491085899513774,,,,2026-07-06T11:06:57.708027+00:00,era=일제강점기; device=cpu
+EXP006,bert-base-chinese zero-shot [조선],bert-base-chinese,artificial_mask_dataset_v1,test,7425,0.19905723905723904,0.3511111111111111,0.4231649831649832,,,,2026-07-06T11:06:57.708027+00:00,era=조선; device=cpu
+EXP006,bert-base-chinese zero-shot [통일신라],bert-base-chinese,artificial_mask_dataset_v1,test,109,0.1651376146788991,0.3302752293577982,0.41284403669724773,,,,2026-07-06T11:06:57.708027+00:00,era=통일신라; device=cpu

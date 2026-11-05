@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-07-03T10:53:25.802682+00:00",
+  "model_name": "ddokbaro/SillokBert",
+  "device": "cpu",
+  "train_rows": 7999,
+  "eval_rows": 2000,
+  "train_examples": 7790,
+  "eval_examples": 1947,
+  "train_steps": 974,
+  "train_loss": 4.329890322881068,
+  "eval_loss": 3.742689094582542,
+  "output_dir": "outputs\\finetune\\sillokbert_gsm_baseline\\final",
+  "max_train_cap": 8000,
+  "max_eval_cap": 2000,
+  "subsample_seed": 42,
+  "train_subsampled": true,
+  "eval_subsampled": true,
+  "epochs": 1.0,
+  "batch_size": 8,
+  "learning_rate": 5e-05
+}

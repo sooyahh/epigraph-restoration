@@ -1,0 +1,7 @@
+freq_bucket,n_bucket,exact_at_5_full,exact_at_5_cov25,exact_at_5_cov50,max_coverage_for_exact5_ge_90,threshold_at_that_coverage,reaches_exact5_90
+very_common (100+),3637,0.7259,0.9758,0.9114,0.5,0.380207,True
+common (21-100),4158,0.5527,0.9077,0.7821,0.25,0.619576,True
+mid (6-20),1728,0.342,0.7222,0.5359,0.05,0.959209,True
+rare (2-5),686,0.1706,0.3663,0.2624,,,False
+hapax (count=1),214,0.1262,0.3333,0.2056,,,False
+unseen_in_train,256,0.0469,0.1406,0.0859,,,False

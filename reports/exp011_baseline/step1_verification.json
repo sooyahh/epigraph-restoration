@@ -1,0 +1,57 @@
+{
+  "mask_rows": 66537,
+  "mask_splits": {
+    "train": 46139,
+    "valid": 10679,
+    "test": 9719
+  },
+  "real_defect_rows": 5000,
+  "split_integrity": {
+    "train_inscriptions": 2355,
+    "valid_inscriptions": 530,
+    "test_inscriptions": 510,
+    "train_intersect_test": 0,
+    "train_intersect_valid": 0,
+    "valid_intersect_test": 0,
+    "passed": true
+  },
+  "unk_on_test": {
+    "test_samples": 9719,
+    "unk_labels": 233,
+    "unk_ratio_pct": 2.4
+  },
+  "exp004_005_canonical": {
+    "EXP-004": {
+      "experiment_id": "EXP-004",
+      "experiment_name": "bert-base-chinese zero-shot",
+      "model_name": "bert-base-chinese",
+      "dataset_name": "artificial_mask_dataset_v1",
+      "split": "test",
+      "num_samples": 2000,
+      "exact_at_1": 0.1975,
+      "exact_at_5": 0.3555,
+      "exact_at_10": 0.4245,
+      "group_at_1": NaN,
+      "group_at_5": NaN,
+      "group_at_10": NaN,
+      "created_at": "2026-07-02T21:44:19.942950+00:00",
+      "notes": "device=cpu; device=cpu; subsample n=2000 of 9719 test; batched model inference"
+    },
+    "EXP-005": {
+      "experiment_id": "EXP-005",
+      "experiment_name": "SillokBert zero-shot",
+      "model_name": "ddokbaro/SillokBert",
+      "dataset_name": "artificial_mask_dataset_v1",
+      "split": "test",
+      "num_samples": 2000,
+      "exact_at_1": 0.2365,
+      "exact_at_5": 0.426,
+      "exact_at_10": 0.509,
+      "group_at_1": NaN,
+      "group_at_5": NaN,
+      "group_at_10": NaN,
+      "created_at": "2026-07-02T21:58:53.205142+00:00",
+      "notes": "device=cpu; device=cpu; subsample n=2000 of 9719 test; batched model inference"
+    }
+  }
+}

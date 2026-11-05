@@ -1,0 +1,323 @@
+{
+  "experiment_id": "EXP-014",
+  "status": "hypothesis",
+  "paths": {
+    "mask": "data/model_inputs/artificial_mask_dataset.csv",
+    "ft_predictions": "reports/exp011_baseline/exp006_sillok_ft_predictions.csv",
+    "exp012_predictions_exists": false,
+    "exp007_predictions_exists": false,
+    "out_json": "reports/exp014_hapax_decline.json",
+    "out_md": "reports/exp014_hapax_decline.md"
+  },
+  "full_test_hapax_n": 232,
+  "full_test_unseen_n": 243,
+  "exp011_ft_buckets": {
+    "hapax": {
+      "n": 48,
+      "exact_at_1": 0.0,
+      "exact_at_5": 0.020833333333333332,
+      "exact_at_10": 0.020833333333333332
+    },
+    "unseen": {
+      "n": 49,
+      "exact_at_1": 0.0,
+      "exact_at_5": 0.02040816326530612,
+      "exact_at_10": 0.02040816326530612
+    },
+    "rare": {
+      "n": 134,
+      "exact_at_1": 0.12686567164179105,
+      "exact_at_5": 0.2537313432835821,
+      "exact_at_10": 0.31343283582089554
+    }
+  },
+  "unk_hapax_test": {
+    "model": "ddokbaro/SillokBert",
+    "n_labels": 232,
+    "unk_or_multi_n": 43,
+    "unk_or_multi_rate": 0.1853448275862069,
+    "examples": [
+      {
+        "label_char": "攷",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "鎰",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "悏",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "韙",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "槪",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "徉",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "玹",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "黽",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "紈",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "竁",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "狎",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "徉",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "㑹",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "侫",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "衲",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "誾",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "劒",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "闈",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "莭",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "閼",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "儞",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "畓",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "瑬",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "汔",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "迤",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "譁",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "惎",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "噲",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "掇",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "甁",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      }
+    ]
+  },
+  "unk_hapax_exp011_overlap": {
+    "model": "ddokbaro/SillokBert",
+    "n_labels": 48,
+    "unk_or_multi_n": 6,
+    "unk_or_multi_rate": 0.125,
+    "examples": [
+      {
+        "label_char": "狎",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "劒",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "瑬",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "黽",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "攷",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      },
+      {
+        "label_char": "㑹",
+        "token_ids": [
+          100
+        ],
+        "is_unk_or_multi": true
+      }
+    ]
+  },
+  "paired": {
+    "n": 48,
+    "zs_exact_at_1": 0.020833333333333332,
+    "zs_exact_at_5": 0.041666666666666664,
+    "ft_exact_at_1": 0.0,
+    "ft_exact_at_5": 0.020833333333333332,
+    "zs_hit_ft_miss": 1,
+    "failure_type_counts": {
+      "both_miss5": 46,
+      "zs_hit5_ft_miss5": 1,
+      "zs_hit1_ft_rank_drop": 1
+    },
+    "paired_csv": "reports/exp014_hapax_paired_cases.csv"
+  },
+  "phase3_zeroshot_reference": {
+    "source": "reports/phase3_stratified_analysis_2026-07-06.md",
+    "exp006_hapax_exact_at_5": 0.078,
+    "exp007_hapax_exact_at_5": 0.082,
+    "exp007_hapax_exact_at_1": 0.034,
+    "n": 232
+  }
+}

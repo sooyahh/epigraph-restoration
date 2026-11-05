@@ -1,0 +1,30 @@
+{
+  "k": 1,
+  "hit_column": "is_exact_at_1",
+  "label_a": "ARI8B_ZS_EXP021",
+  "label_b": "ARI8B_QLoRA_FT",
+  "n_paired": 200,
+  "n_a_only_rows": 500,
+  "n_b_only_rows": 200,
+  "both_correct": 16,
+  "both_incorrect": 151,
+  "only_a_correct": 5,
+  "only_b_correct": 28,
+  "exact_at_1_a": 0.105,
+  "exact_at_1_b": 0.22,
+  "diff_b_minus_a": 0.115,
+  "diff_pp": 11.5,
+  "mcnemar": {
+    "continuity_correction": true,
+    "chi2": 14.666666666666666,
+    "p_value": 0.00012829517819532143,
+    "formula": "(abs(b-c)-1)^2 / (b+c) with b=only_a, c=only_b"
+  },
+  "bootstrap_diff_b_minus_a": {
+    "n_boot": 2000,
+    "seed": 42,
+    "alpha": 0.05,
+    "ci_low": 0.06,
+    "ci_high": 0.17
+  }
+}
