@@ -76,6 +76,23 @@
 
 ## 실험 기록 (최신순)
 
+### EXP-034 (2026-11-18) — top-1 확신도 보정(calibration) 분석 (EXP-020 valid / EXP-022 test 후처리)
+
+- 유형/상태: `ANALYSIS` / `completed` (저장된 표본별 확신도 CSV 후처리; 학습·추론·모델 로딩 없음)
+- 목적/가설: top-1 softmax 점수가 실제 Exact@1과 맞는지(보정 상태) 확인하고, valid에서 학습한 단순 보정기가 test에서도 오차를 줄이는지 본다. 판독 보조 화면에 보여 줄 "맞을 확률"의 근거로 쓴다.
+- 데이터: valid `reports/exp020/exp020_sample_confidence.csv` (n=10,679, EXP-015), test `reports/exp022/exp022_test_sample_confidence.csv` (n=9,719, EXP-012). 같은 체크포인트 `exp012_sillokbert_gpu_best_valid_loss`.
+- 프로토콜: Platt / isotonic / histogram(15 bins) 중 valid 5-fold CV NLL이 가장 낮은 보정기를 test를 읽기 전에 선택. 세 보정기 모두 valid 전체로 학습해 test에 한 번 적용. test 재튜닝 없음.
+- 코드: `src/eval/calibration.py`, `scripts/analyze_calibration.py`, 테스트 `tests/test_calibration.py`
+- 결과:
+  - 보정 전 test: 평균 확신도 38.4% vs Exact@1 33.7%, ECE 4.7% (valid 4.9%). 확신도 0.4~0.7 구간에서 실제 정확도가 11~13%p 낮음 (과신).
+  - valid CV NLL: Platt 0.4210 < isotonic 0.4227 < histogram 0.4235 < 보정 안 함 0.4328 → Platt 선택.
+  - test (Platt): ECE 1.6% (동일 개수 bins 1.2%), Brier 0.1399 → 0.1363, NLL 0.4405 → 0.4284. ECE 변화 −2.88%p (bootstrap 95% CI −3.83 ~ −1.91%p).
+  - EXP-020 기권 임계값 0.617386은 보정 후 약 49.1%에 해당. 보정은 단조 변환이라 기권 규칙의 선택 표본·정확도는 불변.
+  - (보조) top-10 확률 합을 Exact@5 확률로 읽으면 test ECE 10.9%, valid로 학습한 Platt 적용 시 2.3%.
+- 한계: top-10 확률만 저장되어 temperature scaling 불가. 인공 single-mask 기준이며 실제 결손의 보정 상태는 확인 불가.
+- 산출물: `reports/exp034/` (`exp034_results.json`, `exp034_results.md`, `exp034_reliability_valid_test.png`)
+
+
 ### EXP-030 (2026-10-02 새벽 학습 · 요약 저장 01:28 / 02:04 / 02:30 KST) — FT 압축 프롬프트 ablation (학습 완료, 채점 전)
 
 - 유형/상태: `TRAIN` / **학습 완료, 평가 미실행**. Exact@k 없음. 채택 판정 전.
