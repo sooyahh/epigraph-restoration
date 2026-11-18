@@ -6,6 +6,7 @@
 
 - Fine-tuning raised Exact@5 from **43.17% to 53.04%** on the same held-out test set (n = 9,719, split by inscription).
 - A selective-prediction rule tuned only on validation data proposes candidates for about a quarter of gaps at **89.4% Exact@5 on test**, and leaves the rest to experts.
+- On the same 200 validation samples, the fine-tuned SillokBERT (Exact@5 **51.5%**) matched an 8B language model (ARI-8B) fine-tuned on the full training set (52.5%, no significant difference), and beat it when ARI-8B saw only 5,000 training rows (41.0%).
 
 ---
 
@@ -23,6 +24,23 @@
 - Exact@k는 정답 한자가 상위 k개 후보에 포함되는 비율로, 실제 결손 판독의 정답률과는 구분
 
 프론트엔드·백엔드 등 다른 팀원의 담당 영역을 개인 성과로 포함하지 않았습니다.
+
+## 내가 내린 판단
+
+**1. 랜덤 분할 대신 비문 단위로 나눴습니다.**
+같은 비문의 앞뒤 글자가 train과 test에 함께 들어가면, 모델이 문맥을 외워서 맞힌 점수가 섞여 성능이 부풀려집니다. 구현은 랜덤 분할이 가장 쉬웠지만, 수치를 믿을 수 없게 되는 것이 가장 치명적인 약점이라고 보고 비문(`inscription_id`) 단위로 train/valid/test를 나눴습니다 ([DECISIONS 002](docs/DECISIONS.md)).
+
+**2. 원문에 없는 글자는 만들지 않았습니다.**
+초기 전처리에서 원문에 없는 한자가 삽입된 사례(`內진晨 → 內間晨`)를 발견했습니다. 이런 글자가 인공 마스킹의 정답이 되면 틀린 라벨로 학습·평가하게 됩니다. 그래서 코드가 글자를 추정해 고치는 보정을 모두 없애고, 실제 결손이 있는 문장은 학습에서 빼 정성 데모용으로만 분리했습니다. 결손(`□`)과 한글 치환(`◇`) 기호도 나눠, 한글만 있는 2,258행이 결손으로 잘못 잡히던 문제를 막았습니다 ([DECISIONS 004 · 007](docs/DECISIONS.md)).
+
+**3. 평균이 아니라 실제 사용자가 어려워하는 구간을 봤습니다.**
+파인튜닝으로 평균 Exact@5는 올랐지만, 전문가가 판독을 어려워하는 것은 드물게 나오는 글자라고 생각했습니다. 빈도 구간별로 다시 나눠 보니 이득은 고빈도 한자에 몰려 있었고, 학습 데이터에 한 번만 나온 한자에서는 오히려 떨어졌습니다. 이 결과를 근거로 목표를 "자동 복원"이 아니라 "후보를 제시하고 최종 판단은 전문가가 하는 판독 보조"로 정했습니다 (EXP-013/014).
+
+**4. 모든 결손에 답하지 않게 했습니다.**
+판독 보조 도구에서 그럴듯하게 틀린 후보는 후보를 내지 않는 것보다 해롭다고 봤습니다. 그래서 모델이 충분히 확신할 때만 후보를 제안하고 나머지는 전문가에게 넘기는 기권 규칙을 만들었습니다. 모델의 softmax 값은 보정된 확률이 아니므로 임계값은 valid에서만 정했고, test에서는 다시 고르지 않고 그대로 적용해 수치가 부풀려지지 않게 했습니다 (EXP-020/022).
+
+**5. 조건이 같은 숫자끼리만 비교했습니다.**
+8B 언어모델(ARI-8B)과 비교할 때 표본 크기와 점수 방식이 다른 수치가 여러 개 생겼습니다. 비슷해 보이는 숫자를 한 표에 놓으면 결론이 왜곡되므로, 같은 200개 표본에서 세 모델을 다시 맞춰 비교하고 McNemar 검정으로 차이가 유의한지 확인한 수치만 결과로 썼습니다 (EXP-025, [DECISIONS 017](docs/DECISIONS.md)).
 
 ## 무엇을 하나요
 
@@ -43,6 +61,19 @@
 - 데이터: 인공 single-mask **66,537건** (train 46,139 / valid 10,679 / test 9,719, inscription 단위 split)
 - 체크포인트는 valid loss로 선택했고, test로 다시 고르지 않았습니다. 수치는 저장된 예측 파일에서 다시 계산해 확인했습니다 ([`reports/exp012_metrics_reverify.json`](reports/exp012_metrics_reverify.json)).
 - 이득은 고빈도 한자에 집중되며, 학습 데이터에 한 번만 나온 한자(hapax) 구간은 zero-shot 대비 하락했습니다 (EXP-013/014).
+
+### 8B 언어모델과의 비교 (같은 valid 표본 n=200)
+
+| 모델 | 학습 데이터 | Exact@1 | Exact@5 |
+| --- | --- | ---: | ---: |
+| **SillokBERT fine-tune** | train 전체 | **35.0%** | **51.5%** |
+| ARI-8B QLoRA fine-tune (EXP-027, 비공식) | train 전체 (46,139행) | 35.0% | 52.5% |
+| ARI-8B QLoRA fine-tune (EXP-024) | train 5,000행 | 22.0% | 41.0% |
+| ARI-8B zero-shot | — | 10.5% | 22.5% |
+
+- 같은 양의 데이터로 학습하면, 고전 한문에 특화된 작은 BERT 모델과 8B 언어모델 사이에 유의한 차이가 없었습니다 (Exact@5 차이 +1.0%p, McNemar p≈0.87, 95% CI −5.5 ~ +7.0%p). ARI-8B는 A100에서 약 5.7시간 학습이 필요했습니다.
+- ARI-8B를 5,000행만으로 학습했을 때는 SillokBERT가 Exact@1·@5 모두 유의하게 높았습니다 (EXP-025). 이 차이의 대부분은 학습량에서 온 것으로 보입니다.
+- ARI 후보는 beam search 5개로 만든 근사값이며, ARI 논문의 공식 Top-K 방식을 재현한 것은 아닙니다. 위 test n=9,719 수치와 직접 비교하지 않습니다.
 
 ## 선택적 제안 (기권 규칙)
 
@@ -71,6 +102,9 @@
 
 ## 데이터 · 평가 원칙
 
+<details>
+<summary>펼쳐 보기</summary>
+
 - 판독문 원천: 국립문화유산연구원 한국금석문 종합영상정보시스템(NRICH)
 - 실제 결손 `□`와 한글 치환 `◇`를 구분 (`gsm_preprocess_v4`)
 - split은 **inscription 단위** (`seed=42`) — 동일 비문이 train/test에 섞이지 않음
@@ -78,6 +112,8 @@
 - 인공 마스크 성능 ≠ 실제 훼손 복원 능력
 
 상세: [`docs/DATA_SCHEMA.md`](docs/DATA_SCHEMA.md), [`docs/DATA_PREPROCESSING_RULES.md`](docs/DATA_PREPROCESSING_RULES.md)
+
+</details>
 
 ## 한계
 
@@ -88,6 +124,9 @@
 - 모델 가중치와 원천 데이터가 저장소에 없어, 학습·평가 수치는 이 저장소만으로 재실행할 수 없음
 
 ## 레포 구조
+
+<details>
+<summary>펼쳐 보기</summary>
 
 | 경로 | 내용 |
 | --- | --- |
@@ -101,7 +140,12 @@
 | `notebooks/` | EXP-012 · EXP-018 Colab 노트북 |
 | `work/` | GPU 학습 실행·환경 점검·EXP-012 수치 재검증 스크립트 (`reports/`의 runbook과 노트북이 이 경로를 호출) |
 
+</details>
+
 ## 빠른 시작
+
+<details>
+<summary>펼쳐 보기</summary>
 
 ### 의존성 · 테스트
 
@@ -131,7 +175,12 @@ uvicorn app:app --host 0.0.0.0 --port 8000
 
 계약·응답 예시는 [`handoff/README.md`](handoff/README.md).
 
+</details>
+
 ## 더 읽기
+
+<details>
+<summary>펼쳐 보기</summary>
 
 - [`docs/PROJECT_OVERVIEW.md`](docs/PROJECT_OVERVIEW.md) — 목표 · 진행 상태
 - [`docs/EXPERIMENT_LOG.md`](docs/EXPERIMENT_LOG.md) — 실험 기록 (수치 근거)
@@ -139,11 +188,18 @@ uvicorn app:app --host 0.0.0.0 --port 8000
 - [`docs/RISK_CHECKLIST.md`](docs/RISK_CHECKLIST.md) — 위험·대응
 - [`docs/process/AI_COUNCIL.md`](docs/process/AI_COUNCIL.md) — 여러 AI 도구를 쓸 때의 역할 분담과 검증 규칙
 
+</details>
+
 ## 공개용 사본 안내
+
+<details>
+<summary>펼쳐 보기</summary>
 
 - 이 저장소는 캡스톤 조직 저장소(비공개)의 `main`(2026-10-02)을 포트폴리오용으로 옮긴 것입니다. 이 저장소의 코드·문서·실험은 sooyahh가 Cursor 등 AI 코딩 도구와 함께 작성했습니다. 팀의 프론트엔드·백엔드 저장소는 포함하지 않습니다.
 - 데이터 재배포를 피하려고 원본 XLS·가공 corpus·마스크 데이터셋과, 판독문이 들어간 대량 예측 CSV는 넣지 않았습니다. 데모·전문가 패널용 소량 예시(수십 건)만 남겼으며, 판독문의 저작권과 이용조건은 NRICH를 따릅니다.
 - 모델 가중치와 조직 저장소의 커밋 이력은 옮기지 않았습니다. 실험 문서 일부에는 작업 당시의 경로·상태 표현이 남아 있습니다.
+
+</details>
 
 ## License
 
