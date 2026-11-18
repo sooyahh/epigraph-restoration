@@ -6,7 +6,7 @@
 
 - Fine-tuning raised Exact@5 from **43.17% to 53.04%** on the same held-out test set (n = 9,719, split by inscription).
 - A selective-prediction rule tuned only on validation data proposes candidates for about a quarter of gaps at **89.4% Exact@5 on test**, and leaves the rest to experts.
-- On the same 200 validation samples, the fine-tuned SillokBERT beat a fine-tuned 8B language model (ARI-8B) on Exact@5, **51.5% vs 41.0%** (McNemar significant).
+- On the same 200 validation samples, the fine-tuned SillokBERT (Exact@5 **51.5%**) matched an 8B language model (ARI-8B) fine-tuned on the full training set (52.5%, no significant difference), and beat it when ARI-8B saw only 5,000 training rows (41.0%).
 
 ---
 
@@ -64,13 +64,15 @@
 
 ### 8B 언어모델과의 비교 (같은 valid 표본 n=200)
 
-| 모델 | Exact@1 | Exact@5 |
-| --- | ---: | ---: |
-| **SillokBERT fine-tune** | **35.0%** | **51.5%** |
-| ARI-8B QLoRA fine-tune | 22.0% | 41.0% |
-| ARI-8B zero-shot | 10.5% | 22.5% |
+| 모델 | 학습 데이터 | Exact@1 | Exact@5 |
+| --- | --- | ---: | ---: |
+| **SillokBERT fine-tune** | train 전체 | **35.0%** | **51.5%** |
+| ARI-8B QLoRA fine-tune (EXP-027, 비공식) | train 전체 (46,139행) | 35.0% | 52.5% |
+| ARI-8B QLoRA fine-tune (EXP-024) | train 5,000행 | 22.0% | 41.0% |
+| ARI-8B zero-shot | — | 10.5% | 22.5% |
 
-- 고전 한문에 특화된 작은 BERT 모델이, 같은 데이터로 파인튜닝한 8B 언어모델보다 Exact@1·@5 모두 높았습니다. 두 비교 모두 McNemar 검정에서 유의했습니다 (EXP-025).
+- 같은 양의 데이터로 학습하면, 고전 한문에 특화된 작은 BERT 모델과 8B 언어모델 사이에 유의한 차이가 없었습니다 (Exact@5 차이 +1.0%p, McNemar p≈0.87, 95% CI −5.5 ~ +7.0%p). ARI-8B는 A100에서 약 5.7시간 학습이 필요했습니다.
+- ARI-8B를 5,000행만으로 학습했을 때는 SillokBERT가 Exact@1·@5 모두 유의하게 높았습니다 (EXP-025). 이 차이의 대부분은 학습량에서 온 것으로 보입니다.
 - ARI 후보는 beam search 5개로 만든 근사값이며, ARI 논문의 공식 Top-K 방식을 재현한 것은 아닙니다. 위 test n=9,719 수치와 직접 비교하지 않습니다.
 
 ## 선택적 제안 (기권 규칙)
