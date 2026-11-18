@@ -102,6 +102,9 @@
 
 ## 데이터 · 평가 원칙
 
+<details>
+<summary>펼쳐 보기</summary>
+
 - 판독문 원천: 국립문화유산연구원 한국금석문 종합영상정보시스템(NRICH)
 - 실제 결손 `□`와 한글 치환 `◇`를 구분 (`gsm_preprocess_v4`)
 - split은 **inscription 단위** (`seed=42`) — 동일 비문이 train/test에 섞이지 않음
@@ -109,6 +112,8 @@
 - 인공 마스크 성능 ≠ 실제 훼손 복원 능력
 
 상세: [`docs/DATA_SCHEMA.md`](docs/DATA_SCHEMA.md), [`docs/DATA_PREPROCESSING_RULES.md`](docs/DATA_PREPROCESSING_RULES.md)
+
+</details>
 
 ## 한계
 
@@ -119,6 +124,9 @@
 - 모델 가중치와 원천 데이터가 저장소에 없어, 학습·평가 수치는 이 저장소만으로 재실행할 수 없음
 
 ## 레포 구조
+
+<details>
+<summary>펼쳐 보기</summary>
 
 | 경로 | 내용 |
 | --- | --- |
@@ -132,7 +140,12 @@
 | `notebooks/` | EXP-012 · EXP-018 Colab 노트북 |
 | `work/` | GPU 학습 실행·환경 점검·EXP-012 수치 재검증 스크립트 (`reports/`의 runbook과 노트북이 이 경로를 호출) |
 
+</details>
+
 ## 빠른 시작
+
+<details>
+<summary>펼쳐 보기</summary>
 
 ### 의존성 · 테스트
 
@@ -162,7 +175,12 @@ uvicorn app:app --host 0.0.0.0 --port 8000
 
 계약·응답 예시는 [`handoff/README.md`](handoff/README.md).
 
+</details>
+
 ## 더 읽기
+
+<details>
+<summary>펼쳐 보기</summary>
 
 - [`docs/PROJECT_OVERVIEW.md`](docs/PROJECT_OVERVIEW.md) — 목표 · 진행 상태
 - [`docs/EXPERIMENT_LOG.md`](docs/EXPERIMENT_LOG.md) — 실험 기록 (수치 근거)
@@ -170,11 +188,18 @@ uvicorn app:app --host 0.0.0.0 --port 8000
 - [`docs/RISK_CHECKLIST.md`](docs/RISK_CHECKLIST.md) — 위험·대응
 - [`docs/process/AI_COUNCIL.md`](docs/process/AI_COUNCIL.md) — 여러 AI 도구를 쓸 때의 역할 분담과 검증 규칙
 
+</details>
+
 ## 공개용 사본 안내
+
+<details>
+<summary>펼쳐 보기</summary>
 
 - 이 저장소는 캡스톤 조직 저장소(비공개)의 `main`(2026-10-02)을 포트폴리오용으로 옮긴 것입니다. 이 저장소의 코드·문서·실험은 sooyahh가 Cursor 등 AI 코딩 도구와 함께 작성했습니다. 팀의 프론트엔드·백엔드 저장소는 포함하지 않습니다.
 - 데이터 재배포를 피하려고 원본 XLS·가공 corpus·마스크 데이터셋과, 판독문이 들어간 대량 예측 CSV는 넣지 않았습니다. 데모·전문가 패널용 소량 예시(수십 건)만 남겼으며, 판독문의 저작권과 이용조건은 NRICH를 따릅니다.
 - 모델 가중치와 조직 저장소의 커밋 이력은 옮기지 않았습니다. 실험 문서 일부에는 작업 당시의 경로·상태 표현이 남아 있습니다.
+
+</details>
 
 ## License
 
