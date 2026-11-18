@@ -88,6 +88,7 @@
 | `reports/` | 실험 리포트 · 그림 · 집계 결과 |
 | `handoff/` | FE/BE 계약, FastAPI 추론 스텁, 모킹 fixture |
 | `notebooks/` | EXP-012 · EXP-018 Colab 노트북 |
+| `work/` | GPU 학습 실행·환경 점검·EXP-012 수치 재검증 스크립트 (`reports/`의 runbook과 노트북이 이 경로를 호출) |
 
 ## 빠른 시작
 

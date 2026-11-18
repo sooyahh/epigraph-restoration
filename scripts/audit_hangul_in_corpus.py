@@ -1,3 +1,14 @@
+"""Audit Hangul characters mixed into the processed epigraph corpus.
+
+Checks how many Hangul characters remain in `text_raw`, whether any rows marked
+`is_training_text=True` still contain Hangul (training-signal contamination),
+and which Hanja-heavy rows may have been excluded only because of a few Hangul
+characters.
+
+Usage (from the repository root, with the local processed corpus in place):
+    python scripts/audit_hangul_in_corpus.py
+"""
+
 import pandas as pd, re
 
 path = "data/processed_layer/readings.csv"
